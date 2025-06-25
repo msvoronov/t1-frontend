@@ -1,0 +1,24 @@
+$block-name: "b-block-computing-systems-list";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+  @include flex($gap: 56px);
+  
+  @include media-max-md() {
+    @include flex(column, $gap: 24px);
+  }
+
+  &__col {
+    @include flex(column, $gap: 24px);
+    @include size(100%);
+  }
+
+  &__item {
+    @include flex($gap: 16px);
+
+    &__text {
+      @include font-size(20px, 28px, 500);
+
+    }
+  }
+}

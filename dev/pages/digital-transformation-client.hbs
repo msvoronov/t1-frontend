@@ -1,0 +1,58 @@
+{{#> layouts/main title='Цифровая трансформация клиента' }}
+
+<style>
+  .test {
+    padding: 0 32px;
+
+  }
+  @media(max-width: 1023.9px) {
+    
+  .test {
+    padding: 0 24px;
+
+  }
+  }
+  @media(max-width: 575.9px) {
+  .test {
+    padding: 0 16px;
+
+  }
+
+  }
+</style>
+
+<div class="test">
+
+  {{> sections/block-digital-transformation-banner}}
+  
+  {{#with this.store.digitalTransformationOpportunities}}
+    {{> sections/block-icons-slider}}
+  {{/with}}
+  {{#with this.store.digitalTransformationIndustries}}
+    {{> sections/block-pluses-list}}
+  {{/with}}
+
+  {{#with this.store.digitalTransformationServices}}
+    
+    {{> sections/block-digital-transformation-services}}
+  {{/with}}
+
+  {{#with this.store.digitalTransformationTeam}}
+    {{> shared/section__title}}
+    {{> sections/block-team-slider}}
+  {{/with}}
+
+  {{#with this.store.digitalTransformationSuccess}}
+    {{> shared/section__title}}
+    {{> sections/block-transformation-success}}
+  {{/with}}
+
+  {{#with this.store.digitalTransformationStats}}
+    {{> shared/section__title}}
+    {{> sections/block-stats}}
+  {{/with}}
+
+  {{> sections/block-digital-transformation-form}}
+</div>
+
+{{/layouts/main}}

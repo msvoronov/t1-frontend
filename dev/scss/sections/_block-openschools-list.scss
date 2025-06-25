@@ -1,0 +1,72 @@
+$block-name: "b-block-openschools-list";
+
+.#{$block-name} {
+  @include flex($gap: 16px);
+  @include flex-wrap();
+
+  padding: 0 0 48px;
+
+  &__item {
+    $gap: 16px;
+    $count: 3;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    
+    @include media-max-md() {
+      $gap: 16px;
+      $count: 2;
+  
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    }
+
+    @include media-max-s() {
+      @include max-size(100%);
+
+    }
+
+    @include hover() {
+      .#{$block-name}__item__img::after {
+        opacity: 0.2;
+      }
+      .#{$block-name}__item__label {
+        @include color(#00aae6);
+      }
+    }
+
+    &.disabled {
+      opacity: 0.5;
+    }
+
+    &__img {
+      @include position(relative);
+      @include size(100%);
+      @include flex();
+      margin-bottom: 16px;
+
+      border-radius: 16px;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        @include position(absolute, $top: 0, $left: 0);
+        @include size(100%, 100%);
+        @include bg-color(#00aae6);
+        @include transition(opacity);
+        opacity: 0;
+      }
+      img {
+        @include size(100%);
+      }
+    }
+
+    &__label {
+      @include font-size(20px, 28px, 500);
+      @include color(#000);
+      @include transition(color);
+    }
+  }
+
+  
+}

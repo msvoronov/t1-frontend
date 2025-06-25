@@ -1,0 +1,617 @@
+$block-name: "block-accreditation-form";
+
+
+.#{$block-name} {
+
+
+
+  color: #000;
+
+  &__new {
+    .#{$block-name}__project {
+      margin-bottom: 24px;
+    }
+
+    .#{$block-name}__form {
+      display: block;
+    }
+
+    .block-accreditation-form__wrap {
+      @include flex(column, $gap: 0);
+    }
+
+  }
+
+  .b-block-career-form__back {
+    @include color(#00aae6);
+
+    @include hover() {
+      @include color(#005aae);
+
+    }
+  }
+
+  .b-block-career-form__loader,
+  .b-block-career-form__response-error,
+  .b-block-career-form__response-success {
+    margin: auto;
+  }
+
+  &__wrap {
+    @include bg-color(#EFEFF2);
+    @include flex($gap: 96px);
+    @include min-size(null, 466px);
+    border-radius: 16px;
+    padding: 16px;
+
+    @include media-max-md() {
+      @include flex(column, $gap: 48px);
+    }
+
+    @include media-max-lg() {
+      @include flex(column, $gap: 32px);
+      border-radius: 8px;
+    }
+  }
+
+  &__descr {
+    @include font-size(20px, 1.4, 500);
+    margin-top: 32px;
+    margin-bottom: 32px;
+    letter-spacing: -0.6px;
+
+    @include media-max-md() {
+      @include font-size(16px, 1.4, 500);
+      margin-top: 16px;
+      margin-bottom: 16px;
+
+    }
+  }
+
+  &__title {
+    @include font-size(48px, 1, 500);
+
+    @include media-max-md() {
+      @include font-size(36px, 1, 500);
+
+    }
+
+    @include media-max-lg() {
+      @include font-size(28px, 33.6px, 500);
+
+    }
+  }
+
+  &__row {
+    @include flex();
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @include media-max-lg() {
+        margin-bottom: 16px;
+      }
+    }
+
+    @include media-max-md() {
+      @include flex(column, $gap: 16px);
+    }
+  }
+
+  &__file {
+    &__title {
+      @include font-size(36px, 39.6px, 500);
+      margin-bottom: 8px;
+
+      @include media-max-md() {
+        @include font-size(28px, 33.6px, 500);
+
+      }
+
+      @include media-max-lg() {
+
+        @include font-size(24px, 28.8px, 500);
+      }
+    }
+
+    &__subtitle {
+      @include font-size(20px, 28px, 500);
+      @include color(#A5B4C3);
+      margin-bottom: 24px;
+
+      @include media-max-lg() {
+        margin-bottom: 16px;
+        @include font-size(16px, 22.4px, 500);
+
+      }
+    }
+
+
+    .b-file {
+      @include size(100%);
+
+      &__file-list {
+        @include size(100%);
+        @include position(relative);
+
+
+
+      }
+
+      &__item {
+        @include size(100%);
+        @include position(relative);
+        display: flex;
+
+        padding: 9px 0;
+
+        &:last-child {
+          @include border(1px, solid, #E6EAEE, bottom);
+
+          .b-file__item__name {
+            &::after {
+              content: "";
+              @include size(25%, 1px);
+              @include bg-color(#00AAE6);
+              @include position(absolute, $left: -1px, $bottom: 0);
+            }
+          }
+        }
+
+
+        &__cross {
+          @include size(24px, 24px);
+
+          &::before,
+          &::after {
+            @include size(70%, 2px);
+            @include bg-color(#A5B4C3);
+          }
+        }
+
+        &__name {
+          @include font-size(16px, 22.4px, 500);
+
+        }
+      }
+
+      &__prompt {
+        @include color(#A5B4C3);
+        @include font-size(16px, 22.4px, 500);
+
+        margin-bottom: 16px;
+
+        @include media-max-lg() {
+          @include font-size(14px, 19.6px, 500);
+        }
+      }
+    }
+  }
+
+  &__form {
+    @include size(100%);
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__pages-wrap {
+    @include position(relative);
+    @include size(100%);
+    @include transition(height);
+  }
+
+  &__page {
+
+    @include position(absolute, $top: 0, $left: 0);
+    @include size(100%);
+
+    @include transition(opacity);
+
+    opacity: 0;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    &__title {
+      @include font-size(36px, 39.6px, 500);
+      @include size(100%);
+      margin-bottom: 24px;
+
+      @include media-max-md() {
+        @include font-size(28px, 33.6px, 500);
+
+      }
+
+      @include media-max-lg() {
+
+        @include font-size(24px, 28.8px, 500);
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__project-wrap {
+    @include position(relative);
+  }
+
+  &__project {
+    &__title {
+      @include font-size(28px, 33.6px, 500);
+      margin-bottom: 16px;
+
+      &.hidden {
+        display: none;
+      }
+    }
+
+    &__remove {
+      @include position(absolute, $top: 10px, $right: 10px);
+      @include size(16px, 16px);
+
+      @include transition(opacity);
+      cursor: pointer;
+
+      @include hover() {
+        opacity: 0.6;
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        @include size(100%, 2px);
+        @include bg-color(#000);
+        @include position(absolute, $top: 50%, $left: 50%);
+        border-radius: 1.5px;
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+
+    &__add {
+      @include flex($gap: 16px);
+      @include font-size(20px, 28px, 500);
+      @include color(#00AAE6);
+
+      @include transition(opacity);
+      cursor: pointer;
+
+      @include hover() {
+        opacity: 0.6;
+      }
+
+      &__icon {
+        @include flex();
+        @include size(28px, 28px);
+        padding: 4.67px;
+
+        svg {
+          @include size(100%, 100%);
+        }
+      }
+    }
+  }
+
+  &__project-wrap {
+    margin-bottom: 24px;
+
+    @include media-max-lg() {
+      margin-bottom: 16px;
+    }
+
+  }
+
+
+  .b-career-form__field[data-focused] .b-career-form__field__label {
+    transform: translateY(-70%) scale(.7);
+  }
+
+  .b-career-form__field {
+    border-color: #A5B4C3;
+
+    padding: 16px 0;
+
+
+    &__label {
+      &--pale {
+        @include color(#A5B4C3)
+      }
+    }
+
+    &__input {
+      @include color(#000);
+    }
+  }
+
+  &__checkbox {
+    @include size(100%);
+  }
+
+  &__organization {
+
+    margin-bottom: 24px;
+
+    &__sro {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    .b-career-form__checkbox .b-career-form__checkbox {
+      @include flex($align: center);
+
+      &__holder::after {
+        background-image: url("/local/templates/t1-new/assets/svg/icons/checkbox-light.svg");
+        top: -1px;
+
+      }
+
+      &__label {
+        @include font-size(20px, 28px, 500);
+      }
+    }
+
+    &__label {
+      @include font-size(20px, 28px, 500);
+
+      @include media-max-s() {
+        @include font-size(16px, 22.4px, 500);
+
+      }
+    }
+
+    .b-career-form__checkbox__input:checked~.b-career-form__checkbox__holder {
+      @include bg-color(#00AAE6);
+    }
+
+    &__radio-wrap {
+      @include position(relative);
+      @include flex(row, space-between, center, 16px);
+      @include size(100%);
+
+      @include media-max-lg() {
+        @include flex(row, null, flex-start, 16px);
+      }
+
+      padding: 16px 0;
+
+      &.has-error {
+        .alert-input-text {
+          opacity: 1;
+        }
+      }
+    
+      .alert-input-text {
+        @include position(absolute, $top: 100%, $left: 0);
+        @include flex();
+        @include size(max-content);
+        @include font-size(12px, 1.2, 500);
+        @include color($red-input);
+      
+        @include transition(opacity);
+      
+        opacity: 0;
+      
+        letter-spacing: -0.24px;
+      }
+
+      &.blue {
+        @include flex($align: center);
+
+        .block-accreditation-form__organization__radio-wrap__title,
+        .block-accreditation-form__organization__radio-wrap__label__text {
+          @include color(#fff);
+        }
+        .block-accreditation-form__organization__radio-wrap__title,
+        .block-accreditation-form__organization__radio-wrap__label__text {
+          @include media-max-lg() {
+            @include font-size(20px, 28px, 500);
+          }
+          @include media-max-md() {
+            @include font-size(20px, 28px, 500);
+          }
+          @include media-max-md() {
+            @include font-size(16px, 22.4px, 500);
+          }
+        }
+
+        .block-accreditation-form__organization__radio-wrap__label__holder::after {
+          @include bg-color(#00aae6)
+        }
+        .block-accreditation-form__organization__radio-wrap__label input:checked~.block-accreditation-form__organization__radio-wrap__label__holder {
+          @include bg-color(#fff)
+
+        }
+
+      }
+
+      &__title,
+      &__subtitle {
+        @include font-size(20px, 28px, 500);
+        @include color(#000);
+
+        @include media-max-md() {
+          @include font-size(16px, 22.4px, 500);
+
+        }
+
+        @include media-max-lg() {
+          @include font-size(14px, 19.6px, 500);
+
+        }
+      }
+
+
+
+      &__subtitle {
+        @include color(#A5B4C3);
+
+      }
+
+      &__inputs-wrap {
+        @include flex(column, $gap: 12px);
+      }
+
+      &__label {
+        @include flex(row, null, center, $gap: 16px);
+
+        @include font-size(16px, 22.4px, 400);
+        @include color(#000);
+
+        @include media-max-md() {
+          @include font-size(16px, 22.4px, 400);
+
+        }
+
+        @include media-max-lg() {
+          @include font-size(14px, 19.6px, 400);
+        }
+
+        input {
+          display: none;
+        }
+
+        input:checked~.block-accreditation-form__organization__radio-wrap__label__holder {
+          border-color: #0000001A;
+          @include bg-color(#00AAE6);
+        }
+
+        input:checked~.block-accreditation-form__organization__radio-wrap__label__holder::after {
+          opacity: 1;
+        }
+
+        &__holder {
+          @include position(relative);
+          @include size(18px, 18px);
+          @include border(1px, solid, #A5B4C3);
+          @include bg-color(#fff);
+
+          @include transition(#{background-color, border-color});
+          border-radius: 50%;
+
+          &::after {
+            content: "";
+            @include size(8px, 8px);
+            @include position(absolute, $top: 50%, $left: 50%);
+            @include bg-color(#fff);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+
+            opacity: 0;
+
+            @include transition(opacity);
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &__checkboxes {
+    @include flex($gap: 24px);
+    margin-bottom: 8px;
+
+    @include media-max-md() {
+      @include flex(column, $gap: 8px);
+
+    }
+
+    &__col {
+      @include flex(column, $gap: 8px);
+      @include size(100%);
+    }
+
+    .b-career-form__checkbox {
+
+      @include flex(row, null, center, $gap: 8px);
+
+      &.policy {
+        margin-bottom: 32px;
+      }
+
+      &__link {
+        @include color(#00AAE6);
+      }
+    }
+
+
+
+
+
+
+  }
+
+  .b-career-form__checkbox {
+
+    @include flex(row, null, center, $gap: 8px);
+
+    &__holder::after {
+      background-image: url("/local/templates/t1-new/assets/svg/icons/checkbox-light.svg");
+
+      top: -1px;
+    }
+
+    &__label {
+      @include font-size(20px, 28px, 500);
+    }
+
+    &.policy {
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+
+    &__link {
+      @include color(#00AAE6);
+
+      @include hover() {
+        @include color(#005aae);
+
+      }
+    }
+  }
+
+  .b-career-form__checkbox__input:checked~.b-career-form__checkbox__holder {
+    @include bg-color(#00AAE6);
+  }
+
+  &__navigation {
+    margin-top: 32px;
+    @include flex(row, $gap: 12px);
+
+    @include media-max-lg() {
+      @include flex(column, $gap: 12px);
+    }
+  }
+
+  &__btn {
+    @include transition(#{color, background-color});
+
+    &.disabled {
+      @include bg-color(#F7F7F8);
+      @include color(#A5B4C3);
+      pointer-events: none;
+    }
+
+    &.hidden {
+      display: none
+    }
+  }
+
+  .b-file__label {
+    padding: 8px 20px;
+  }
+}

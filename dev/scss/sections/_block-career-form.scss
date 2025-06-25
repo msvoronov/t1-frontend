@@ -1,0 +1,319 @@
+$block-name: "b-block-career-form";
+
+.#{$block-name} {
+    @include color(#fff);
+    margin-bottom: 0;
+
+    padding-top: 90px;
+    margin-top: -90px;
+
+    &.block-silaron-form,
+    &.block-digital-transformation-form {
+        .b-career-form__row {
+
+            @include media-max-md() {
+                @include flex(row);       
+            }
+            @include media-max-s() {
+                @include flex(column);       
+            }
+        }
+    }
+
+    &.block-digital-transformation-form {
+        .textarea .b-career-form__field__label {
+            top: 0;
+        }
+
+        textarea {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: -3%;
+
+        }
+
+        .b-career-form__field.textarea[data-focused] {
+          .b-career-form__field__label {
+            transform: unset;
+          }
+        }
+    }
+
+
+    &.olympic {
+
+        padding-bottom: 56px;
+
+        .b-block-career-form-new__title {
+            @include font-size(36px, 36px, 500);
+            
+            @include media-max-s() {
+                @include font-size(28px, 33.6px, 500);
+            }
+        }
+        
+        @include media-max-md() {
+            padding-bottom: 48px;
+            .b-career-form__btn {
+                @include font-size(20px, 28px, 500);
+
+            }
+        }
+        .b-career-form__field {
+            padding: 26px 0 8px;
+        }
+        .b-career-form__field__input {
+            max-height: 28px
+        }
+        .b-block-career-form__wrap {
+            border-radius: 16px;
+            @include media-max-lg() {
+                @include flex(column)
+            }
+            @include media-max-s() {
+                border-radius: 8px;
+
+            }
+
+            
+        }
+        .b-block-career-form__form {
+            @include media-max-lg() {
+                @include size(100%);
+            }
+        }
+        .b-career-form__row:not(.search-select__other) {
+            @include media-max-md() {
+                @include flex(row);
+            }
+            @include media-max-custom(700px) {
+                @include flex(column);
+            }
+        }
+            .b-block-career-form__inputs-wrap.active {
+                @include media-max-md() {
+                    gap: 24px;
+                }
+            }
+    }
+
+    &.completed {
+        .#{$block-name}__wrap {
+            @include min-size(null, unset);
+        }
+
+        .#{$block-name}__form {
+            display: none;
+        }
+    }
+    
+    a {
+        text-decoration: unset !important;
+    }
+    
+    &.b-block-career-form-camp {
+      margin-bottom: 48px;
+    }
+    &.b-block-career-form-debut {
+        padding: 0 0 48px;
+        
+        padding-top: 90px;
+        margin-top: -90px;
+
+
+        .block-accreditation-form__organization__radio-wrap {
+            @include flex(column, flex-start, flex-start);
+        }
+        .block-accreditation-form__organization__radio-wrap__inputs-wrap {
+            @include flex(row);
+        }
+    }
+
+    &__title {
+        @include size(50%);
+        @include font-size(48px, 1, 500);
+
+        letter-spacing: -1.92px;
+
+        @include media-max-md() {
+            @include size(100%);
+            @include font-size(28px, 1.2, 500);
+
+            letter-spacing: -0.84px;
+        }
+    }
+
+
+
+    &__wrap {
+        @include bg-color($blue);
+        @include flex($gap: 16px);
+        @include min-size(null, 362px);
+        
+        border-radius: 16px;
+        padding: 16px;
+        
+        @include media-max-md() {
+            @include min-size(null, unset);
+            @include flex(column, $gap: 48px);
+            border-radius: 8px
+        }
+
+        @include media-max-s() {
+            padding: 12px;
+
+        }
+    }
+
+    &__form {
+        @include size(49.6%);
+        @include flex(row, center, center);
+
+        @include media-max-md() {
+            @include size(100%);
+
+        }
+    }
+
+    &__double-select {
+        @include flex(column, $gap: 16px);
+    }
+
+    &__select-wrap {
+        &--first {
+            @include position(relative);
+            z-index: 100;
+        }
+    }
+
+    &__inputs-wrap {
+        @include size(100%);
+
+        display: none;
+
+        &.active {
+            @include flex(column, $gap: 24px);
+
+            @include media-max-md() {
+                @include flex(column, $gap: 16px);
+
+            }
+        }
+    }
+
+    &__secondary-select-wrap {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__response-success,
+    &__response-error {
+        @include flex(column, center, center);
+
+        img {
+            margin-bottom: 24px;
+        }
+
+    }
+
+    &__response-success {
+        .b-block-career-form__response-msg {
+            margin-bottom: 0;
+            text-align: center
+        }
+    }
+
+    &__response-msg {
+
+        @include font-size(20px, 1.4, 500);
+        letter-spacing: -0.6px;
+
+        margin-bottom: 8px;
+
+        @include media-max-s() {
+            @include font-size(16px, 1.4, 500);
+            letter-spacing: -0.48px;
+
+        }
+
+        a {
+            @include color(#B2E5F7);
+        }
+    }
+
+    &__back {
+        @include color(#B2E5F7);
+
+        @include transition(color);
+
+        cursor: pointer;
+
+        @include font-size(20px, 1.4, 500);
+        letter-spacing: -0.6px;
+
+        @include media-max-s() {
+            @include font-size(16px, 1.4, 500);
+            letter-spacing: -0.48px;
+        }
+
+        @include hover() {
+            @include color(#fff);
+        }
+    }
+
+    &__response-error {
+        img {
+            padding: 23.333px;
+        }
+    }
+
+    &__response-success,
+    &__response-error,
+    &__loader {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+
+    &__loader {
+        @include size(140px, 140px);
+        @include transition(transform);
+        transform-origin: center;
+        animation: rotation infinite 1s linear;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    &--light {
+        @include color(#000);
+
+        .#{$block-name}__wrap {
+            @include bg-color($gray-light);
+        }
+
+        .#{$block-name}__back {
+            @include color($blue);
+            @include transition(opacity);
+
+            @include hover() {
+                @include color($blue);
+                opacity: 0.5;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+$block-name: "b-block-alumni-content";
+
+.#{$block-name} {
+  &__img-wrap {
+    @include image-wrap(100%, null, contain);
+    @include max-size(974px);
+    margin-bottom: 48px;
+  }
+
+  &__text-wrap {
+    @include font-size(20px, 28px, 400);
+    @include max-size(912px);
+
+   letter-spacing: -0.8px;
+    margin-bottom: 48px;  
+  }
+
+  &__text-block {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 24px;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  ul>li:after {
+    top: 0.8em;
+  }
+
+}

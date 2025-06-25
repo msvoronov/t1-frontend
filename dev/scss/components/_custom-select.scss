@@ -1,0 +1,183 @@
+.custom-select {
+  @include position(relative);
+  @include bg-color(#fff);
+  @include border(#E1E5EA, 1px, solid);
+
+  @include size(100%, fit-content);
+
+  border-radius: 8px;
+  padding: 23px 16px 7px;
+
+  cursor: pointer;
+
+  &.url-select {
+    .block-policy__field__label {
+      top: 5px;
+      transform: scale(.7);
+    }
+  }
+
+  @include media-max-s() {
+    border-radius: 6px;
+    padding: 23px 12px 7px;
+  }
+
+  &.required {
+    .block-policy__field__label::after {
+      content: "*";
+      @include color(#FA4A14);
+    }
+  }
+
+  &__label {
+    @include font-size(20px, 18px, 400);
+    letter-spacing: -0.02em;
+    @include color(#A0B0BF);
+
+    @include transition(transform);
+    transform-origin: left;
+
+    @include position(absolute, $top: 50%, $left: 16px);
+    transform: translateY(-50%);
+
+    @include media-max-s() {
+      @include position(absolute, $top: 50%, $left: 12px);
+    }
+  }
+
+
+  .alert-input-text {
+    @include position(absolute, $left: 0, $top: calc(100% + 4px));
+    @include font-size(12px, 16px, 400);
+    @include color(#FA4A14);
+  }
+
+  &__input {
+    @include size(100%, 28px);
+    @include bg-color(transparent);
+    @include color(#000);
+    @include font-size(20px, 1.4, 500);
+
+    letter-spacing: -0.6px;
+
+    @include media-max-s() {
+      @include font-size(16px, 1.4, 500);
+
+      letter-spacing: -0.48px;
+    }
+  }
+
+  &__arrow {
+    @include size(24px, 24px);
+    @include position(absolute, $right: 16px, $top: 50%);
+
+    @include transition(#{top, transform});
+    transform: translateY(-50%);
+
+    @include media-max-s() {
+      @include position(absolute, $right: 12px, $top: 50%);
+    }
+  }
+
+  &__value {
+    @include size(100%);
+    @include max-size(96%);
+    @include min-size(null, 28px);
+    @include bg-color(transparent);
+    @include color(#000);
+    @include font-size(20px, 1.4, 500);
+
+    letter-spacing: -0.6px;
+
+    @include media-max-s() {
+      @include font-size(16px, 1.4, 500);
+
+      letter-spacing: -0.48px;
+    }
+  }
+
+  &[data-focused] {
+    .block-policy__field__label {
+      transform: translateY(-144%) scale(.7);
+    }
+  }
+
+  &__list {
+    @include position(absolute, $left: 0, $top: 100%);
+    @include border(#E9E9EF, 1px, solid);
+    @include bg-color(#fff);
+
+    z-index: 10;
+
+    opacity: 0;
+    pointer-events: none;
+
+    @extend %custom-srollbar-y;
+    border-radius: 16px;
+
+    overflow-y: auto;
+    @include max-size(100%, 792px);
+
+    @include transition(#{opacity, transform});
+
+    @include media-max-s() {
+      border-radius: 8px;
+    }
+  }
+
+  &__item {
+    padding: 12px;
+
+    @include transition(background-color);
+    cursor: pointer;
+
+    @include hover() {
+      @include bg-color(#F7F7F8);
+    }
+
+    &__wrap {
+      &__descr {
+        @include font-size(20px, 28px, 500);
+        @include color(#000);
+
+        margin-bottom: 0;
+
+        .pale {
+          @include color(#A5B4C3);
+
+        }
+      }
+    }
+  }
+
+  &.open {
+    .custom-select__arrow {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .custom-select__list {
+      transform: translateY(4px);
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &.has-value {
+
+    .block-policy__field__label {
+      top: 5px;
+      transform: scale(.7);
+    }
+  }
+}
+
+.aim-wrap {
+  .custom-select__value .custom-select__item__wrap__descr {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0;
+  }
+}

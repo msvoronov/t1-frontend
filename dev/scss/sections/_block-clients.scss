@@ -1,0 +1,105 @@
+$block-name: "b-block-clients-new";
+
+.#{$block-name} {
+
+    padding: 0 0 48px;
+    margin-bottom: 0 !important;
+
+    a {
+        text-decoration: unset !important;
+    }
+
+    &.col-3 {
+        .#{$block-name}__img img {
+            max-width: 316px;
+        }
+        .#{$block-name}__img {
+                padding-top: 37%;
+        }
+        .#{$block-name}__item {
+            $gap: 16px;
+            $count: 3;
+
+            @include size(100%);
+            @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+
+            @include media-max-s() {
+                $gap: 16px;
+                $count: 2;
+
+                @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+            }
+        }
+    }
+
+    &__wrap {
+        @include flex($gap: 16px);
+        @include flex-wrap();
+    }
+
+    &__item {
+        $gap: 16px;
+        $count: 6;
+
+        @include size(100%);
+        @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+        @include bg-color($gray-light);
+
+        border-radius: 16px;
+
+        @include media-max-xl {
+            $gap: 16px;
+            $count: 5;
+
+            @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+        }
+
+        @include media-max-lg() {
+            $gap: 16px;
+            $count: 4;
+
+            @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+        }
+
+
+        @include media-max-md() {
+            $gap: 16px;
+            $count: 3;
+
+            @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+            border-radius: 8px
+        }
+
+        @include media-max-s() {
+            $gap: 16px;
+            $count: 2;
+
+            @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+        }
+    }
+
+    &__img {
+        @include position(relative);
+        padding-top: 72%;
+
+        @include media-max-s() {
+            padding-top: 64%;
+
+        }
+
+        img {
+            @include position(absolute, $top: 50%, $left: 50%);
+            @include max-size(80%, 80%);
+            @include size(auto);
+
+            transform: translate(-50%, -50%);
+
+            @include media-max-s() {
+                @include max-size(60%, 60%);
+
+            }
+        }
+    }
+}

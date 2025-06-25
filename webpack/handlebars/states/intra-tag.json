@@ -1,0 +1,24 @@
+{
+    "list": [
+        {
+            "name": "products",
+            "value": "НОТА ВИЗОР",
+            "label": "НОТА ВИЗОР"
+        },
+        {
+            "name": "products",
+            "value": "НОТА ЮНИОН",
+            "label": "НОТА ЮНИОН"
+        },
+        {
+            "name": "products",
+            "value": "НОТА",
+            "label": "НОТА"
+        },
+        {
+            "name": "other",
+            "value": "Другое",
+            "label": "Другое"
+        }
+    ]
+}

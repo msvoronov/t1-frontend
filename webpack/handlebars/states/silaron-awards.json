@@ -1,0 +1,21 @@
+{
+  "list": [
+    {
+      "href": " https://t1-integration.ru/press/news/asu-tp-silaron-v-short-liste-luchshikh-tekhnologicheskikh-resheniy-premii-brics-solutions-awards/",
+      "img": "silaron/silaron-award__1.png",
+      "md": "silaron/silaron-award__1__md.png",
+      "s": "silaron/silaron-award__1__s.png",
+      "title": "Международная премия «BRICS Solutions Awards».",
+      "descr": "Шорт-лист лучших технологических практик премии в категории <br class=\"br-desk\">«Новая промышленность и энергетика»."
+    },
+    {
+      "href": "https://t1.ru/news/item/15-proektov-it-kholdinga-t1-stali-laureatami-premii-global-cio/",
+      "blank": true,
+      "img": "silaron/silaron-award__2.png",
+      "md": "silaron/silaron-award__2__md.png",
+      "s": "silaron/silaron-award__2__s.png",
+      "title": "Премия CNews Awards",
+      "descr": "В категории «Импортозамещение года»"
+    }
+  ]
+}

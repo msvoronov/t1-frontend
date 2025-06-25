@@ -1,0 +1,19 @@
+$block-name: "b-block-computing-systems-video";
+
+.#{$block-name} {
+  
+  padding: 0 0 48px;
+  
+  &__wrap {
+    @include size(100%);
+    @include max-size(912px);
+    @include position(relative);
+
+    padding-top: 38.227%;
+  }
+
+  iframe {
+    @include position(absolute, $top: 0, $left: 0);
+    @include size(100%, 100%,);
+  }
+}

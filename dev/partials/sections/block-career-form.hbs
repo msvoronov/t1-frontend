@@ -1,0 +1,111 @@
+<div class="b-block-career-form">
+    <div class="b-block-career-form__wrap js-b-form">
+        <div class="b-block-career-form__title">Нет подходящей вакансии? </div>
+        <form action="/ajax/vacancy/vacancy-success.json" class="b-block-career-form__form b-career-form form js-b-form__form js-form-validate">
+            <input class="js-url-query" type="hidden" name="url_query">
+            <div class="b-block-career-form__inputs-wrap js-b-form-inputs active">        
+                <div class="b-career-form__row">
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Имя Фамилия<span class="required">*</span></span>
+                        <input type="text" name="name" id="" class="b-career-form__field__input js-b-input__field" data-max-length="60" data-cyrLat-name data-required>
+                        <span class="alert-input-text"></span>
+                    </label>
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Ссылка на соцсети, Github</span>
+                        <input type="text" name="github" id="" class="b-career-form__field__input js-b-input__field" data-no-special>
+                        <span class="alert-input-text"></span>
+                    </label>
+                </div>
+                {{#with this.store.form}}
+                <div class="b-block-career-form__double-select js-double-select">
+
+                    <div class="b-block-career-form__select-wrap b-block-career-form__select-wrap--first js-nice-select-wrap">
+                        <select name="" id="" class="nice-select js-nice-select js-main-select">
+                            <option selected disabled value="{{value}}">Выберите направление</option>
+                            {{#each activity}}
+                                <option value="{{value}}">{{label}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                    <div class="b-block-career-form__select-wrap b-block-career-form__secondary-select-wrap js-secondary-select-wrap">
+                        <select name="" id="" class="nice-select b-block-career-form__secondary-select js-secondary-select">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                {{/with}}
+                <div class="b-career-form__row">
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Email<span class="required">*</span></span>
+                        <input type="email" name="email" id="" class="b-career-form__field__input js-b-input__field" data-required data-email>
+                        <span class="alert-input-text"></span>
+                    </label>
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Телефон<span class="required">*</span></span>
+                        <input type="tel" name="tel" id="" class="b-career-form__field__input js-b-input__field js-phone-mask" data-required >
+                        <span class="alert-input-text"></span>
+                    </label>
+                </div>
+                <div class="b-career-form__row">
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Комментарий</span>
+                        <textarea type="tel" name="tel" id="" class="b-career-form__field__input js-b-input__field" data-max-length="200" ></textarea>
+                        <span class="alert-input-text"></span>
+                    </label>
+                </div>
+
+                <div class="b-file js-c-file{{#if className}} {{className}}{{/if}}">
+
+                	<label class="js-input-file b-file__input-wrap js-c-file-label">
+                		<div class="b-file__label btn-transparent">
+                            {{{getSvg src="icons/upload"}}}
+                            Загрузить резюме
+                        </div>
+                		<input name="file" 
+                            type="file" 
+                            class="b-file__input js-c-input__file"
+                            data-max-count="5" 
+                            data-size="10"
+                            data-accept="pdf, jpg, png, doc, txt" accept="pdf, jpg, png, doc,txt"
+                            data-name="files[]"
+                            multiple
+                         >
+                        <span class="c-input__error-message alert-input-text"></span>
+                    <div class="b-file__prompt">Не больше 5 файлов в формате PDF, JPG, PNG, DOC</div>
+                	</label>
+                	<ul class="b-file__file-list js-c-file-list">
+                    </ul>
+
+                </div>
+
+                <label class="b-career-form__checkbox">
+                    <input type="checkbox" name="tel" id="" class="b-career-form__checkbox__input js-b-input__field" data-required>
+                    <span class="b-career-form__checkbox__holder"></span>
+                    <span class="b-career-form__checkbox__label">Даю согласие на <a href="https://t1.ru/documents/personal_data_politics/" target="_blank" class="b-career-form__checkbox__link">обработку персональных данных</a></span>
+                    <span class="alert-input-text"></span>
+                </label>
+                <label class="b-career-form__checkbox">
+                    <input type="checkbox" name="tel" id="" class="b-career-form__checkbox__input">
+                    <span class="b-career-form__checkbox__holder"></span>
+                    <span class="b-career-form__checkbox__label">Я согласен на <a href="https://t1.ru/documents/SOPD_personal_data_ad.pdf" target="_blank" class="b-career-form__checkbox__link">получение рекламы</a></span>
+                    <span class="alert-input-text"></span>
+                </label>
+
+                <button type="submit" class="b-career-form__btn btn-white js-b-form-submit">Отправить резюме</button>
+
+            </div>
+            <div class="b-block-career-form__response-success js-b-form-success">
+                {{{getImg src="form/success-img.png"}}}
+                <span class="b-block-career-form__response-msg">Спасибо! Мы с вами свяжемся</span>
+            </div>
+            <div class="b-block-career-form__response-error js-b-form-error">
+                {{{getImg src="form/back.png"}}}
+                <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+                <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+            </div>
+            <div class="b-block-career-form__loader js-b-form-loader">
+                {{{getImg src="form/loader.png"}}}
+            </div>
+        </form>
+    </div>
+</div>

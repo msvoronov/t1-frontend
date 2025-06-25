@@ -1,0 +1,55 @@
+<div class="b-block-career-form b-block-career-form--light" id="form">
+    <div class="b-block-career-form__wrap js-b-form">
+        <div class="b-block-career-form__title">Подать заявку на  стажировку в Т1</div>
+        <form action="/ajax/vacancy/vacancy-success.json" class="b-block-career-form__form b-career-form b-career-form--light form js-b-form__form js-form-validate">
+            <input class="js-url-query" type="hidden" name="url_query">
+            <div class="b-block-career-form__inputs-wrap js-b-form-inputs active">        
+                <div class="b-career-form__row">
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Имя Фамилия<span class="required">*</span></span>
+                        <input type="text" name="name" id="" class="b-career-form__field__input js-b-input__field" data-max-length="60" data-cyrLat-name data-required>
+                        <span class="alert-input-text"></span>
+                    </label>
+                </div>
+
+                <div class="b-career-form__row">
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Email<span class="required">*</span></span>
+                        <input type="email" name="email" id="" class="b-career-form__field__input js-b-input__field" data-email data-required>
+                        <span class="alert-input-text"></span>
+                    </label>
+                </div>
+
+                <div class="b-career-form__row">
+                    <label class="b-career-form__field js-b-input">
+                        <span class="b-career-form__field__label">Телефон<span class="required">*</span></span>
+                        <input type="tel" name="tel" id="" class="b-career-form__field__input js-b-input__field js-phone-mask"  data-required>
+                        <span class="alert-input-text"></span>
+                    </label>
+                </div>
+
+                <label class="b-career-form__checkbox">
+                    <input type="checkbox" name="tel" id="" class="b-career-form__checkbox__input" checked data-required>
+                    <span class="b-career-form__checkbox__holder"></span>
+                    <span class="b-career-form__checkbox__label">Даю согласие на обработку персональных данных</span>
+                    <span class="alert-input-text"></span>
+                </label>
+
+                <button type="submit" class="btn-blue js-b-form-submit">Подать заявку</button>
+
+            </div>
+            <div class="b-block-career-form__response-success js-b-form-success">
+                {{{getImg src="form/success-img-blue.png"}}}
+                <span class="b-block-career-form__response-msg">Спасибо! Мы с вами свяжемся</span>
+            </div>
+            <div class="b-block-career-form__response-error js-b-form-error">
+                {{{getImg src="form/back-blue.png"}}}
+                <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+                <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+            </div>
+            <div class="b-block-career-form__loader js-b-form-loader">
+                {{{getImg src="form/loader-blue.png"}}}
+            </div>
+        </form>
+    </div>
+</div>

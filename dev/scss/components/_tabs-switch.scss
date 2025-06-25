@@ -1,0 +1,126 @@
+.b-tabs-switch {
+    @include flex(row, space-between, center);
+    @include size(fit-content, null);
+    @include position(absolute, $top: 48px, $left: 48px);
+
+    overflow: hidden;
+
+    padding: 1px;
+
+    @include media-max-md() {
+        @include position(absolute, $top: 12px, $left: 12px);
+
+    }
+
+    &__wrap {
+        @include size(100%);
+        @include flex();
+    }
+
+    &__tab {
+        @include flex();
+        @include font-size(16px, 1.4, 500);
+        @include color(#fff);
+        @include transition(opacity);
+        @include position(relative);
+        @include size(fit-content);
+        @include min-size(max-content);
+        
+        letter-spacing: -0.48px;
+        
+        text-align: center;
+        
+        border-radius: 10px;
+        
+        padding: 8px 24px;
+        
+        z-index: 3;
+        
+        cursor: pointer;
+
+        @include hover() {
+            &:not(.active) {
+                opacity: 0.6;
+            }
+        }
+        
+        @include media-max-s() {
+            @include font-size(14px, 1.4, 500);
+            
+        }
+
+        @include media-max-custom(770px) {
+            &.active {
+                @include bg-color(rgb(0, 0, 0), 0.5);
+                border-radius: 60px;
+            }
+        }
+
+        &-bg {
+            @include transition(#{width, left, opacity}, 0.4s);
+            @include position(absolute, $all: 1px);
+
+            @include bg-color(rgb(0, 0, 0), 0.50);
+
+            border-radius: 60px;
+
+            z-index: 2;
+
+            &[data-selection] {
+                @include animation(bounceSelection, 1s);
+            }
+        }
+    }
+
+    &__container {
+        @include transition(height);
+        @include position(relative);
+    }
+
+    &__slide {
+        @include size(100%);
+        @include transition(#{opacity});
+        @include position(absolute, $top: 0, $inline: 0);
+
+        opacity: 0;
+
+        pointer-events: none;
+
+        &[data-active] {
+            @include animation(appearanceOpacity);
+
+            pointer-events: all;
+
+            opacity: 1;
+        }
+    }
+
+    &--desk {
+        @include media-max-custom(770px) {
+            display: none;
+        }
+    }
+    
+    &--mob {
+        overflow: visible;
+        display: none;
+        @include size(100%);
+        @include media-max-custom(770px) {
+            display: block;
+            z-index: 10;
+        }
+
+        .b-tabs-switch__tab {
+            
+        }
+    }
+}
+
+@keyframes appearanceOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

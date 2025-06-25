@@ -1,0 +1,15 @@
+<div class="block-team-slider">
+  <div class="block-team-slider__wrap">
+    {{#> components/swiper class="js-block-team-slider" pagination=true}}
+      {{#each list }}
+          {{#> components/swiper__slide }}
+          <div class="block-team-slider__item">
+              <div class="block-team-slider__item__img">{{{getImg src=img}}}</div>
+              <div class="block-team-slider__item__label">{{label}}</div>
+              <div class="block-team-slider__item__descr">{{{descr}}}</div>
+          </div>
+          {{/components/swiper__slide}}
+      {{/each}}
+    {{/components/swiper}}
+  </div>
+</div>

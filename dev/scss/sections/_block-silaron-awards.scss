@@ -1,0 +1,79 @@
+$block-name: "block-silaron-awards";
+
+.#{$block-name} {
+  padding: 48px 0;
+  
+  @include media-max-md() {
+    padding: 24px 0 48px;
+    
+  }
+  @include media-max-s() {
+    padding: 0 0 48px;
+    
+  }
+
+  &__wrap {
+    @include flex($gap: 16px);
+    @include flex-wrap();
+    
+    @include media-max-s() {
+      @include flex($gap: 24px);
+
+    }
+  }
+
+  &__item {
+
+    // padding: 0 16px;
+    $gap: 16px;
+    $count: 2;
+    
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    @include media-max-s {
+      @include max-size(100%);
+    }
+
+    @include hover() {
+      .block-silaron-awards__item__title {
+        @include color(#00aae6);
+      }
+    }
+    &__img {
+      border-radius: 16px;
+      margin-bottom: 24px;
+
+      overflow: hidden;
+
+      @include image-wrap(100%);
+
+      
+      @include media-max-s() {
+        border-radius: 8px;
+      }
+    }
+
+    &__title {
+      @include font-size(20px, 28px, 400);
+      @include color(#000);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+
+      @include transition(color);
+      
+      @include media-max-s() {
+        @include font-size(16px, 24px, 400);
+      }
+    }
+    &__descr {
+      @include font-size(16px, 24px, 400);
+      @include color(rgba(104, 125, 146, 1));
+      letter-spacing: -0.02em;
+      
+      @include media-max-s() {
+        @include font-size(14px, 20px, 400);
+      }
+    }
+  }
+}

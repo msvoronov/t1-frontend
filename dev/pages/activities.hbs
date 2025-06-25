@@ -1,0 +1,16 @@
+{{#> layouts/main title='Направления деятельности' }}
+{{> shared/menu-gray activeIndex=2}}
+{{#with this.store.infoItems.activities}}
+{{> shared/section__title descrClass="section__text-wrap--small"}}
+{{> sections/block-career-items classNames="b-block-career-items--grid-4"}}
+{{/with}}
+
+{{#with this.store.clients}}
+{{> shared/section__title descrClass="section__text-wrap--small"}}
+{{> sections/block-clients}}
+{{/with}}
+
+{{#with this.store.banner.join}}
+{{> sections/block-banner className="last-block b-block-banner--black"}}
+{{/with}}
+{{/layouts/main}}

@@ -1,0 +1,219 @@
+$block-name: "b-block-blue-slider";
+
+.#{$block-name} {
+  overflow: hidden;
+
+  margin-bottom: 0 !important;
+
+  a {
+    text-decoration: unset !important;
+  }
+
+  .br-desk {
+    display: block;
+    
+    @include media-max-md() {
+      display: none;
+    }
+  }
+
+  &.camp {
+    .b-block-blue-slider__item {
+      @include position(relative);
+      @include min-size(null, 620px);
+      @include media-max-md() {
+        gap: 0;
+      }
+    }
+    .b-block-blue-slider__item__img {
+      @include position(absolute, $top: 50%, $right: 48px);
+      position: absolute;
+      top: 50%;
+      right: 48px;
+      transform: translateY(-50%);
+      @include max-size(620px, 620px);
+      @include size(45%);
+      @include media-max-md() {
+        @include position(initial);
+        @include size(100%);
+        transform: unset;
+        padding: 0;
+      }
+      
+      img {
+        
+      }
+    }
+  }
+
+  .swiper {
+    overflow: visible;
+    .swiper-pagination {
+      @include position(absolute);
+      @include size(100%, 8px);
+
+      @include media-max-md() {
+        @include position(initial);
+      }
+    }
+
+    .swiper-pagination {
+      margin-top: 16px;
+    }
+  }
+
+  @include position(relative);
+
+  padding: 0 0 72px;
+
+  @include media-max-md() {
+    padding: 0 0 48px;
+  }
+
+  &__swiper {
+    .swiper-wrapper {
+      @include media-max-custom(770px) {
+        @include bg-color(#1BB6FA);
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__tabs {
+    @include flex(row, $gap: 4px);
+
+    padding: 4px;
+
+    &__item {
+      @include font-size(0.8rem, 1.4, 500);
+
+      padding: 8px 24px;
+    }
+  }
+
+  .b-tabs-switch {
+    .swiper {
+      .swiper-slide {
+        @include size(unset);
+      }
+    }
+  }
+
+  &__item {
+    @include flex(row, space-between, center, 24px);
+    @include min-size(null, 536px);
+    @include bg-color(#1BB6FA);
+
+    overflow: hidden;
+
+    padding: 48px;
+
+    padding-top: 134px;
+
+    border-radius: 16px;
+
+    @include media-max-md() {
+      @include flex(column-reverse);
+      @include min-size(null, unset);
+      padding: 50px 12px 12px;
+      border-radius: 8px;
+    }
+
+    &__link {
+      @include font-size(20px, 1.4, 500);
+      padding: 8px 20px;
+
+      margin-top: 40px;
+      
+      @include media-max-md() {
+        margin-top: 20px;
+
+      }
+    }
+
+    &__img {
+      @include size(100%);
+      @include max-size(522px);
+
+      img {
+        @include size(100%, 100%);
+        border-radius: 16px;
+        overflow: hidden;
+
+      }
+
+      @include media-max-md() {
+        padding: 48px 24px;
+      }
+    }
+
+    &__info {
+      @include max-size(50%);
+      @include color(#fff);
+      @include media-max-md() {
+        @include max-size(100%);
+
+      }
+    }
+
+    &__label {
+      @include font-size(48px, 1, 500);
+
+      margin-bottom: 16px;
+      letter-spacing: -1.92px;
+
+      @include media-max-s() {
+        @include font-size(28px, 1.2, 500);
+
+        letter-spacing: -0.84px;
+      }
+    }
+
+    &__descr {
+      @include font-size(20px, 1.4, 500);
+
+      letter-spacing: -0.6px;
+
+      @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+
+        letter-spacing: -0.48px;
+      }
+    }
+  }
+
+  &.internship {
+    .b-block-blue-slider__item {
+      padding: 106px 48px 80px;
+      @include position(relative);
+      @include min-size(null, 620px);
+      
+      @include media-max-md() {
+        padding: 50px 12px 32px;
+      }
+    }
+    .b-block-blue-slider__item__descr {
+      max-width: 652px;
+    }
+    .b-block-blue-slider__item__info {
+      width: 51%;
+      @include media-max-md() {
+        width: 100%
+      }
+    }
+    .b-block-blue-slider__item__img {
+      @include position(absolute, $top: 50%, $right: 48px);
+      transform: translateY(-50%);
+      @include max-size(620px, 620px);
+      @include size(45%);
+      @include flex();
+      
+      @include media-max-md() {
+        @include position(initial);
+        padding: 0;
+        transform: unset;
+        width: 100%
+      }
+    }
+  }
+}

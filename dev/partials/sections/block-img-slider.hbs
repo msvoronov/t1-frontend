@@ -1,0 +1,26 @@
+<div class="b-block-img-slider">
+    {{#> components/swiper class="js-block-img-slider block-img-slider" customPagination=true arrows=hasArrows}}
+        {{#each list }}
+            {{#> components/swiper__slide }}
+                <div class="b-block-img-slider__item">
+                    <div class="b-block-img-slider__item__img">
+                        {{#if s}}
+                            {{{getPicture src=img s=s}}}
+                        {{else}}
+                            {{{getImg src=img}}}
+                        {{/if}}
+                    </div>
+                    {{#if label}}
+                    <div class="b-block-img-slider__item__label">{{label}}</div>
+                    {{/if}}
+                </div>
+            {{/components/swiper__slide}}
+        {{/each}}
+    {{/components/swiper}}
+    {{#if link}}
+        <a href="{{link.href}}" class="section__link section__link--mob">
+			{{link.label}}
+			{{{getSvg src="arrow-link"}}}
+		</a>
+    {{/if}}
+</div>

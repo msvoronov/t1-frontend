@@ -1,0 +1,27 @@
+{
+  "title": "Прошедшие события",
+  "link": {
+    "label": "Все новости",
+    "href": "/news"
+  },
+  "list": [
+    {
+      "date": "23 января",
+      "label": "Стажировка в Группе Т1",
+      "img": "past-events/event__img__1.png"
+    },
+    {
+      "date": "19 июня",
+      "label": "Стажерская школа для системных аналитиков"
+    },
+    {
+      "date": "3 июня",
+      "label": "Открытая школа для Data Engineer (Hadoop)"
+    },
+    {
+      "date": "24 мая",
+      "label": "Открытая школа для Data Engineer (Spark, Hadoop, AirFlow)",
+      "img": "past-events/event__img__2.png"
+    }
+  ]
+}

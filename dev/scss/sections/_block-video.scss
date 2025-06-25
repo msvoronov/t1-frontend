@@ -1,0 +1,253 @@
+$block-name: "b-block-video";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+
+  &.full-video {
+    .#{$block-name}__wrap {
+      @include max-size(100%);
+    }
+  }
+
+
+  &.stoped {
+    .b-block-video__name,
+    .b-block-video__time,
+    .b-block-video__btn {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .b-block-video__wrap::before {
+      opacity: 0.5;
+      pointer-events: all;
+    }
+  }
+
+  &.playing {
+    .b-block-video__btn__icon.play {
+      opacity: 0;
+    }
+    .b-block-video__btn__icon.pause {
+      opacity: 1;
+    }
+  }
+
+  &__modal {
+    @include position(fixed, $top: 0, $left: 0);
+    @include size(100%, 100%);
+    @include flex(row, center, center);
+
+    @include bg-color(#A5B4C3, 0.5);
+
+    @include transition(opacity);
+
+    padding: 0 24px;
+    
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    
+    @include media-max-s() {
+      padding: 0;
+    }
+
+    .b-block-video.full-video .b-block-video__wrap {
+      @include max-size(1200px !important);
+
+    }
+    .b-block-video__wrap {
+      aspect-ratio: 1200 / 675;
+      @include max-size(1200px !important, 100%);
+      @include size(fit-content, fit-content);
+      @include min-size(null, unset);
+    }
+    
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+
+      .b-block-video__modal__close {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    &__close {
+      @include size(48px, 48px);
+      @include position(absolute, $top: 20px, $right: 20px);
+      
+      border-radius: 50%;
+      
+      @include bg-color(#000000, 0.1);
+      @include transition(background-color);
+      cursor: pointer;
+      
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1;
+      
+      @include hover() {
+        @include bg-color(#000000, 0.5);
+
+      }
+      
+      @include media-max-s() {
+        @include position(absolute, $top: 16px, $right: 16px);
+        @include size(32px, 32px);
+
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        @include size(30px, 3px);
+        @include bg-color(#fff);
+        
+        @include position(absolute, $top: 50%, $left: 50%);
+        
+        @include media-max-md() {
+          @include size(20px, 2px);
+        }
+      }
+    }
+  }
+
+
+  &__wrap {
+    @include position(relative);
+    @include size(100%);
+    @include max-size(912px);
+    @include bg-color(#A5B4C3);
+    @include flex();
+
+    overflow: hidden;
+    border-radius: 16px;
+    
+    @include media-max-md() {
+      border-radius: 8px;
+    }
+
+    @include media-max-s() {
+      @include min-size(null, 376px);
+
+    }
+
+    video {
+    //       outline: 4px solid white;
+    // outline-offset: -2px;
+    }
+
+    &::before {
+      content: "";
+      @include size(100%, 75px);
+      @include position(absolute, $bottom: 0, $left: 0);
+      @include transition(opacity);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+      opacity: 0;
+    }
+    @include hover() {
+      .b-block-video__name,
+      .b-block-video__time,
+      .b-block-video__btn {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .b-block-video__wrap::before {
+        opacity: 0.5;
+        pointer-events: all;
+      }
+      .b-block-video__wrap::before {
+        opacity: 0.5;
+        pointer-events: all;
+      }
+      &::before {
+        opacity: 0.5;
+        pointer-events: all;
+      }
+    }
+  }
+
+
+
+
+  &__name,
+  &__time,
+  &__btn,
+  &::before  {
+    @include transition(opacity);
+    pointer-events: all;
+    opacity: 0;
+  }
+
+  .video {
+    @include size(100%, 100%);
+    margin-right: -1px;
+    position: none;
+    
+    @include media-max-s() {
+      @include size(100%, unset);
+      object-fit: cover;
+    }
+  }
+
+  &__name,
+  &__time {
+    @include font-size(16px, 22px, 500);
+    @include color(#fff);
+    letter-spacing: -0.03em;
+  }
+
+  &__name {
+    @include position(absolute, $bottom: 16px, $left: 16px)
+  }
+
+  &__time {
+    @include position(absolute, $bottom: 16px, $right: 16px)
+  }
+
+  &__btn {
+    @include position(absolute, $top: 50%, $left: 50%);
+    @include size(80px, 80px);
+    @include bg-color(#000, 0.5);
+    @include flex(row, center, center);
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    border-radius: 50%;
+    
+    @include transition(background-color);
+    
+    transform: translate(-50%, -50%);
+  
+    
+    &__icon {
+      @include position(absolute, $top: 50%, $left: 50%);
+      transform: translate(-50%, -50%);
+      
+      &.play {
+        opacity: 1;
+        svg {
+          @include position(relative, $left: 2px);
+        }
+      }
+
+      &.pause {
+        opacity: 0;
+      }
+    }
+    
+    @include hover() {
+      @include bg-color(#000, 0.6);
+
+    }
+
+  }
+}

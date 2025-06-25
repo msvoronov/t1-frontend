@@ -1,0 +1,93 @@
+$block-name: 'b-block-internship-detail';
+
+.#{$block-name} {
+
+  @include size(100%);
+  a {
+    text-decoration: none;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+
+    img {
+      @include size(100%);
+      border-radius: 16px;
+    }
+  }
+ 
+  &__description {
+    @include size(100%);
+    @include media-max-md() {
+      @include size(100%);
+    }
+    @include media-max-s() {
+      @include size(100%);
+    }
+    
+  }
+
+  &__soc-media {
+    @include flex(row, null, center, $gap: 32px);
+    @include flex-wrap(wrap);
+    
+    padding: 24px 0;
+    
+    @include media-max-s() {
+      @include flex(row, null, center, $gap: 10px);
+
+    }
+
+    &__info {
+      @include font-size(16px, 22px, 500);
+      @include color(#000);
+      
+      letter-spacing: -0.03em;
+      
+      @include media-max-s() {
+        @include font-size(14px, 20px, 500);
+        
+        letter-spacing: -0.02em;
+
+      }
+
+      &__value {
+        @include color(#A5B4C3)
+      }
+    }
+
+    &__links {
+      @include flex(row, null, center, $gap: 16px);
+    }
+
+    &__link {
+      @include flex(row, null, center, 8px);
+      @include transition(color);
+      
+      @include color($blue);
+
+      cursor: pointer;
+
+      svg circle {
+        @include transition(fill);
+      }
+
+      svg {
+        height: 46px;
+      }
+      
+      &.clicked {
+        pointer-events: none;
+      }
+      
+      @include hover() {
+        svg circle {
+          fill: $blue-dark
+        }
+        
+      }
+    }
+
+
+  }
+}

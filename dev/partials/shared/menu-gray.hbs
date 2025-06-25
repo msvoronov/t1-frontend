@@ -1,0 +1,11 @@
+<div class="b-menu-gray" activeIndex={{activeIndex}}>
+    {{#> components/swiper class="js-nav-swiper"}}
+        {{#each this }}
+            {{#> components/swiper__slide }}
+                <div class="b-menu-gray__elem{{#if (eq @index ../../../activeIndex)}} b-menu-gray__elem--active{{/if}}">
+	        	    <a class="b-menu-gray__link" href="{{href}}">{{label}}</a>
+	            </div>	
+            {{/components/swiper__slide}}
+        {{/each}}
+    {{/components/swiper}}
+</div>

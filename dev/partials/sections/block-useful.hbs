@@ -1,0 +1,21 @@
+<div class="b-block-useful">
+  <div class="b-block-useful__wrap">
+    {{#each list}}
+    <div class="b-block-useful__wrap__item{{#if isActive}} active{{/if}}">
+      <div class="b-block-useful__wrap__item__img-wrap">
+        {{{getImg src=img}}}
+
+        <div class="b-block-useful__wrap__item__img-wrap__date">
+          {{{getSvg src="icons/schedule-white"}}}
+          {{date}}
+        </div>
+      </div>
+      <div class="b-block-useful__wrap__item__title">{{title}}</div>
+      <a href="" class="b-block-useful__wrap__item__link">
+        {{label}}
+        {{{getSvg src="arrow-top-right"}}}
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</div>

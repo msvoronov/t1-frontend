@@ -1,0 +1,129 @@
+$block-name: "block-reports-annual";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+
+  @include flex(column, $gap: 24px);
+
+  .nice-select {
+    @include media-min-xxl() {
+      @include font-size(1rem, 1.2, 500);
+    }
+    
+    .current {
+      @include media-min-xxl() {
+        @include font-size(1rem, 1.2, 500);
+      }
+    }
+  }
+
+  &__wrap {
+    @include max-size(66%);
+    @include flex(row, $gap: 16px);
+    @include flex-wrap();
+
+    @include media-max-s() {
+      @include max-size(100%);
+      flex-wrap: unset;
+      overflow-y: scroll;
+    }
+  }
+
+  &__item {
+    $gap: 16px;
+    $count: 4;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    @include flex(column, $gap: 16px);
+
+    @include media-max-md() {
+      $gap: 16px;
+      $count: 3;
+      
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    }
+
+    @include media-max-s() {
+      @include max-size(216px);
+      @include min-size(216px);
+      padding-bottom: 10px;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    &__img {
+      // @include image-wrap(100%, 100%, cover);
+
+      border-radius: 16px;
+      overflow: hidden;
+      
+      @include media-max-s() {
+        border-radius: 8px;
+      }
+
+      img {
+        @include size(100%, 100%);
+        object-fit: cover
+      }
+
+      @include media-max-s() {
+        @include max-size(null, 292px);
+      }
+    }
+
+
+    &__title,
+    &__descr {
+      @include font-size(20px, 28px, 500);
+      letter-spacing: -0.03em;
+
+      @include media-min-xxl() {
+        @include font-size(1rem, 1.2, 500);
+      }
+
+    }
+
+    &__descr {
+      @include color(#A5B4C3);
+    }
+
+    &__buttons {
+      @include flex(column, $gap: 8px);
+    }
+
+    &__file {
+      @include color(#00AAE6);
+      @include size(100%);
+      @include flex(row, center, center, $gap: 10px);
+      @include bg-color(#F7F7F8);
+      @include transition(background-color);
+      @include font-size(20px, 28px, 500);
+
+      text-decoration: unset !important;
+
+      @include media-min-xxl() {
+        @include font-size(0.83rem, 1.2, 500);
+      }
+
+      border-radius: 30px;
+      
+      padding: 8px;
+
+      svg {
+        @include size(20px, 20px);
+      }
+      
+      @include hover() {
+        @include bg-color(#EFEFF2);
+
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,133 @@
+{
+    "work": {
+        "title": "Жизнь в Т1",
+        "link": {
+            "label": "Все бенефиты и условия",
+            "href": "/benefits.html"
+        },
+        "label": "Демократичная и вдохновляющая атмосфера",
+        "list": [
+            {
+                "label": "Демократичная и вдохновляющая атмосфера",
+                "img": "slider-life/slide__img__1.png",
+                "s": "slider-life/slide__img__1__s.png"
+            },
+            {
+                "label": "Офисы в 16 городах России",
+                "img": "slider-life/slide__img__2.png",
+                "s": "slider-life/slide__img__2__s.png"
+            },
+            {
+                "label": "Спортивные секции и клубы по интересам",
+                "img": "slider-life/slide__img__3.png",
+                "s": "slider-life/slide__img__3__s.png"
+            },
+            {
+                "label": "ИТ-конференции, хакатоны и регулярные митапы на самые актуальные темы",
+                "img": "slider-life/slide__img__4.png",
+                "s": "slider-life/slide__img__4__s.png"
+            },
+            {
+                "label": "12+ активных ИТ-сообществ, в которых состоят 10 000+ сотрудников",
+                "img": "slider-life/slide__img__5.png",
+                "s": "slider-life/slide__img__5__s.png"
+            },
+            {
+                "label": "Развитие в профессиональной среде и при экспертной поддержке",
+                "img": "slider-life/slide__img__6.png",
+                "s": "slider-life/slide__img__6__s.png"
+            },
+            {
+                "label": "Партнерства с ведущими вузами и своя Цифровая Академия",
+                "img": "slider-life/slide__img__7.png",
+                "s": "slider-life/slide__img__7__s.png"
+            }
+        ]
+    },
+    "offices": {
+        "title": "Наслаждаемся комфортными офисами",
+        "list": [
+            {
+                "label": "Офисы в 16 городах России",
+                "img": "offices/offices__img__1.png",
+                "s": "offices/offices__img__1__s.png"
+            },
+            {
+                "label": "Офис Т1 в Москве — победитель в номинации «Гибкий офис» Best Office Awards 2023",
+                "img": "offices/offices__img__2.png",
+                "s": "offices/offices__img__2__s.png"
+            },
+            {
+                "label": "Офис как отражение корпоративной культуры: Т1 признан одним из лучших по итогам Best Office Awards 2023",
+                "img": "offices/offices__img__3.png",
+                "s": "offices/offices__img__3__s.png"
+            },
+            {
+                "label": "Офисы в 16 городах России",
+                "img": "offices/offices__img__4.png",
+                "s": "offices/offices__img__4__s.png"
+            },
+            {
+                "label": "Офисы в 16 городах России",
+                "img": "offices/offices__img__5.png",
+                "s": "offices/offices__img__5__s.png"
+            }
+        ]
+    },
+    "officesInternship": {
+        "title": "Наслаждайся комфортными офисами и вдохновляйся атмосферой Т1",
+        "descr": "Стажировки проходят в гибридном формате.<br><br> Первые две недели - онлайн, для подключения достаточно интернета. Дальше - в твоем  распоряжении наши офисы в Москве — победители в номинациях Best Office Awards 2023, а также офисы в Санкт-Петербурге, Ижевске, Твери и Рязани.",
+        "link": {
+            "label": "Все бенефиты и условия",
+            "href": "/benefits.html"
+        },
+        "list": [
+            {
+                "label": "Главный офис Т1 в БЦ «Арена» в Москве (м. Динамо) Best Office Awards 2023",
+                "img": "offices/offices__img__1.png"
+            },
+            {
+                "label": "Офис Т1 в БЦ «Алкон» в Москве (м. Сокол)",
+                "img": "offices/offices__img__6.png"
+            },
+            {
+                "label": "Офис Т1 в БЦ \"Ренессанс Плаза\"в Санкт-Петербурге (м. Звенигородская / Лиговский)",
+                "img": "offices/offices__img__7.png"
+            },
+            {
+                "label": "Главный офис Т1 в БЦ «Арена» в Москве (м. Динамо) Best Office Awards 2023",
+                "img": "offices/offices__img__4.png"
+            },
+            {
+                "label": "Офис Т1 в БЦ «Алкон» в Москве (м. Сокол)",
+                "img": "offices/offices__img__5.png"
+            },
+            {
+                "label": "Офис Т1 в БЦ \"Ренессанс Плаза\"в Санкт-Петербурге (м. Звенигородская / Лиговский)",
+                "img": "offices/offices__img__8.png"
+            }
+        ]
+    },
+    "camp": {
+        "title": "Вдохновляйся атмосферой и погружайся в культуру Т1",
+        "descr": "Чтобы адаптироваться было проще, мы объединяем участников из разных команд в большое и активное комьюнити и проводим классные неформальные мероприятия, которые помогут найти единомышленников и определиться с направлением развития.",
+        "link": {
+            "label": "Все бенефиты и условия",
+            "href": "/benefits"
+        },
+        "list": [
+            {
+                "label": "Демократичная и вдохновляющая атмосфера",
+                "img": "camp-life-slider/slide__img__1.png"
+            },
+            {
+                "label": "Демократичная и вдохновляющая атмосфера",
+                "img": "camp-life-slider/slide__img__2.png"
+            },
+            {
+                "label": "Демократичная и вдохновляющая атмосфера",
+                "img": "camp-life-slider/slide__img__3.png"
+            }
+        ]
+    }
+}

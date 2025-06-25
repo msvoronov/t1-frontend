@@ -1,0 +1,17 @@
+<div class="b-block-offices">
+    <div class="b-block-offices__wrap">
+        {{#each list}}
+            <div class="b-block-offices__item">
+                <div class="b-block-offices__item__title">{{title}}</div>
+                <div class="b-block-offices__item__links-wrap">
+                    {{#each links}}
+                        <a href="{{href}}" class="b-block-offices__item__link" target="_blank">
+                            {{{getSvg src="arrow-link-big"}}}
+                            {{label}}
+                        </a>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

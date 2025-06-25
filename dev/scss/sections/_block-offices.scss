@@ -1,0 +1,76 @@
+$block-name: "b-block-offices";
+
+.#{$block-name} {
+  margin-bottom: 0 !important;
+
+  a {
+    text-decoration: unset !important;
+  }
+
+  padding: 0 0 48px;
+
+  &__wrap {
+    @include grid($gap: 16px 32px);
+
+    grid-template-rows: repeat(4, 72px);
+    grid-auto-flow: column;
+
+    @include media-max-md() {
+      grid-template-rows: repeat(4, 92px);
+    }
+
+    @include media-max-s() {
+      @include flex(column, $gap: 8px);
+    }
+  }
+
+  &__item {
+    &__title {
+      @include font-size(28px, 1.2, 500);
+
+      letter-spacing: -0.84px;
+      margin-bottom: 16px;
+
+      @include media-max-s() {
+        @include font-size(20px, 1.2, 500);
+      }
+    }
+
+    &__links-wrap {
+      @include flex(column, $gap: 16px);
+    }
+
+    &__link {
+      @include flex($gap: 16px);
+      @include font-size(20px, 1.4, 500);
+      @include color($blue);
+      @include transition(color);
+
+      letter-spacing: -0.48px;
+
+      &__black {
+        @include color(#000);
+      }
+      svg path {
+        @include transition(fill);
+      }
+
+      @include media-max-s() {
+        @include flex($gap: 8px);
+        @include font-size(16px, 1.4, 500);
+      }
+
+      @include hover() {
+        @include color($blue-dark);
+
+        svg path {
+          fill: $blue-dark;
+        }
+      }
+
+      svg {
+        min-width: 22px;
+      }
+    }
+  }
+}

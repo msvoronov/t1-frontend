@@ -1,0 +1,61 @@
+{{#> layouts/main title='Стажировка Т1. Дебют' titleValue="Стажировка Т1. Дебют" breadcrumbs=this.store.breadcrumbs.debut }}
+
+  {{#with this.store.banner.debut}}
+    {{> sections/block-banner className="b-block-banner--green"}}
+    {{> shared/section__title}}
+  {{/with}}
+
+  {{#with this.store.internshipDebutDirections}}
+    {{> shared/section__title}}
+    {{> sections/block-culture-slider}}
+  {{/with}}
+
+  {{#with this.store.internshipDebutProjects}}
+    {{> shared/section__title}}
+    {{> sections/block-culture-slider}}
+  {{/with}}
+
+  {{#with this.store.video}}
+    {{> shared/section__title}}
+    {{> sections/block-video}}
+  {{/with}}
+
+  {{#with this.store.expects}}
+    {{> shared/section__title}}
+    {{> sections/block-steps}}
+  {{/with}}
+
+  {{#with this.store.internshipSteps}}
+    {{> shared/section__title}}
+    {{> sections/block-steps}}
+  {{/with}}
+
+  {{#with this.store.imgSliders.officesInternship}}
+  {{> shared/section__title}}
+  {{> sections/block-img-slider stickyArrows=true}}
+  {{/with}}
+
+  {{#with this.store.expertiseNew}}
+    {{> shared/section__title}}
+    {{> sections/block-expertise className="row-3"}}
+  {{/with}}
+
+  {{#with this.store.closestEvents}}
+    {{> shared/section__title}}
+    {{> sections/block-resizable-wrap}}
+  {{/with}}
+  
+  {{#with this.store.pastEvents}}
+    {{> shared/section__title}}
+    {{> sections/block-past-events}}
+  {{/with}}
+
+  {{> sections/block-career-form-new}}
+
+  {{#with this.store.internshipDebutFaq}}
+    {{> shared/section__title}}
+    {{> sections/block-accordion}}
+  {{/with}}
+
+  {{> sections/block-feedback mail="future@t1.ru"}}
+{{/layouts/main}}

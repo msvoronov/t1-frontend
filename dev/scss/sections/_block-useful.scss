@@ -1,0 +1,159 @@
+$block-name: "b-block-useful";
+
+
+.#{$block-name} {
+  padding: 14px 0 104px;
+  
+  @include media-max-md() {
+    padding: 14px 0 48px;
+  }
+  @include media-max-s() {
+    padding: 9px 0 48px;
+  }
+
+  &__wrap {
+
+    @include flex(row, $gap: 48px 16px);
+    @include flex-wrap();
+
+
+    &__item {
+      @include flex(column, $gap: 16px);
+
+      $gap: 16px;
+      $count: 3;
+
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+      @include media-max-md() {
+        $gap: 16px;
+        $count: 2;
+
+        @include size(100%);
+        @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+      }
+
+      @include media-max-s() {
+        @include flex(column, $gap: 8px);
+        @include max-size(100%);
+      }
+
+      &__img-wrap {
+        border-radius: 16px;
+        @include position(relative);
+
+        @include bg-color(#F7F7F8);
+        @include flex(row, center, center);
+
+        aspect-ratio: 448/280;
+
+        img {
+          @include size(140px, 140px);
+          
+          @include media-max-s() {
+            @include size(124px, 124px);
+          }
+        }
+
+        @include media-max-md() {
+          
+        }
+        @include media-max-s() {
+border-radius: 8px;
+        }
+
+
+        &__date {
+          @include position(absolute, $bottom: 16px, $left: 16px);
+          @include bg-color(rgb(0, 0, 0), 0.25);
+          @include flex(row, null, center, 4px);
+          @include size(fit-content);
+          @include font-size(12px, 15.6px, 500);
+          @include color(#fff);
+          border-radius: 30px;
+              letter-spacing: -0.3px;
+          padding: 4px 12px;
+          
+          @include media-max-md() {
+            @include position(absolute, $bottom: 12px, $left: 12px);
+
+          }
+        }
+      }
+
+      &__title {
+        @include font-size(20px, 28px, 500);
+        letter-spacing: -0.6px;
+
+        @include media-max-md() {
+          
+        }
+        @include media-max-s() {
+          @include font-size(16px, 22.4px, 500);
+
+        }
+      }
+
+      &__link {
+        @include font-size(20px, 28px, 500);
+        @include size(fit-content);
+        @include flex(row,null, center, $gap: 10px);
+        @include bg-color(#F7F7F8);
+        @include color(#A5B4C3);
+
+        text-decoration: unset !important;
+        
+        pointer-events: none;
+        
+        padding: 8px 20px;
+        border-radius: 30px;
+
+        @include transition(background-color);
+        svg path {
+          fill: #A5B4C3
+        }
+
+        @include media-max-s() {
+          @include font-size(16px, 22.4px, 500);
+           @include flex(row,null, center, $gap: 8px);
+          padding: 6px 16px;
+
+          svg {
+            @include size(16px, 16px);
+          }
+        }
+      }
+
+
+      &.active {
+        .#{$block-name}__wrap__item {
+          &__img-wrap {
+            @include bg-color(#B2E5F7);
+
+            &__date {
+              display: none;
+            }
+          }
+          &__link {
+
+            pointer-events: all;
+            @include bg-color(#00AAE6);
+            @include color(#fff);
+
+            svg path {
+              fill: #fff
+            }
+
+                    
+          @include hover() {
+            @include bg-color(#005aae);
+
+          }
+
+          }
+        }
+      }
+    }
+  }
+}

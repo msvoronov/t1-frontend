@@ -1,0 +1,174 @@
+<div class="block-how-it-was js-tabs js-tabs-always-open" data-initial="0" id="how-it-was"> 
+
+  <div class="block-how-it-was__tabs">
+    <div class="block-how-it-was__tab js-tab-trigger" data-index="0">Отборочный этап</div>
+    <div class="block-how-it-was__tab js-tab-trigger" data-index="1">Полуфинал</div>
+    <div class="block-how-it-was__tab js-tab-trigger" data-index="2">Финал</div>
+  </div>
+
+  <div class="block-how-it-was__container js-tabs__container">
+
+    <div class="block-how-it-was__item js-tab-item" data-index="0">
+
+      <div class="block-how-it-was__item__title">Отборочный этап</div>
+      <div class="block-how-it-was__item__descr">
+        Это не только возможность продемонстрировать свои способности, но и шанс получить ценный опыт и знания, которые помогут
+        в дальнейшем развитии карьеры в области технологий.<br /><br />
+        Участникам было предложено 12 уникальных задач, каждая из которых охватывает разные аспекты и темы искусственного
+        интеллекта.
+      </div>
+      <div class="block-how-it-was__item__wrap">
+        {{#each tab1}}
+          <div class="block-how-it-was__item__card">
+            <div class="block-how-it-was__item__card-inner">
+          
+              <div class="block-how-it-was__item__card__front">
+                <div class="block-how-it-was__item__card__head">
+                  <div class="block-how-it-was__item__card__type">{{type}}</div>
+                  <div class="block-how-it-was__item__card__status">{{status}}</div>
+                </div>
+                <div class="block-how-it-was__item__card__task-title">{{taskTitle}}</div>
+                <div class="block-how-it-was__item__card__result">
+                  <div class="block-how-it-was__item__card__result-item">
+                    {{{getSvg src="participants"}}}
+                    {{participants}}
+                  </div>
+                  <div class="block-how-it-was__item__card__result-item">
+                    {{{getSvg src="solutions"}}}
+                    {{solutions}}
+                  </div>
+                </div>
+              </div>
+          
+              <div class="block-how-it-was__item__card__details">
+                <div class="block-how-it-was__item__card__details__head">Описание</div>
+                <div class="block-how-it-was__item__card__details__title">{{title}}</div>
+                <div class="block-how-it-was__item__card__details__descr">{{descr}}</div>
+              </div>
+            </div>
+          
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="block-how-it-was__item js-tab-item" id="how-it-was" data-index="1">
+      <div class="block-how-it-was__item__title">Полуфинал</div>
+      <div class="block-how-it-was__item__descr">
+        Это важный этап, на котором участники продемонстрировали свои знания, навыки и креативность в области ИИ. Для решения
+        задач потребовались не только теоретические знания, но и практическое применение технологий искусственного интеллекта.
+        <br /><br />
+        В полуфинале участникам было предложено 12 задач, каждая из которых охватывает разные аспекты и темы искусственного
+        интеллекта.
+      </div>
+      <div class="block-how-it-was__item__wrap">
+        {{#each tab2}}
+        <div class="block-how-it-was__item__card">
+          <div class="block-how-it-was__item__card-inner">
+            
+            <div class="block-how-it-was__item__card__front">
+              <div class="block-how-it-was__item__card__head">
+                <div class="block-how-it-was__item__card__type">{{type}}</div>
+                <div class="block-how-it-was__item__card__status">{{status}}</div>
+              </div>
+              <div class="block-how-it-was__item__card__task-title">{{taskTitle}}</div>
+              <div class="block-how-it-was__item__card__result">
+                <div class="block-how-it-was__item__card__result-item">
+                  {{{getSvg src="participants"}}}
+                  {{participants}}
+                </div>
+                <div class="block-how-it-was__item__card__result-item">
+                  {{{getSvg src="solutions"}}}
+                  {{solutions}}
+                </div>
+              </div>
+            </div>
+
+            <div class="block-how-it-was__item__card__details">
+              <div class="block-how-it-was__item__card__details__head">Описание</div>
+              <div class="block-how-it-was__item__card__details__title">{{title}}</div>
+              <div class="block-how-it-was__item__card__details__descr">{{descr}}</div>
+            </div>
+          </div>
+          
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="block-how-it-was__item js-tab-item"  data-index="2">
+      <div class="block-how-it-was__item__title">Финал</div>
+      <div class="block-how-it-was__item__descr">
+        Это уникальная возможность для школьников углубить свои знания, познакомиться с единомышленниками и сделать шаг в мир
+        технологий будущего.
+        <br /><br />
+        Задачи финала олимпиады охватывают теоретические, практические и креативные элементы, что делает финал разнообразным и
+        увлекательным.
+      </div>
+
+      <div class="block-how-it-was__item__video">
+        <div class="b-block-video js-video-wrap stoped full-video" data-c-inited="" bis_skin_checked="1">
+          <div class="b-block-video__wrap js-video-container" bis_skin_checked="1">
+            <div class="b-block-video__modal__close js-video-close" bis_skin_checked="1"></div>
+            <video src="/assets/video/osh.mp4#t=1.4" class="video js-video"></video>
+            <div class="b-block-video__btn js-video-btn" bis_skin_checked="1">
+              <div class="b-block-video__btn__icon play" bis_skin_checked="1">
+                <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.5 14.134C26.1667 14.5189 26.1667 15.4811 25.5 15.866L1.5 29.7224C0.833329 30.1073 -1.42614e-06 29.6262 -1.39249e-06 28.8564L-1.81122e-07 1.14359C-1.47473e-07 0.373789 0.833334 -0.107333 1.5 0.277567L25.5 14.134Z"
+                    fill="white"></path>
+                </svg>
+        
+              </div>
+              <div class="b-block-video__btn__icon pause" bis_skin_checked="1">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 3C6.44772 3 6 3.44772 6 4V32C6 32.5523 6.44772 33 7 33H13C13.5523 33 14 32.5523 14 32V4C14 3.44772 13.5523 3 13 3H7ZM23 3C22.4477 3 22 3.44772 22 4V32C22 32.5523 22.4477 33 23 33H29C29.5523 33 30 32.5523 30 32V4C30 3.44772 29.5523 3 29 3H23Z"
+                    fill="white"></path>
+                </svg>
+        
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-how-it-was__item__video__title">Название видео</div>
+        <div class="block-how-it-was__item__video__descr">Открой новые грани своей профессии и реализуй себя вместе с Т1</div>
+      </div>
+
+      {{> sections/block-culture-slider}}
+
+      <div class="block-how-it-was__item__wrap">
+        {{#each tab3}}
+        <div class="block-how-it-was__item__card">
+          <div class="block-how-it-was__item__card-inner">
+        
+            <div class="block-how-it-was__item__card__front">
+              <div class="block-how-it-was__item__card__head">
+                <div class="block-how-it-was__item__card__type">{{type}}</div>
+                <div class="block-how-it-was__item__card__status">{{status}}</div>
+              </div>
+              <div class="block-how-it-was__item__card__task-title">{{title}}</div>
+              <div class="block-how-it-was__item__card__result">
+                <div class="block-how-it-was__item__card__result-item">
+                  {{{getSvg src="participants"}}}
+                  {{participants}}
+                </div>
+                <div class="block-how-it-was__item__card__result-item">
+                  {{{getSvg src="solutions"}}}
+                  {{solutions}}
+                </div>
+              </div>
+            </div>
+        
+            <div class="block-how-it-was__item__card__details">
+              <div class="block-how-it-was__item__card__details__head">Описание</div>
+              <div class="block-how-it-was__item__card__details__title">{{title}}</div>
+              <div class="block-how-it-was__item__card__details__descr">{{descr}}</div>
+            </div>
+          </div>
+        
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+</div>

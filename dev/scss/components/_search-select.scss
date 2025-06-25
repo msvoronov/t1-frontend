@@ -1,0 +1,216 @@
+.search-select {
+  @include position(relative);
+  @include size(100%);
+
+  &.has-error {
+    .alert-input-text {
+      opacity: 1;
+    }
+
+    .search-select__label {
+      border-color: ($red-input);
+    }
+  }
+
+  .alert-input-text {
+    @include position(absolute, $top: 100%, $left: 0);
+    @include font-size(12px, 1.2, 500);
+    @include color($red-input);
+    @include transition(opacity);
+    @include flex();
+    @include size(max-content);
+    opacity: 0;
+    letter-spacing: -0.24px;
+  }
+  &.open {
+    .search-select__label__arrow {
+      transform: rotate(180deg);
+    }
+
+    .search-select__dropdown {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0);
+    }
+  }
+
+  &.loading {
+    .search-select__search-wrap,
+    .search-select__list {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+
+  &__other {
+    display: none;
+
+    @include media-max-md() {
+      display: none;
+    }
+
+    @include media-max-s() {
+      display: none;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__label {
+    @include position(relative);
+    @include size(100%, 100%);
+    @include border(1px, solid, #fff, bottom);
+
+    @include transition(border-color);
+    padding: 24px 0 8px;
+
+    @include media-max-s() {
+      padding: 16px 0 15px;
+    }
+
+    cursor: pointer;
+
+    @include media-max-s() {
+      padding: 16px 0 15px;
+    }
+
+    &__text {
+      @include position(relative, $top: -11px);
+      @include max-size(95%);
+      @include font-size(20px, 1.4, 500);
+
+      letter-spacing: -0.6px;
+
+      @include media-max-md() {
+        @include position(relative, $top: -8px);
+      }
+
+      @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+        @include position(relative, $top: -2px);
+      }
+
+      &.required {
+        @include color($red-input);
+      }
+    }
+
+    &__arrow {
+      @include position(absolute, $top: calc(50% - 12px), $right: 4px);
+      @include size(24px, 24px);
+
+      @include transition(transform);
+    }
+  }
+
+  &__dropdown {
+    @include position(absolute, $top: calc(100% + 4px));
+    @include bg-color(#fff);
+    @include border(1px, solid, #e9e9ef);
+    @include size(100%);
+
+    @include transition(#{opacity, transform});
+
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+
+    border-radius: 16px;
+    padding: 6px 0;
+
+    z-index: 100;
+  }
+
+  &__search-wrap {
+    padding: 16px 12px;
+
+    @include flex(row, null, center, $gap: 16px);
+
+    padding-bottom: 16px;
+    @include border(1px, solid, #a5b4c3, bottom);
+
+    &__icon {
+      @include size(20px, 20px);
+    }
+  }
+
+  &__list {
+    &::-webkit-scrollbar {
+      @include size(6px);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      @include bg-color(#d8d8d8);
+      border-radius: 3px;
+    }
+
+    @include max-size(null, 200px);
+
+    list-style: none;
+    overflow-y: auto;
+
+    &__item {
+      padding: 8px 12px;
+
+      list-style: none;
+
+      @include flex(column);
+
+      @include bg-color(#fff);
+      @include transition(background-color);
+
+      cursor: pointer;
+
+      @include hover() {
+        @include bg-color(#f7f7f8);
+      }
+
+      &__short-name {
+        @include font-size(20px, 1.4, 500);
+        @include color(#000);
+
+        pointer-events: none;
+        letter-spacing: -0.6px;
+      }
+
+      &__full-name {
+        @include font-size(16px, 1.4, 500);
+        @include color(#a5b4c3);
+
+        pointer-events: none;
+        letter-spacing: -0.48px;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__error-msg {
+    padding: 8px 12px;
+
+    list-style: none;
+
+    @include flex(column, center, center);
+    @include text-align(center);
+
+    @include bg-color(#fff);
+    @include color(#000);
+    @include transition(background-color);
+
+    @include min-size(null, 66px);
+  }
+
+  ul, ol, li {
+    list-style: none;
+  }
+  li {
+    &::after {
+      display: none;
+    }
+  } 
+}

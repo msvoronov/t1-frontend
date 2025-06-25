@@ -1,0 +1,13 @@
+<div class="block-silaron-cards">
+  <div class="block-silaron-cards__wrap">
+    {{#each list}}
+      <div class="block-silaron-cards__card">
+        <div class="block-silaron-cards__card__icon">
+          {{{getSvg src=img}}}
+        </div>
+        <div class="block-silaron-cards__card__title">{{title}}</div>
+        <div class="block-silaron-cards__card__descr">{{descr}}</div>
+      </div>
+    {{/each}}
+  </div>
+</div>

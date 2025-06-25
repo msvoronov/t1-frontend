@@ -1,0 +1,39 @@
+{
+  "title": "Тебе пригодится",
+  "list": [
+    {
+      "isActive": true,
+      "img": "tg-big.png",
+      "title": "Телеграм-канал",
+      "label": "Перейти"
+    },
+    {
+      "isActive": false,
+      "img": "t1-big.png",
+      "title": "Вебинар",
+      "label": "Начать",
+      "date": "Запуск в ноябре 2024"
+    },
+    {
+      "isActive": false,
+      "img": "t1-big.png",
+      "title": "Тренировочный курс",
+      "label": "Начать",
+      "date": "Запуск в ноябре 2024"
+    },
+    {
+      "isActive": false,
+      "img": "t1-big.png",
+      "title": "Первый тур",
+      "label": "Начать",
+      "date": "Запуск в декабре 2024"
+    },
+    {
+      "isActive": false,
+      "img": "t1-big.png",
+      "title": "Второй тур",
+      "label": "Начать",
+      "date": "Запуск в феврале 2025"
+    }
+  ]
+}

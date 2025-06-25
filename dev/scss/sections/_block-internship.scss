@@ -1,0 +1,241 @@
+$block-name: "b-block-internship-detail";
+
+.#{$block-name} {
+
+  a {
+      text-decoration: unset !important; 
+  }
+
+  ul {
+    margin-top: 16px;
+  }
+
+  ul>li:after {
+    top: 0.7em;
+  }
+
+  &__tags {
+    padding: 24px 0;
+
+    @include font-size(16px, 22px, 500);
+    letter-spacing: -0.03em;
+
+    &__title {
+      @include color(#000);
+    }
+
+    &__wrap {
+      @include flex($gap: 12px);
+    }
+
+    &__tag {
+      @include color($blue);
+    }
+  }
+
+  &__steps {
+    @include size(100%);
+    padding: 0 0 48px;
+    margin-bottom: 0 !important;
+    
+    @include media-max-s() {
+      width: 100%;
+    }
+
+    a {
+        text-decoration: unset !important; 
+    }
+
+    &__wrap {
+      @include flex($gap: 16px);
+      @include flex-wrap();
+
+      &.row-3 {
+        .#{$block-name}__steps__item {
+          $gap: 16px;
+          $count: 3;
+          @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+        }
+      }
+    }
+
+    &__item {
+
+      $gap: 16px;
+      $count: 4;
+
+      
+
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+      @include bg-color($gray-light);
+      border-radius: 16px;
+      padding: 16px;
+      
+      @include media-max-md() {
+        $gap: 16px;
+        $count: 2;
+        border-radius: 8px;
+        @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+      }
+      @include media-max-s() {
+          @include max-size(100%);
+      }
+
+      &__img {
+          @include image-wrap(100%, null, contain);
+          @include max-size(100px, 100px);
+          margin-bottom: 42px;
+      }
+
+      &__label,
+      &__descr {
+          @include font-size(16px, 1.4, 500);
+          letter-spacing: -0.6px;
+      }
+
+      &__descr {
+          @include max-size(98%);
+          @include color($gray);
+          a {
+              @include color($blue);
+          }
+      }
+    }
+  }
+
+  &__content {
+    padding: 0 0 48px;
+
+    .btn-blue {
+      @include hover() {
+        @include color(#fff);
+      }
+    }
+
+    &__img-wrap {
+      @include image-wrap(100%, null, contain);
+      margin-bottom: 48px;
+    }
+
+    &__text-wrap {
+      @include font-size(20px, 28px, 400);
+      @include max-size(912px);
+
+     letter-spacing: -0.8px;
+      margin-bottom: 48px;  
+    }
+
+    &__text-block {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    &__text {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__list {
+      margin-bottom: 24px;
+    }
+
+    &__list-item {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    ul>li:after {
+      top: 0.8em;
+    }
+  }
+
+
+  &__list {
+    margin-bottom: 0 !important;
+
+    a {
+      text-decoration: unset !important;
+    }
+  
+    padding: 0 0 48px;
+  
+    &__wrap {
+
+    }
+  
+    &__item {
+
+      &__title {
+        @include font-size(28px, 1.2, 500);
+      
+        letter-spacing: -0.84px;
+        margin-bottom: 16px;
+      
+        @include media-max-s() {
+          @include font-size(20px, 1.2, 500);
+        }
+      }
+    
+      &__links-wrap {
+        @include flex(column, $gap: 16px);
+      }
+    
+      &__link {
+        @include flex();
+        @include font-size(20px, 1.4, 500);
+        @include color($blue);
+        @include transition(color);
+
+
+        &.disbaled {
+          pointer-events: none;
+        }
+
+        svg {
+          margin-right: 16px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 16px
+        }
+      
+        letter-spacing: -0.48px;
+      
+        &__black {
+          @include color(#000);
+        }
+        svg path {
+          @include transition(fill);
+        }
+      
+        @include media-max-s() {
+          svg {
+            margin-right: 16px;
+          }
+
+          @include font-size(16px, 1.4, 500);
+        }
+      
+        @include hover() {
+          @include color($blue-dark);
+        
+          svg path {
+            fill: $blue-dark;
+          }
+        }
+      
+        svg {
+          min-width: 22px;
+        }
+      }
+    }
+  }
+}

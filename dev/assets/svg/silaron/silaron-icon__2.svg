@@ -1,0 +1,25 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#bgblur_0_235_1286_clip_path)" data-figma-skip-parse="true"><foreignObject x="-5.10199" y="5.33648" width="35.887" height="47.0771"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5.15px);height:100%;width:100%"></div></foreignObject></g><rect data-figma-bg-blur-radius="10.3005" width="17.6508" height="17.6508" transform="matrix(0.866025 0.5 -2.20305e-08 1 5.19849 15.637)" fill="#2DCDFF"/>
+<g clip-path="url(#bgblur_1_235_1286_clip_path)" data-figma-skip-parse="true"><foreignObject x="10.1839" y="5.33624" width="35.887" height="47.0771"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5.15px);height:100%;width:100%"></div></foreignObject></g><rect data-figma-bg-blur-radius="10.3005" width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 2.20305e-08 1 20.4844 24.4621)" fill="#02C2FD"/>
+<g clip-path="url(#bgblur_2_235_1286_clip_path)" data-figma-skip-parse="true"><foreignObject x="-5.10321" y="-3.4889" width="51.173" height="38.2517"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5.15px);height:100%;width:100%"></div></foreignObject></g><rect data-figma-bg-blur-radius="10.3005" width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 0.866025 0.5 5.19727 15.637)" fill="#49D1FC"/>
+<g clip-path="url(#bgblur_3_235_1286_clip_path)" data-figma-skip-parse="true"><foreignObject x="14.1777" y="16.6583" width="35.887" height="47.0771"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5.15px);height:100%;width:100%"></div></foreignObject></g><g data-figma-bg-blur-radius="10.3005">
+<rect width="17.6507" height="17.6508" transform="matrix(0.866025 0.5 -2.20305e-08 1 24.4781 26.9588)" fill="#01ABE6" fill-opacity="0.1"/>
+<rect x="0.326095" y="0.564813" width="16.8977" height="16.8977" transform="matrix(0.866025 0.5 -2.20305e-08 1 24.5218 26.7958)" stroke="white" stroke-opacity="0.1" stroke-width="0.753083"/>
+</g>
+<g clip-path="url(#bgblur_4_235_1286_clip_path)" data-figma-skip-parse="true"><foreignObject x="29.4631" y="16.6575" width="35.887" height="47.0771"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5.15px);height:100%;width:100%"></div></foreignObject></g><g data-figma-bg-blur-radius="10.3005">
+<rect width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 2.20305e-08 1 39.7635 35.7833)" fill="#01ABE6" fill-opacity="0.1"/>
+<rect x="0.326095" y="0.188271" width="16.8977" height="16.8977" transform="matrix(0.866025 -0.5 2.20305e-08 1 39.8072 35.9464)" stroke="white" stroke-opacity="0.1" stroke-width="0.753083"/>
+</g>
+<g clip-path="url(#bgblur_5_235_1286_clip_path)" data-figma-skip-parse="true"><foreignObject x="14.1771" y="7.83294" width="51.173" height="38.2517"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5.15px);height:100%;width:100%"></div></foreignObject></g><g data-figma-bg-blur-radius="10.3005">
+<rect width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 0.866025 0.5 24.4775 26.9588)" fill="#01ABE6" fill-opacity="0.1"/>
+<rect x="0.652189" y="2.24436e-08" width="16.8977" height="16.8977" transform="matrix(0.866025 -0.5 0.866025 0.5 24.5649 27.2849)" stroke="white" stroke-opacity="0.1" stroke-width="0.753083"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_235_1286_clip_path"><rect width="17.6508" height="17.6508" transform="matrix(0.866025 0.5 -2.20305e-08 1 5.19849 15.637)"/>
+</clipPath><clipPath id="bgblur_1_235_1286_clip_path"><rect width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 2.20305e-08 1 20.4844 24.4621)"/>
+</clipPath><clipPath id="bgblur_2_235_1286_clip_path"><rect width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 0.866025 0.5 5.19727 15.637)"/>
+</clipPath><clipPath id="bgblur_3_235_1286_clip_path"><rect width="17.6507" height="17.6508" transform="matrix(0.866025 0.5 -2.20305e-08 1 24.4781 26.9588)"/>
+</clipPath><clipPath id="bgblur_4_235_1286_clip_path"><rect width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 2.20305e-08 1 39.7635 35.7833)"/>
+</clipPath><clipPath id="bgblur_5_235_1286_clip_path"><rect width="17.6508" height="17.6508" transform="matrix(0.866025 -0.5 0.866025 0.5 24.4775 26.9588)"/>
+</clipPath></defs>
+</svg>

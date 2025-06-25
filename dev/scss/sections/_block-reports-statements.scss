@@ -1,0 +1,218 @@
+$block-name: "block-reports-statements";
+
+.#{$block-name} {
+  @include max-size(64.773%);
+  
+  @include media-max-md() {
+    @include max-size(100%);
+  }
+
+  &__wrap {
+    padding: 0 0 48px;
+    @include flex(column, $gap: 24px);
+    
+    @include media-max-s() {
+      @include flex(column, $gap: 16px);
+
+    }
+  }
+
+  .nice-select {
+    @include media-min-xxl() {
+      @include font-size(1rem, 1.2, 500);
+    }
+    
+    .current {
+      @include media-min-xxl() {
+        @include font-size(1rem, 1.2, 500);
+      }
+    }
+  }
+
+  a {
+    text-decoration: unset !important;
+  }
+
+  &__select {
+    @include color(#000);
+    @include max-size(323px);
+
+    
+    .nice-select {
+      border-bottom: 1px solid #A5B4C3;
+      
+      @include hover() {
+        border-bottom: 1px solid #A5B4C3
+      }
+
+      .nice-select-dropdown {
+        border: 1px solid #A5B4C3;
+        box-shadow: 0px 8px 24px -4px #21223014;
+
+        box-shadow: 0px 5px 16px -4px #2122300F;
+
+      }
+
+      &::after {
+        background-image: url("/local/templates/t1-new/assets/svg/dropdown-grey.svg");
+      }
+    }
+  }
+  
+  &__toggle {
+    @include bg-color(#F7F7F8);
+    @include flex(row, $gap: 4px);
+    @include size(fit-content);
+    
+    border-radius: 128px;
+    padding: 4px;
+
+    &__item {
+      cursor: pointer;
+
+      &__label {
+        @include color(#A5B4C3);
+        @include bg-color(transparent);
+        @include font-size(16px, 1.2, 500);
+
+        border-radius: 60px;
+        padding: 8px 24px;
+
+        @include transition(#{background-color, color});
+
+        @include media-min-xxl() {
+          @include font-size(0.83rem, 1.2, 500);
+        }
+
+        @include media-max-s() {
+          padding: 8px 12px;
+        }
+
+        @include hover() {
+          @include color(#000);
+          @include bg-color(#fff);
+        }
+      }
+
+      input {
+        display: none;
+
+        &:checked~.#{$block-name}__toggle__item__label {
+          @include color(#000);
+          @include bg-color(#fff);
+        }
+      }
+    }
+  }
+
+
+  &__content {
+    @include position(relative);
+    @include max-size(912px);
+    @include transition(height);
+    
+    height: 392px;
+
+    &__page {
+      @include flex(column, $gap: 16px);
+      @include size(100%);
+      @include position(absolute, $top: 0, $left: 0);
+
+      @include transition(opacity);
+      
+      opacity: 0;
+      pointer-events: none;
+
+      &.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      &__item {
+        @include bg-color(#F7F7F8);
+        @include flex(row, space-between, center, 24px);
+        @include position(relative);
+        @include transition(background-color);
+
+        padding: 16px;
+        border-radius: 16px;
+        
+        @include hover() {
+          @include bg-color(#EFEFF2);
+
+          .#{$block-name}__content__page__item__arrow {
+            @include position(absolute, $top: 50%, $right: 24px);
+            @include size(34px, 34px);
+            opacity: 1;
+          }
+
+          .#{$block-name}__content__page__item__type {
+            margin-right: 60px
+          }
+        }
+
+        &__icon {
+          @include size(48px, 48px);
+          @include min-size(48px, 48px);
+
+          @include media-min-xxl() {
+            @include size(2rem, 2rem);
+           @include min-size(2rem, 2rem);
+          }
+          img {
+            @include size(100%, 100%);
+          }
+        }
+
+        &__type {
+          @include font-size(20px, 28px, 500);
+          @include color(#00AAE6);
+          @include flex(row, center, center, $gap: 8px);
+          @include transition(margin);
+
+          @include media-min-xxl() {
+            @include font-size(1rem, 1.2, 500);
+          }
+        }
+
+        &__arrow {
+          @include position(absolute, $top: 50%, $right: 109px);
+          @include transition(#{opacity, right});
+          @include size(34px, 34px);
+          opacity: 0;
+
+          transform: translateY(-50%);
+        }
+
+        &__text {
+          @include size(100%);
+        }
+
+        &__title {
+          @include font-size(20px, 28px, 500);
+          letter-spacing: -0.03em;
+          margin-bottom: 4px;
+          
+          @include color(#000000);
+          @include media-min-xxl() {
+          @include font-size(1rem, 1.2, 500);
+        }
+          @include media-max-s() {
+            @include font-size(16px, 22.4px, 500);
+            @include max-size(145px);
+
+          }
+        }
+
+        &__descr {
+          @include font-size(16px, 22.4px, 500);
+          letter-spacing: -0.03em;
+        @include media-min-xxl() {
+          @include font-size(1rem, 1.2, 500);
+        }
+          @include color(#A5B4C3);
+        }
+      }
+    }
+  }
+}

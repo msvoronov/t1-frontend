@@ -1,0 +1,105 @@
+$block-name: "b-block-career-blog";
+
+.#{$block-name} {
+  margin-top: -4px;
+  margin-bottom: 0 !important;
+
+  a {
+    text-decoration: unset !important;
+  }
+
+  @include transition(opacity);
+
+  &.loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &__wrap {
+    @include flex(row, $gap: 48px 16px);
+    @include flex-wrap();
+    @include transition(all);
+
+    overflow: hidden;
+
+    @include media-max-md() {
+        @include flex(row, $gap: 24px);
+    }
+  }
+
+  &__item {
+    $gap: 16px;
+    $count: 3;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    @include hover() {
+      .b-block-career-blog__item__label {
+        @include color($blue);
+      }
+    }
+
+    @include media-max-md() {
+      $gap: 24px;
+      $count: 2;
+
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    }
+
+    @include media-max-s() {
+      @include max-size(100%);
+    }
+
+    &__img {
+      @include image-wrap(100%, null, contain);
+      @include max-size(100%);
+      @include min-size(null, 80%);
+
+      border-radius: 16px;
+      margin-bottom: 16px;
+      overflow: hidden;
+
+      @include media-max-md() {
+        margin-bottom: 8px;
+        border-radius: 8px;
+      }
+
+      img {
+        overflow: hidden;
+        border-radius: 16px;
+
+        @include media-max-md() {
+          border-radius: 8px;
+        }
+      }
+    }
+
+    &__label {
+      @include font-size(20px, 1.4, 500);
+      @include color(#000);
+      @include transition(color);
+
+      letter-spacing: -0.6px;
+
+      @include media-max-md() {
+        @include font-size(16px, 1.4, 500);
+        letter-spacing: -0.48px;
+      }
+    }
+  }
+
+  &__btn {
+    @include font-size(36px, 1.1, 500);
+
+    letter-spacing: -1.08px;
+    padding: 38px 140px;
+    margin: 0 auto;
+
+    margin-top: 24px;
+
+    &.hidden {
+      display: none;
+    }
+  }
+}

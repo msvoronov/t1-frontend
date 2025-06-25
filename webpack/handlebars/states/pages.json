@@ -1,0 +1,190 @@
+[
+    {
+        "label": "Работа в T1",
+        "href": "/home.html"
+    },
+    {
+        "label": "Вакансии",
+        "href": "/vacancies.html"
+    },
+    {
+        "label": "Направления деятельности",
+        "href": "/activities.html"
+    },
+    {
+        "label": "Бенефиты и условия",
+        "href": "/benefits.html"
+    },
+    {
+        "label": "Начало карьеры",
+        "href": "/internship.html"
+    },
+    {
+        "label": "Блог",
+        "href": "/blog.html"
+    },
+    {
+        "label": "FAQ",
+        "href": "/faq.html"
+    },
+    {
+        "label": "Alumni",
+        "href": "/alumni.html"
+    },
+    {
+        "label": "Начало карьеры(new)",
+        "href": "/start-career.html"
+    },
+    {
+        "label": "Стажировка Т1. Дебют",
+        "href": "/internship-debut.html"
+    },
+    {
+        "label": "Стажировка (деталка)",
+        "href": "/internship-detail.html"
+    },
+    {
+        "label": "Форма",
+        "href": "/new-form.html"
+    },
+    {
+        "label": "block-internship",
+        "href": "/block-internship.html"
+    },
+    {
+        "label": "camp",
+        "href": "/camp.html"
+    },
+    {
+        "label": "int1ra",
+        "href": "/int1ra.html"
+    },
+    {
+        "label": "Прошедшие события",
+        "href": "/past-events.html"
+    },
+    {
+        "label": "Конференция ИВА: заявка на презенацию решения Оазис",
+        "href": "/oasis-form.html"
+    },
+    {
+        "label": "Открытые школы от Холдинга Т1",
+        "href": "/openschool.html"
+    },
+    {
+        "label": "Открытая школа для системных аналитиков",
+        "href": "/openschool-system-analysts.html"
+    },
+    {
+        "label": "Открытая школа для Java-разработчиков",
+        "href": "/openschool-java-developers.html"
+    },
+    {
+        "label": "Открытая школа для разработчиков JS+React",
+        "href": "/openschool-js-react-developers.html"
+    },
+    {
+        "label": "Открытая школа для ручных тестировщиков",
+        "href": "/openschool-testers.html"
+    },
+    {
+        "label": "Открытая школа для инженеров данных (Data Engineer)",
+        "href": "/openschool-data-engineer.html"
+    },
+    {
+        "label": "Открытая школа для автотестировщиков",
+        "href": "/openschool-autotesters.html"
+    },
+    {
+        "label": "Вычислительные комплексы",
+        "href": "/computing-systems.html"
+    },
+    {
+        "label": "Аккредитация - форма",
+        "href": "/accreditation-form.html"
+    },
+    {
+        "label": "Олимпиада ИИ",
+        "href": "/olympic-ai.html"
+    },
+    {
+        "label": "Годовые отчёты",
+        "href": "/reports.html"
+    },
+    {
+        "label": "Согласие на распространение",
+        "href": "/policy.html"
+    },
+    {
+        "label": "Первая ракетка - форма",
+        "href": "/tennis-form.html"
+    },
+    {
+        "label": "Карьера - новая",
+        "href": "/caree_new.html"
+    },
+    {
+        "label": "Тестирование оборудования",
+        "href": "/testirovanie.html"
+    },
+    {
+        "label": "Форма одни плюсы",
+        "href": "/form-pluses.html"
+    },
+    {
+        "label": "nda",
+        "href": "/nda.html"
+    },
+    {
+        "label": "form-sad",
+        "href": "/form-sad.html"
+    },
+    {
+        "label": "nda-t1",
+        "href": "/nda-t1.html"
+    },
+    {
+        "label": "Интра - форма",
+        "href": "/intra-form.html"
+    },
+    {
+        "label": "Силарон",
+        "href": "/silaron.html"
+    },
+    {
+        "label": "Форма - гравитация",
+        "href": "/grvitation-form.html"
+    },
+    {
+        "label": "Форма - бизнес-ужин облако",
+        "href": "/business-dinner-cloud.html"
+    },
+    {
+        "label": "Форма - Вебинар \"Группы Астра\"",
+        "href": "/vebinar-astra-group.html"
+    },
+    {
+        "label": "Форма - Т1 на ПМЭФ-2025",
+        "href": "/t1-pmef-2025.html"
+    },
+    {
+        "label": "Форма - Т1 на ПМЭФ-2025 для сотрудников",
+        "href": "/t1-pmef-2025-inner.html"
+    },
+    {
+        "label": "Форма - Алгоритмы большого бизнеса",
+        "href": "/algorithms-big-business.html"
+    },
+    {
+        "label": "Цифровая трансформация клиента",
+        "href": "/digital-transformation-client.html"
+    },    
+    {
+        "label": "Форма - Силарон. Время больших возможностей",
+        "href": "/silaron-time-big-possibilities.html"
+    },
+    {
+        "label": "Форма - Митап №2 в рамках Интры",
+        "href": "/mitap-2-v-ramkakh-intry.html"
+    }
+]

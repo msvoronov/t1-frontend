@@ -1,0 +1,25 @@
+<div class="b-block-img-slider b-block-banner-slider">
+  {{#> components/swiper class="js-block-img-slider block-img-slider" customPagination=true arrows=hasArrows}}
+    {{#each list }}
+      {{#> components/swiper__slide }}
+        <div class="b-block-banner{{#if className}} {{className}}{{/if}}">
+          <div class="b-block-banner__wrap">
+            <div class="b-block-banner__bg">
+              {{{getPicture src=img s=s}}}
+            </div>
+            <div class="b-block-banner__content">
+              <h2 class="b-block-banner__content__title">{{{ title }}}</h2>
+              {{#if subtitle}}
+                <div class="b-block-banner__content__subtitle">{{{subtitle}}}</div>
+              {{/if}}
+              {{#if descr}}
+                <div class="b-block-banner__content__descr">{{{descr}}}</div>
+              {{/if}}
+              <a href={{href}} class="link btn-blue js-link{{#if btnClass}} {{btnClass}}{{/if}}">{{ link }}</a>
+            </div>
+          </div>
+        </div>
+      {{/components/swiper__slide}}
+    {{/each}}
+  {{/components/swiper}}
+</div>

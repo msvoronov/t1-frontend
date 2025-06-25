@@ -1,0 +1,16 @@
+<div class="block-transformation-success">
+  <div class="block-transformation-success__wrap">
+    {{#> components/swiper class="js-block-team-slider" pagination=true}}
+      {{#each list }}
+        {{#> components/swiper__slide }}
+        <div class="block-transformation-success__item">
+          <div class="block-transformation-success__item__img">{{{getImg src=img}}}</div>
+          <div class="block-transformation-success__item__label">{{label}}</div>
+          <div class="block-transformation-success__item__descr">{{{descr}}}</div>
+          <a href="{{href}}" target="_blank" class="block-transformation-success__item__link">Подробнее</a>
+        </div>
+        {{/components/swiper__slide}}
+      {{/each}}
+    {{/components/swiper}}
+  </div>
+</div>

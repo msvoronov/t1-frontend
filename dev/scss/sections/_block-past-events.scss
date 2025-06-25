@@ -1,0 +1,60 @@
+$block-name: "b-block-past-events";
+
+.#{$block-name} {
+
+  padding: 0 0 24px;
+
+  &__wrap {
+    @include size(100%);
+  }
+
+  &__item {
+    @include border(1px, solid, #000, top);
+    @include flex($gap: 32px);
+    @include color(#000);
+    @include transition(color);
+
+    padding: 16px 0 32px;
+
+    @include hover() {
+      @include color($blue);
+    }
+
+    @include media-max-sm() {
+      @include flex(column-reverse, $gap: 0);
+    }
+
+    &__date {
+      @include min-size(160px);
+      @include font-size(20px, 28px, 500);
+      
+      letter-spacing: -0.03em;
+
+      @include media-max-sm() {
+        @include color(#A5B4C3);
+      }
+    }
+
+    &__label {
+      @include font-size(28px, 34px, 500);
+      
+      letter-spacing: -0.03em;
+    }
+
+    &__img {
+      @include image-wrap(100%, null, contain);
+      @include max-size(244px);
+      margin-left: auto;
+      
+      overflow: hidden;
+      border-radius: 16px;
+      
+      @include media-max-sm() {
+        @include max-size(unset);
+        margin-left: unset;
+        @include flex(column-reverse);
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

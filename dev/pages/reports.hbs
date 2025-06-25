@@ -1,0 +1,29 @@
+{{#> layouts/main title='Вакансии' }}
+  {{#with this.store.reportsAnnual}}
+    {{> shared/section__title}}
+    {{> sections/block-reports-annual}}
+  {{/with}}
+  {{#with this.store.reportsStatements}}
+    {{> shared/section__title}}
+    {{> sections/block-reports-statements}}
+  {{/with}}
+  {{#with this.store.reportsPresentation}}
+    {{> shared/section__title}}
+    {{> sections/block-reports-presentation}}
+  {{/with}}
+
+<h2 class="section__title">Дополнительная информация</h2>
+<div class="section__text-wrap internship">
+  <p class="section__descr">
+    В данном разделе представлена информация, которую Холдинг Т1 обязан раскрывать в соответствии с требованиями Банка
+    России, Федерального закона «О рынке ценных бумаг» и др.
+  </p>
+</div>
+<h2 class="section__title">Документы</h2>
+<div class="section__text-wrap internship">
+  <a href="{{pdfLink}}" class="section__text-link" data-ajax-url="{{pdfLink}}" download>
+    {{{ getSvg src="icons/download-blue" }}}
+    Перечень инсайдерской информации
+  </a>
+</div>
+{{/layouts/main}}

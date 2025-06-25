@@ -1,0 +1,13 @@
+<div class="block-silaron-awards">
+  <div class="block-silaron-awards__wrap">
+    {{#each list}}
+      <a href="{{href}}" {{#if blank}} target="_blank"{{/if}} class="block-silaron-awards__item">
+        <div class="block-silaron-awards__item__img">
+          {{{getPicture src=img md=md s=s }}}
+        </div>
+        <div class="block-silaron-awards__item__title">{{title}}</div>
+        <div class="block-silaron-awards__item__descr">{{{descr}}}</div>
+      </a>
+    {{/each}}
+  </div>
+</div>

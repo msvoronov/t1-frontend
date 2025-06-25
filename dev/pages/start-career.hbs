@@ -1,0 +1,49 @@
+{{#> layouts/main title='Начало карьеры' }}
+  {{> shared/menu-gray activeIndex=8}}
+
+  {{#with this.store.internshipBannerSlider}}
+    {{> sections/block-banner-slider stickyArrows=true className="b-block-banner--black"}}
+    {{> shared/section__title}}
+  {{/with}}
+
+  {{#with this.store.infoItems.internship}}
+    {{> shared/section__title}}
+    {{> sections/block-career-items}}
+  {{/with}}
+  {{#with this.store.internshipStats}}
+    {{> shared/section__title descrClass="section__text-wrap--small"}}
+    {{> sections/block-career-stats classNameWrap="row-2"}}
+  {{/with}}
+
+  {{#with this.store.internshipSlider}}
+    {{> shared/section__title}}
+    {{> sections/block-blue-slider className="internship"}}
+  {{/with}}
+  {{!-- {{#with this.store.culture}}
+    {{> shared/section__title titleClass="section__title--small"}}
+    {{> sections/block-culture-slider}}
+  {{/with}} --}}
+  
+  {{#with this.store.closestEvents}}
+    {{> shared/section__title}}
+    {{> sections/block-resizable-wrap}}
+  {{/with}}
+
+  {{#with this.store.pastEvents}}
+    {{> shared/section__title}}
+    {{> sections/block-past-events}}
+  {{/with}}
+  {{#with this.store.achievements}}
+    {{> shared/section__title}}
+    {{> sections/block-career-achievements}}
+  {{/with}}
+  {{#with this.store.imgSliders.work}}
+    {{> shared/section__title}}
+    {{> sections/block-img-slider stickyArrows=true}}
+  {{/with}}
+  {{#with this.store.expertiseNew}}
+    {{> shared/section__title}}
+    {{> sections/block-expertise className="row-3"}}
+  {{/with}}
+  {{> sections/block-career-form-new}}
+{{/layouts/main}}

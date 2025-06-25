@@ -1,0 +1,34 @@
+{
+  "title": "Направления стажировок",
+  "descr": "Мы создаём и развиваем проекты для школьников, студентов и профессионалов. Получать знания, строить карьеру или соревноваться — у нас разные направления. Выбирай своё и подавай заявку.",
+  "link": {
+    "label": "Направления для опытных профессионалов",
+    "href": "/activities.html"
+  },
+  "list": [
+    {
+      "label": "Разработка frontend (JavaScript + React)",
+      "img": "debut-directions/debut__direction__1.png"
+    },
+    {
+      "label": "Разработка backend (Java)",
+      "img": "debut-directions/debut__direction__2.png"
+    },
+    {
+      "label": "Ручное функциональное тестирование",
+      "img": "debut-directions/debut__direction__3.png"
+    },
+    {
+      "label": "Системный анализ",
+      "img": "debut-directions/debut__direction__4.png"
+    },
+    {
+      "label": "DevOps",
+      "img": "debut-directions/debut__direction__5.png"
+    },
+    {
+      "label": "Техническая поддержка",
+      "img": "debut-directions/debut__direction__6.png"
+    }
+  ]
+}

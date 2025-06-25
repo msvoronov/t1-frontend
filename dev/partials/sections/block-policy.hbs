@@ -1,0 +1,747 @@
+<div class="block-policy-container js-b-form">
+
+<form class="block-policy js-b-form__form js-policy-form js-form-validate js-b-form__form">
+  <div class="js-b-form-inputs block-policy__inputs-wrap active">
+  <p class="block-policy__text" style="font-weight: 500;">
+    Привет!<br> Мы группа Т1.<br>Ты оказался на этой странице, потому что мы хотим разместить сведения о тебе в интернете на одной из наших площадок. Для этого нам необходимо получить от тебя разрешение – твое согласие. Что бы мы могли получить твое согласие, пожалуйста, ниже предоставь всю необходимую нам информацию и сведения.
+  </p>
+
+  <div class="block-policy__wrap">
+    <h2 class="block-policy__title">Общие сведения:</h2>
+
+    <div class="block-policy__form-wrap">
+      <div class="block-policy__form-wrap__text">Настоящим, я</div>
+
+      <div class="block-policy__form-wrap__inputs">
+        <div class="block-policy__form-wrap__row">
+          <label class="block-policy__field js-b-input required">
+            <span class="block-policy__field__label">Фамилия</span>
+            <input type="text" name="surname" class="block-policy__field__input js-b-input__field" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+
+          <label class="block-policy__field js-b-input required">
+            <span class="block-policy__field__label">Имя</span>
+            <input type="text" name="name" class="block-policy__field__input js-b-input__field" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+      <div class="block-policy__form-wrap__row">
+
+        <div class="block-policy__form-wrap__wrap js-second-name">
+
+          <label class="block-policy__field js-b-input required">
+            <span class="block-policy__field__label">Отчество</span>
+            <input type="text" name="second-name" class="block-policy__field__input js-b-input__field js-second-name-input" data-required="">
+            <span class="alert-input-text"></span>
+          </label>
+
+          <label class="block-policy__checkbox">
+            <input type="checkbox" name="no-second-name" class="block-policy__checkbox__input js-b-input__field js-second-name-checkbox">
+            <span class="block-policy__checkbox__holder"></span>
+            <span class="block-policy__checkbox__label">Нет отчества</span>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+        
+        <label class="block-policy__field js-b-input required">
+          <span class="block-policy__field__label">Номер телефона</span>
+          <input type="tel" name="tel" class="block-policy__field__input js-b-input__field js-phone-mask" data-required>
+          <span class="alert-input-text"></span>
+        </label>
+      </div>
+      <div class="block-policy__form-wrap__row">
+        <label class="block-policy__field js-b-input required">
+          <span class="block-policy__field__label">Адрес электронной почты</span>
+          <input type="email" name="email" class="block-policy__field__input js-b-input__field" data-required data-email>
+          <span class="alert-input-text"></span>
+        </label>
+      </div>
+      </div>
+      
+      <div class="block-policy__form-wrap__text">даю своё согласие на распространение моих персональных данных,</div>
+      <div class="block-policy__form-wrap__row">
+        <label class="custom-select js-custom-select block-policy__field required">
+          <div class="custom-select__label block-policy__field__label">Компания</div>
+          <div class="custom-select__value js-custom-select-value"></div>
+          <div class="custom-select__arrow">
+            {{{getSvg src="dropdown-grey"}}}
+          </div>
+          <input type="hidden" name="company" class="custom-select__input js-b-input__field" data-required>
+          <span class="alert-input-text"></span>
+          <div class="custom-select__list">
+            <div class="custom-select__item js-custom-select-item" data-value='OOO  «Т1»' data-index="1">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью  «Т1»<br><br>
+                  ИНН: <span class="pale">7720484492</span><br><br>
+                  ОГРН: <span class="pale">1197746617419'</span><br><br>
+                  адрес: <span class="pale">125167, г. Москва, вн. тер. г. муниципальный округ Аэропорт, пр-кт Ленинградский, д. 36 стр. 41, помещ. 22</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='ООО "ГК "ИННОТЕХ"' data-index="2">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Группа Компаний «Иннотех»<br><br>
+                  ИНН: <span class="pale">9703073496</span><br><br>
+                  ОГРН: <span class="pale">1227700086460'</span><br><br>
+                  адрес: <span class="pale">123112, г. Москва, вн. тер. г. Муниципальный округ Пресненский, Пресненская наб., д. 12, помещ. 9/60</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='АНО ДПО «Т1 Цифровая Академия»' data-index="3">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Автономной некоммерческой организации дополнительного профессионального образования «Т1 Цифровая Академия»<br><br>
+                  ИНН: <span class="pale">1683014745</span><br><br>
+                  ОГРН: <span class="pale">1231600034676'</span><br><br>
+                  адрес: <span class="pale">420500, Республика Татарстан, м. р-н Верхнеуслонский, г.п. город Иннополис, ул. Университетская, д. 5, помещ. 123</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Т1Клауд»'  data-index="4">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Т1Клауд»<br><br>
+                  ИНН: <span class="pale">7720479358</span><br><br>
+                  ОГРН: <span class="pale">1197746515405'</span><br><br>
+                  адрес: <span class="pale">125167, г. Москва, вн. тер. г. муниципальный округ Аэропорт, пр-кт Ленинградский, д. 36 стр. 41, помещ. 22</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Сервионика»'  data-index="5">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Сервионика»<br><br>
+                  ИНН: <span class="pale">7727790940</span><br><br>
+                  ОГРН: <span class="pale">1127747102988'</span><br><br>
+                  адрес: <span class="pale">119119, г. Москва, Ленинский проспект, д. 42, корп. 1-2-3, помещ. II, ком. 22</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Т1 Инновации»' data-index="6">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Т1 Инновации»<br><br>
+                  ИНН: <span class="pale">9718107268</span><br><br>
+                  ОГРН: <span class="pale">1187746683519'</span><br><br>
+                  адрес: <span class="pale">107497, г. Москва, Иркутская ул., д. 11, корп. 1, э. 1, пом. 5, к. 64, оф. 2008</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Т1 Диджитал»'  data-index="7">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Т1 Диджитал»<br><br>
+                  ИНН: <span class="pale">9731079549</span><br><br>
+                  ОГРН: <span class="pale">1217700254364'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, вн. тер. г. муниципальный округ Вешняки, ул. Юности, д. 13А</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Дататех»'  data-index="8">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Дататех»<br><br>
+                  ИНН: <span class="pale">9731081330</span><br><br>
+                  ОГРН: <span class="pale">1217700337975'</span><br><br>
+                  адрес: <span class="pale">121205, г. Москва, Муниципальный округ Можайский вн. тер. г., Сколково Инновационного центра тер., Большой б-р, д. 42, стр. 1, помещ. 182, часть I</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO  «ТС Интеграция»'  data-index="9">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью  «ТС Интеграция»<br><br>
+                  ИНН: <span class="pale">7720479365</span><br><br>
+                  ОГРН: <span class="pale">1197746515394'</span><br><br>
+                  адрес: <span class="pale">125167, г. Москва, вн. тер. г. Муниципальный округ Аэропорт, пр-кт Ленинградский, д. 36, стр. 41, помещ. 20</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «ТСК Технолоджи»'  data-index="10">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «ТСК Технолоджи»<br><br>
+                  ИНН: <span class="pale">9718130309</span><br><br>
+                  ОГРН: <span class="pale">1197746136939'</span><br><br>
+                  адрес: <span class="pale">107061, г. Москва, Хромова ул., д. 20, этаж 1, офис 1-60</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Монолит»' data-index="11">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Монолит»<br><br>
+                  ИНН: <span class="pale">7720850357</span><br><br>
+                  ОГРН: <span class="pale">1217700255684'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, вн. тер. г. Муниципальный округ Вешняки, ул. Юности, д. 13, каб. 12</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «ТС-Финтех»' data-index="12">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «ТС-Финтех»<br><br>
+                  ИНН: <span class="pale">9731059373</span><br><br>
+                  ОГРН: <span class="pale">1197746757119'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, вн. тер. г. Муниципальный округ Вешняки, ул. Юности, д. 13А, каб. №26-3</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO  «ТС Цифровые технологии»' data-index="13">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью  «ТС Цифровые технологии»<br><br>
+                  ИНН: <span class="pale">9731059341</span><br><br>
+                  ОГРН: <span class="pale">1197746756525'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, вн. тер. г. Муниципальный округ Вешняки, ул. Юности, д. 13А, каб. №26-2</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO  «Т1 Территория радиоэлектроники и кибернетики»' data-index="14">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью  «Т1 Территория радиоэлектроники и кибернетики»<br><br>
+                  ИНН: <span class="pale">9731059310</span><br><br>
+                  ОГРН: <span class="pale">1197746756184'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, вн. тер. г. Муниципальный округ Вешняки, ул. Юности, д. 13А, каб. №26-1</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO  «Т-ДАТА»' data-index="15">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью  «Т-ДАТА»<br><br>
+                  ИНН: <span class="pale">7720492736</span><br><br>
+                  ОГРН: <span class="pale">1197746757515'</span><br><br>
+                  адрес: <span class="pale">125167, г. Москва, Ленинградский проспект, д. 36, стр. 41, пом. 20</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «ТС-Центр»' data-index="16">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «ТС-Центр»<br><br>
+                  ИНН: <span class="pale">7720479301</span><br><br>
+                  ОГРН: <span class="pale">1197746514965'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, Муниципальный округ Вешняки вн. тер. г., ул. Юности, д. 13А, каб. 5</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Трэйд Инвест Технолоджиз»' data-index="17">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Трэйд Инвест Технолоджиз»<br><br>
+                  ИНН: <span class="pale">7724947663</span><br><br>
+                  ОГРН: <span class="pale">5147746448559'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, ул. Юности, д. 13А, каб. 51</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Т1 Технологии»' data-index="18">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Т1 Технологии»<br><br>
+                  ИНН: <span class="pale">2367030074</span><br><br>
+                  ОГРН: <span class="pale">1232300015309'</span><br><br>
+                  адрес: <span class="pale">354340, Краснодарский край, ф.т. Сириус, пгт. Сириус, проезд Триумфальный, д. 1, помещ. 2-032, раб. место2-032/17, 2-032/18, 2-032/19, 2-032/20</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO  «Омега.С»' data-index="19">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью  «Омега.С»<br><br>
+                  ИНН: <span class="pale">2367030500</span><br><br>
+                  ОГРН: <span class="pale">1232300021678'</span><br><br>
+                  адрес: <span class="pale">354340, Краснодарский край, ф.т. Сириус, пгт. Сириус, проезд Триумфальный, д. 1, помещ. 2-032/16</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='АО «Цифровые документы»' data-index="20">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Акционерному обществу «Цифровые документы»<br><br>
+                  ИНН: <span class="pale">7720852788</span><br><br>
+                  ОГРН: <span class="pale">1217700367015'</span><br><br>
+                  адрес: <span class="pale">111395, г. Москва, вн. тер. г. Муниципальный округ Вешняки, ул. Юности, д. 13А, каб. 13</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «НОТА Сервис» ' data-index="21">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «НОТА Сервис» <br><br>
+                  ИНН: <span class="pale">2367031550</span><br><br>
+                  ОГРН: <span class="pale">1232300034670'</span><br><br>
+                  адрес: <span class="pale">354340, Краснодарский край, ф.т. Сириус, пгт. Сириус, Триумфальный пр-д, д. 1, помещ. 2-032, раб. место 2-032/21</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='OOO «Дискавери Лабс»' data-index="22">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Обществу с ограниченной ответственностью «Дискавери Лабс»<br><br>
+                  ИНН: <span class="pale">2367024803</span><br><br>
+                  ОГРН: <span class="pale">1222300022450'</span><br><br>
+                  адрес: <span class="pale">354340, Краснодарский край, ф.т. Сириус, пгт. Сириус, проезд Триумфальный, д. 1, помещ. 1-026F</span>
+                  </p>
+              </div>
+            </div>
+            <div class="custom-select__item js-custom-select-item" data-value='АО «Эмпаэро» ' data-index="23">
+              <div class="custom-select__item__wrap">
+                <p class="custom-select__item__wrap__descr">
+                  Акционерному обществу «Эмпаэро» <br><br>
+                  ИНН: <span class="pale">2983014829</span><br><br>
+                  ОГРН: <span class="pale">1232900000376'</span><br><br>
+                  адрес: <span class="pale">166000, Ненецкий автономный округ, г.о. город Нарьян-Мар Москва, г.
+Нарьян-Мар, ул. Ненецкая, д. 3, оф. 16;</span>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="block-policy__form-wrap__text">(далее – «Компания») на указанных ниже условиях.</div>
+    </div>
+  </div>
+
+  <div class="block-policy__wrap" id="aim">
+    <h2 class="block-policy__title">Цель для которой Компания будет распространять твои персональные данные:</h2>
+    <div class="block-policy__form-wrap">
+    
+      <div class="block-policy__form-wrap__aim-wrap">
+
+        <label class="custom-select js-custom-select js-custom-select-inner block-policy__field required aim-wrap">
+          <div class="custom-select__label block-policy__field__label">Условия</div>
+          <div class="custom-select__value js-custom-select-value"></div>
+          <div class="custom-select__arrow">
+            {{{getSvg src="dropdown-grey"}}}
+          </div>
+          <input type="hidden" name="aim" class="custom-select__input js-b-input__field" data-required>
+          <span class="alert-input-text"></span>
+          <div class="custom-select__list">
+            <div class="custom-select__item js-custom-select-item selected">
+              <p class="custom-select__item__wrap__descr" data-value="Совершенствование и развитие деятельности Компании, подразумевающее предложение и продвижение собственной продукции и бренда на рынке, проведение маркетинговых (рекламных, пиар) мероприятий и осуществление информационного (коммуникационного) взаимодействия со всеми заинтересованными лицами">
+                Совершенствование и развитие деятельности Компании, подразумевающее предложение и продвижение собственной продукции и
+                бренда на рынке, проведение маркетинговых (рекламных, пиар) мероприятий и осуществление информационного
+                (коммуникационного) взаимодействия со всеми заинтересованными лицами
+              </p>
+            </div>
+            <div class="custom-select__item js-custom-select-item"
+              data-value="Продвижение товаров, работ, услуг на рынке" data-company-allowed="3">
+              <p class="custom-select__item__wrap__descr" data-company-allowed="3">
+                Продвижение товаров, работ, услуг на рынке
+              </p>
+            </div>
+            <div class="custom-select__item js-custom-select-item"
+              data-value="обеспечение соблюдения законодательства РФ в сфере образования" data-company-allowed="3">
+              <p class="custom-select__item__wrap__descr" data-company-allowed="3">
+                обеспечение соблюдения законодательства РФ в сфере образования
+              </p>
+            </div>
+
+          </div>
+        </label>
+        <span class="tip-text">
+          (далее&nbsp;–&nbsp;«Цель»)
+
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="block-policy__wrap">
+    <h2 class="block-policy__title">Перечень персональных данных, которые ты разрешаешь распространять Компании, то есть раскрывать их неопределенному (неограниченному) кругу лиц (далее – «Получатели»):</h2>
+    <ul class="block-policy__list">
+      <li>фамилия, имя, отчество;</li>
+      <li>«контактные (коммуникационные) данные (рабочий номер телефона, рабочий адрес электронной почты);</li>
+      <li>данные изображения (лица) (фотография);</li>
+      <li>видеозвукозапись изображения (лица) и устной речи (для распространения видеоролика с твоим участием);</li>
+      <li>сведения о должности, структурном подразделении и текущем месте трудоустройства;</li>
+      <li>сведения о месте учебы, повышения квалификации, карьере, проектах;</li>
+      <li>сведения, которые были тобой сообщены для распространения (публикации, отзывы) Компанией.</li>
+    </ul>
+    <p class="block-policy__text">Компания может распространять как все персональные данные, на распространение которых ты даешь настоящее согласие, так и в меньшем объеме.</p>
+
+  </div>
+  <div class="block-policy__wrap">
+    <h2 class="block-policy__title">Категория персональных данных: </h2>
+    <p class="block-policy__text">Персональные данные общей категории.</p>
+  </div>
+
+  <div class="block-policy__wrap">
+    <h2 class="block-policy__title">Информационные ресурсы, где ты разрешаешь распространять твои персональные данные:</h2>
+  
+    <div class="block-policy__form-wrap site js-form-copy">
+      <div class="block-policy__form-wrap__copy-wrap js-form-copy-wrap">
+        <div class="block-policy__form-wrap__row js-form-row">
+          <label class="custom-select js-custom-select js-custom-select-inner url-select block-policy__field required has-value">
+            <div class="custom-select__label block-policy__field__label">Сайт компании</div>
+            {{!-- <div class="custom-select__value js-custom-select-value"></div> --}}
+            <div class="custom-select__arrow">
+              {{{getSvg src="dropdown-grey"}}}
+            </div>
+            <input type="text" name="conditions-1" class="custom-select__input js-b-input__field" placeholder="https://www.example.ru/" data-required data-url>
+            <span class="alert-input-text"></span>
+            <div class="custom-select__list">
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.inno.tech/">
+                    https://www.inno.tech/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t1.ru/ ">
+                    https://www.t1.ru/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t1-cloud.ru/ ">
+                    https://www.t1-cloud.ru/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t1-academy.ru/">
+                    https://www.t1-academy.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.datatech.ru/">
+                    https://www.datatech.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.servionica.ru/ ">
+                    https://www.servionica.ru/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.impulse.t1.ru/">
+                    https://www.impulse.t1.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="http://www.nota.tech/ ">
+                    http://www.nota.tech/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.modus.nota.tech/ ">
+                    https://www.modus.nota.tech/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.union.nota.tech/ ">
+                    https://www.union.nota.tech/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.kupol.nota.tech/">
+                    https://www.kupol.nota.tech/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.partner.nota.tech/">
+                    https://www.partner.nota.tech/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.vk.com/">
+                    https://www.vk.com/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t.me/">
+                    https://www.t.me/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t1-integration.ru/">
+                    https://www.t1-integration.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t1-consulting.ru/">
+                    https://www.t1-consulting.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.sferaplatform.ru/">
+                    https://www.sferaplatform.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.air.inno.tech/ ">
+                    https://www.air.inno.tech/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.career.inno.tech/">
+                    https://www.career.inno.tech/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.infra.inno.tech/">
+                    https://www.infra.inno.tech/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.onedayoffer.inno.tech/">
+                    https://www.onedayoffer.inno.tech/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.talentforce.ru/ ">
+                    https://www.talentforce.ru/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t1-easytax.ru/">
+                    https://www.t1-easytax.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.женщинывит.рф">
+                    https://www.женщинывит.рф
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="http://www.watchman.t1-consulting.ru/">
+                    http://www.watchman.t1-consulting.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.diongo.ru/ ">
+                    https://www.diongo.ru/ 
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.intro.godion.vc/">
+                    https://www.intro.godion.vc/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.empaero.ru/">
+                    https://www.empaero.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.ornitech.pro/">
+                    https://www.ornitech.pro/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.orixdata.ru/">
+                    https://www.orixdata.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.comitet.online/">
+                    https://www.comitet.online/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.pragmatika-it.ru/">
+                    https://www.pragmatika-it.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.russiadevopsreport.ru/">
+                    https://www.russiadevopsreport.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.t1-digital.ru/">
+                    https://www.t1-digital.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.best.t1.ru/">
+                    https://www.best.t1.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.disclabs.ru/">
+                    https://www.disclabs.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.tsctech.ru/">
+                    https://www.tsctech.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.notaservice.ru/">
+                    https://www.notaservice.ru/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.monolith.tech/">
+                    https://www.monolith.tech/
+                  </p>
+              </div>
+              <div class="custom-select__item js-custom-select-item">
+                  <p class="custom-select__item__wrap__descr" data-value="https://www.kryptonite.technology">
+                    https://www.kryptonite.technology
+                  </p>
+              </div>
+
+            </div>
+          </label>
+
+          <label class="block-policy__field url-select js-b-input has-value">
+            <span class="block-policy__field__label">Имя каталога на сервере</span>
+            <input type="text" name="catalog-1" placeholder="documents/example.pdf" class="block-policy__field__input js-b-input__field">
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="block-policy__add js-form-copy-add">
+        {{{getSvg src="plus"}}}
+        <div class="block-policy__add__label">Добавить еще строку</div>
+        <div class="block-policy__add__count js-form-copy-count"></div>
+      </div>  
+    </div>
+  </div>
+
+  <div class="block-policy__wrap">
+    <h2 class="block-policy__title">Выбери условия сбора и обработки Получателями твоих персональных данных, которые будут распространяться:</h2>
+      <div class="block-policy__form-wrap">
+        <label class="custom-select js-custom-select js-custom-select-inner block-policy__field required">
+          <div class="custom-select__label block-policy__field__label">Условия</div>
+          <div class="custom-select__value js-custom-select-value"></div>
+          <div class="custom-select__arrow">
+            {{{getSvg src="dropdown-grey"}}}
+          </div>
+          <input type="hidden" name="conditions" class="custom-select__input js-b-input__field" data-required>
+          <span class="alert-input-text"></span>
+          <div class="custom-select__list">
+            <div class="custom-select__item js-custom-select-item selected">
+                <p class="custom-select__item__wrap__descr">
+                  Разрешаю с условиями:  <span class="pale">только доступ к моим распространенным персональным данным</span>
+                </p>
+            </div>
+            <div class="custom-select__item js-custom-select-item">
+                <p  class="custom-select__item__wrap__descr">
+                  Разрешаю без условий
+                </p>
+            </div>
+            <div class="custom-select__item js-custom-select-item">
+                <p  class="custom-select__item__wrap__descr">
+                  Не разрешаю
+                </p>
+            </div>
+          </div>
+        </label>
+      </div>
+  </div>
+
+  <div class="block-policy__wrap">
+    <h2 class="block-policy__title">Выбери условия передачи твоих персональных данных по сети для Получателей:</h2>
+    <div class="block-policy__form-wrap">
+
+      <label class="custom-select js-custom-select js-custom-select-inner block-policy__field required">
+        <div class="custom-select__label block-policy__field__label">Условия</div>
+        <div class="custom-select__value js-custom-select-value"></div>
+        <div class="custom-select__arrow">
+          {{{getSvg src="dropdown-grey"}}}
+        </div>
+        <input type="hidden" name="conditions" class="custom-select__input js-b-input__field" data-required>
+        <span class="alert-input-text"></span>
+        <div class="custom-select__list">
+          <div class="custom-select__item js-custom-select-item selected">
+              <p class="custom-select__item__wrap__descr" data-value="Условия передачи по сети не указаны">
+                Условия передачи по сети не указаны
+              </p>
+          </div>
+          <div class="custom-select__item js-custom-select-item"  data-value="Передача только по внутренней сети получателя – с доступом лишь для строго определенных лиц">
+              <p  class="custom-select__item__wrap__descr">
+                Передача только по внутренней сети получателя – с доступом лишь для строго определенных лиц
+              </p>
+          </div>
+          <div class="custom-select__item js-custom-select-item" data-value="Передача с использованием информационно-телекоммуникационных сетей, включая «Интернет»">
+              <p  class="custom-select__item__wrap__descr">
+                Передача с использованием информационно-телекоммуникационных сетей, включая «Интернет»
+              </p>
+          </div>
+          <div class="custom-select__item js-custom-select-item" data-value="Без передачи по сети">
+              <p  class="custom-select__item__wrap__descr">
+                Без передачи по сети
+              </p>
+          </div>
+        </div>
+      </label>
+      
+
+      <div class="block-policy__form-wrap__text">Твой выбор одного из значений означает, что тобой не установлено каких-либо иных условий передачи персональных данных по сети.</div>
+    </div>
+  </div>
+
+
+  <div class="block-policy__wrap">
+
+    <h2 class="block-policy__title">Лица, которых Компания может привлекать к обработке твоих персональных данных, разрешенных для распространения: </h2>
+    <ul class="block-policy__list">
+      <li>Лица, которые предоставляют Компании услуги хостинга информационных ресурсов (посредством которых (ого) будут осуществляться распространение персональных данных Получателям); </li>
+      <li>Лица, которые оказывают Компании услуги ИТ обслуживания, и предоставляют ИТ инфраструктуру;</li>
+      <li>Общество с ограниченной ответственностью «Т1» (125167, г. Москва, вн. тер. г. муниципальный округ Аэропорт, пр-кт Ленинградский, д. 36 стр. 41, помещ. 22) - за исключением тех случаев, когда ООО «Т1» в контексте настоящего согласия выступает оператором персональных данных;</li>
+      <li>Общество с ограниченной ответственностью «Группа Компаний «Иннотех» (123112, г. Москва, вн. тер. г. Муниципальный округ Пресненский, Пресненская наб., д. 12, пом. 9/60; ИНН 9703073496) - за исключением тех случаев, когда ООО «ГК Иннотех» в контексте настоящего согласия выступает оператором персональных данных;  </li>
+      <li>Общество с ограниченной ответственностью «Т1Клауд» (125167, г. Москва, вн. тер. г. муниципальный округ Аэропорт, пр-кт Ленинградский, д. 36 стр. 41, помещ. 22) - за исключением тех случаев, когда ООО «Т1Клауд» в контексте настоящего согласия выступает оператором персональных данных  </li>
+    </ul>
+  </div>
+
+  <div class="block-policy__wrap">
+    <h2 class="block-policy__title">Срок действия согласия:</h2>
+    <p class="block-policy__text">До момента прекращения гражданско-правовых и иных непосредственно связанных с ними отношений между тобой и Компанией или в течение 3 лет с даты предоставления настоящего согласия – в зависимости от того, какое событие наступит ранее. </p>
+    <p class="block-policy__text">Ты в любой момент можешь отозвазть это согласие - для этого тебе нужно написать нам на почту <a href="mailto:DPO@inno.tech" class="block-policy__link">DPO@inno.tech</a>. В теме обращения, пожалуйста, укажи «распространение персональных данных» - это поможет нам быстрее выполнить твой запрос. Настоящим ты уведомлен, что отказ от дачи этого согласия, а равно полный или частичный отзыв согласия не создаст для тебя каких-либо негативных юридических последствий. </p>
+    <p class="block-policy__text">
+      «В случае, если ты хочешь установить иные условия, запреты или ограничения обработки твоих персональных данных, ты
+      можешь:
+    </p>
+    <ul class="block-policy__list">
+      <li>на этапе предоставления настоящего согласия сообщить Компании об этом в разделе «комментарии» ниже;</li>
+      <li>в любой момент можешь направить соответствующее требование на адрес электронной почты <a href="mailto:DPO@inno.tech" class="block-policy__link">DPO@inno.tech</a>.</li>
+    </ul>
+  </div>
+<div class="block-policy__wrap">
+
+  <div class="block-policy__form-wrap" style="margin-bottom: ;">
+    <label class="block-policy__field url-select js-b-input">
+      <span class="block-policy__field__label">Комментарий</span>
+      <textarea type="text" name="comment"
+        class="block-policy__field__input js-b-input__field"></textarea>
+      <span class="alert-input-text"></span>
+    </label>
+
+  </div>
+</div>
+
+
+  
+
+  <div class="block-policy__wrap">
+    
+    <p class="block-policy__text" style="font-weight: 500;">Нажимая «согласен» я подтверждаю, что выражаю свое согласие на распространение моих персональных данных на указанных выше условиях.</p>
+
+    <button class="block-policy__submit btn-blue js-b-form-submit" style="font-weight: 500;">Согласен</button>
+    <span class="policy-alert js-policy-alert"></span>
+    <a href="/legal-entity_new/" target="_blank" class="block-policy__link">Политики обработки персональных данных компаний группы Т1</a>
+  </div>
+  </div>
+
+<div class="b-block-career-form__response-success js-b-form-success">
+  {{{getImg src="form/success-img-blue.png"}}}
+  <span class="b-block-career-form__response-msg">Спасибо!</span>
+</div>
+<div class="b-block-career-form__response-error js-b-form-error">
+  {{{getImg src="form/back-blue.png"}}}
+  <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+  <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+</div>
+<div class="b-block-career-form__loader js-b-form-loader">
+  {{{getImg src="form/loader-blue.png"}}}
+</div>
+</form>
+  </div>

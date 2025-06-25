@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru"
+      data-scroll-detection="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0">
+    <link rel="stylesheet"
+          href="{{ url 'css/main.min.css' }}">
+    <link rel="stylesheet"
+          href="{{ url 'css/assets.min.css' }}">
+
+
+    <title>{{title}}</title>
+    <script>
+        window.backDates = {
+            captchaKey: "6Ld2iVYmAAAAALcRH5v-9xrbsU12Q0WomqScWDIu",
+            dadataToken: "c2b86703e3e5c3b950d55f0a4cb17cde25026595",
+            yandexApiKey: "e47c8fad-3a78-44f8-ac71-88a60ec3009e",
+            messages: {
+                inn: "Введите корректное значениее",
+                required: "Заполните поле",
+                email: "Введите email",
+                emailBlacklist: "Введите корпоративную почту",
+                phone: "Введите телефон",
+                minLength: "Введите не менее $1 символов",
+                maxLength: "Макс. кол-во символов: $1",
+                acceptTerms: "Примите условия",
+                onlyNumbers: "Неверные символы",
+                cyrLatName: "Неверные символы",
+                cyrText: "Неверные символы",
+                latNumbers: "Неверные символы",
+                fileSize: "Максимальный размер файла: $1MB",
+                fileInvalid: "Недопустимый файл",
+                fileCount: "Максимальный количество файлов: $1",
+                passRepeat: "Пароли не совпадают",
+                passNew: "Новый пароль совпадает со старым",
+                password: "Неверные символы",
+                rangeLength: "Неверные данные",
+                innList: "Выберите ИНН из списка",
+                maxValue: "Максимальное значение $1",
+                numbersOnly: "необходимо ввести цифры",
+                minValue: "Миниимальное значение $1",
+                fileExtensions: "Допустимые разрешения фалов: $1",
+                invalidBirthday: "Недопустимая дата",
+                telegram: "Недопустимый формат"
+            },
+        };
+
+    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e47c8fad-3a78-44f8-ac71-88a60ec3009e&lang=ru_RU"
+            type="text/javascript"></script>
+
+</head>
+
+
+<body>
+
+
+    <div class="site-wrap">
+        {{!-- {{> components/header}} --}}
+        <main class="main">
+            {{#if breadcrumbs}}
+            {{> components/breadcrumbs list=breadcrumbs }}
+            {{/if}}
+            {{#if titleValue}}
+            <h1>{{titleValue}}</h1>
+            {{/if}}
+            {{> @partial-block }}
+        </main>
+        <div class="b-block-video__modal js-video-modal-wrap"></div>
+
+        {{> shared/footer}}
+
+    </div>
+    <script src="{{ url 'js/assets.min.js' }}"></script>
+    <script src="{{ url 'js/main.min.js' }}"></script>
+</body>
+
+</html>

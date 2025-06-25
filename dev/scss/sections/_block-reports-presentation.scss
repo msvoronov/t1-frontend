@@ -1,0 +1,154 @@
+$block-name: "block-reports-presentation";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+
+
+  &__wrap {
+
+  }
+
+  a {
+    text-decoration: unset !important;
+  }
+
+  &__filter {
+    @include flex(row, $gap: 4px);
+    @include flex-wrap();
+    margin-bottom: 24px;
+
+    &__item {
+      cursor: pointer;
+
+      input {
+        display: none;
+
+        &:checked~.#{$block-name}__filter__item__btn {
+          @include color(#fff);
+          @include bg-color(#00AAE6);
+        }
+      }
+      
+      &__btn {
+        @include bg-color(#F3F3F6);
+        @include font-size(16px, 22.4px, 500);
+        @include transition(#{background-color, color});
+        
+        border-radius: 60px;
+        
+        padding: 8px 24px;
+        
+        @include hover() {
+          @include bg-color(#cdcdce);
+
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include flex($gap: 24px 16px);
+    @include flex-wrap();
+    
+    @include media-max-md() {
+      @include flex($gap: 16px);
+
+    }
+  }
+
+  &__item {
+    display: none;
+
+    $gap: 16px;
+    $count: 3;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    @include media-max-md() {
+      $gap: 16px;
+    $count: 2;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    }
+
+    @include media-max-s() {
+      @include max-size(100%);
+    }
+
+    &.active {
+      @include flex(column, $gap: 16px);
+      
+      @include media-max-s() {
+        @include flex(column, $gap: 8px);
+
+      }
+    }
+
+    &__img {
+      aspect-ratio: 498 / 280;
+
+      @include size(100%);
+
+      border-radius: 16px;
+      overflow: hidden;
+      
+      @include media-max-s() {
+        border-radius: 8px;
+      }
+      img {
+        @include size(100%);
+        object-fit: contain;
+      }
+    }
+
+    &__title {
+      @include font-size(20px, 28px, 500);
+      letter-spacing: -0.03em;
+      
+      @include media-min-xxl() {
+        @include font-size(1rem, 1.2, 500);
+      }
+      @include media-max-s() {
+        @include font-size(16px, 24px, 500);
+
+      }
+    }
+
+    &__link {
+      @include font-size(20px, 28px, 500);
+      @include color(#00AAE6);
+      @include size(fit-content);
+      @include flex(row, center, center, $gap: 10px);
+      @include bg-color(#F7F7F8);
+      @include transition(background-color);
+      
+      letter-spacing: -0.03em;
+
+      border-radius: 30px;
+      @include media-min-xxl() {
+        @include font-size(1rem, 1.2, 500);
+      }
+      padding: 8px 20px;
+
+      svg {
+        @include size(20px, 20px);
+
+        @include media-min-xxl() {
+          @include size(100%, 100%);
+        }
+      }
+      
+      @include hover() {
+        @include bg-color(#EFEFF2);
+
+      }
+
+      @include media-max-s() {
+        @include font-size(16px, 24px, 500);
+
+      }
+    }
+  }
+}

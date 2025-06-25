@@ -1,0 +1,75 @@
+<div class="b-block-career-form b-block-career-form-new block-computing-systems-form" id="form">
+  <div class="b-block-career-form__wrap js-b-form">
+    <div class="b-block-career-form-new__title-wrap">
+
+      <div class="b-block-career-form-new__title">Получить консультацию<br> по вычислительным<br> комплексам</div>
+    </div>
+    <form action="http://127.0.0.1:3000"
+      class="b-block-career-form__form b-career-form form js-b-form__form js-form-validate">
+      <input class="js-url-query" type="hidden" name="url_query">
+      <div class="b-block-career-form__inputs-wrap js-b-form-inputs active">
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Как к вам обращаться?<span class="required">*</span></span>
+            <input type="text" name="name" id="" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Email<span class="required">*</span></span>
+            <input type="email" name="email" id="" class="b-career-form__field__input js-b-input__field" data-required
+              data-email>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Телефон<span class="required">*</span></span>
+            <input type="tel" name="tel" id="" class="b-career-form__field__input js-b-input__field js-phone-mask"
+              data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <label class="b-career-form__checkbox">
+          <input type="checkbox" name="tel" id="" class="b-career-form__checkbox__input js-b-input__field"
+            data-required>
+          <span class="b-career-form__checkbox__holder"></span>
+          <span class="b-career-form__checkbox__label">Даю согласие на <a
+              href="https://t1.ru/documents/personal_data_politics/" target="_blank"
+              class="b-career-form__checkbox__link">обработку персональных данных</a></span>
+          <span class="alert-input-text"></span>
+        </label>
+        <label class="b-career-form__checkbox">
+          <input type="checkbox" name="tel" id="" class="b-career-form__checkbox__input">
+          <span class="b-career-form__checkbox__holder"></span>
+          <span class="b-career-form__checkbox__label">Я согласен на <a
+              href="https://t1.ru/documents/SOPD_personal_data_ad.pdf" target="_blank"
+              class="b-career-form__checkbox__link">получение
+              рекламы</a></span>
+          <span class="alert-input-text"></span>
+        </label>
+
+        <button type="submit" class="b-career-form__btn btn-white js-b-form-submit">Узнать подробнее</button>
+
+      </div>
+      <div class="b-block-career-form__response-success js-b-form-success">
+        {{{getImg src="form/success-img.png"}}}
+        <span class="b-block-career-form__response-msg">Спасибо! Заявка принята.</span>
+        <span class="b-block-career-form__response-msg">Письма будут приходить на указанный в заявке email.</span>
+        <span class="b-block-career-form__response-msg">Вопросы о стажировке в Т1 направляй на <a
+            href="mailto:future@t1.ru">future@t1.ru</a></span>
+      </div>
+      <div class="b-block-career-form__response-error js-b-form-error">
+        {{{getImg src="form/back.png"}}}
+        <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+        <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+      </div>
+      <div class="b-block-career-form__loader js-b-form-loader">
+        {{{getImg src="form/loader.png"}}}
+      </div>
+    </form>
+  </div>
+</div>

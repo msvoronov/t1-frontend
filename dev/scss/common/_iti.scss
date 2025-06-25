@@ -1,0 +1,67 @@
+.iti__selected-dial-code {
+  display: none;
+
+}
+
+.iti {
+  --iti-path-flags-1x: url('/assets/img/iti/flags.webp');
+  --iti-path-flags-2x: url('/assets/img/iti/flags@2x.webp');
+  --iti-path-globe-1x: url('/assets/img/iti/globe.webp');
+  --iti-path-globe-2x: url('/assets/img/iti/globe@2x.webp');
+
+    @include size(100%);
+  // --iti-path-flags-1x: url('/local/templates/t1-new/assets/img/iti/flags.webp');
+  // --iti-path-flags-2x: url('/local/templates/t1-new/assets/img/iti/flags@2x.webp');
+  // --iti-path-globe-1x: url('/local/templates/t1-new/assets/img/iti/globe.webp');
+  // --iti-path-globe-2x: url('/local/templates/t1-new/assets/img/iti/globe@2x.webp');
+} 
+
+.iti__country-name {
+  @include font-size(18px, 20px, 500);
+  @include color(#000);
+}
+
+.iti__country-container {
+  @include size(100%);
+}
+
+.iti__selected-country {
+  right: 0;
+  position: absolute !important;
+}
+
+.iti__dropdown-content {
+  top: calc(100% + 16px);
+  border-radius: 16px !important;
+  padding: 10px 0;
+
+  @include transition(#{opacity, transform});
+  transform: translateY(0);
+
+  &.iti__hide {
+    transform: translateY(10px);
+  }
+}
+.iti--inline-dropdown .iti__dropdown-content {
+  border: unset !important;
+} 
+.iti__country-list {
+
+    &::-webkit-scrollbar {
+      @include size(6px);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      @include bg-color(#d8d8d8);
+      border-radius: 3px;
+    }
+}
+
+.iti__tel-input {
+  padding-left: 0 !important;
+  @include size(100%);
+
+  &::placeholder {
+    @include color(transparent);
+  }
+}

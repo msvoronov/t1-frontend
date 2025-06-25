@@ -1,0 +1,15 @@
+<div class="block-silaron-steps">
+  <div class="block-silaron-steps__wrap">
+    {{#each list}}
+      <div class="block-silaron-steps__item">
+        <div class="block-silaron-steps__icon">
+          {{{getSvg src=img }}}
+        </div>
+        <div class="block-silaron-steps__descr">{{descr}}</div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="block-silaron-steps__img">
+    {{{getImg src="silaron/silaron-img.png"}}}
+  </div>
+</div>

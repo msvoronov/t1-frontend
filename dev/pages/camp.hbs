@@ -1,0 +1,41 @@
+{{#> layouts/main title='ИТ-лагерь Т1' titleValue="ИТ-лагерь Т1" breadcrumbs=this.store.breadcrumbs.camp }}
+
+  {{#with this.store.banner.camp}}
+    {{> sections/block-banner}}
+    {{> shared/section__title}}
+  {{/with}}
+  {{#with this.store.campProposals}}
+    {{> shared/section__title}}
+    {{> sections/block-steps}}
+  {{/with}}
+  {{#with this.store.campProgram}}
+    {{> shared/section__title}}
+    {{> sections/block-blue-slider className="camp"}}
+  {{/with}}
+  {{#with this.store.campDirections}}
+    {{> shared/section__title}}
+    {{> sections/block-culture-slider classNames="camp"}}
+  {{/with}}
+  {{#with this.store.stepsCamp}}
+    {{> shared/section__title}}
+    {{> sections/block-steps}}
+  {{/with}}
+  {{#with this.store.campExpectations}}
+    {{> shared/section__title}}
+    {{> sections/block-steps}}
+  {{/with}}
+  {{#with this.store.imgSliders.camp}}
+    {{> shared/section__title}}
+    {{> sections/block-img-slider stickyArrows=true}}
+  {{/with}}
+  {{#with this.store.expertiseCamp}}
+    {{> shared/section__title}}
+    {{> sections/block-expertise className="row-3"}}
+  {{/with}}
+  {{> sections/block-career-form-camp}}
+  {{#with this.store.campFaq}}
+    {{> shared/section__title}}
+    {{> sections/block-accordion}}
+  {{/with}}
+  {{> sections/block-feedback}}
+{{/layouts/main}}

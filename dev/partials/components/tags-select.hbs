@@ -1,0 +1,24 @@
+<div class="tags-select js-c-tags-select">
+    <input type="hidden" class="js-direction-input js-b-input__field" name="direction" {{#if required}} data-required {{/if}}>
+    <div class="tags-select__label js-c-dropdown-trigger">
+        <div class="tags-select__label__text">{{title}}{{#if required}}<span class="required">*</span>{{/if}}</div>
+        <div class="tags-select__label__arrow">
+            {{{getSvg src="arrow-select"}}}
+        </div>
+        <div class="tags-select__tags-wrap js-tags-wrap"></div>
+    </div>
+    <div class="tags-select__dropdown">
+       <ul class="tags-select__list">
+            {{#each list}}
+            <li class="tags-select__list__item js-c-list-item" data-index="{{@index}}">
+                <label class="tags-select__list__item__label b-career-form__checkbox">
+                    <input type="checkbox" name="{{value}}" class="b-career-form__checkbox__input js-tag-checkbox">
+                    <span class="b-career-form__checkbox__holder"></span>
+                    <span class="tags-select__list__item__label-text js-c-short-name">{{label}}</span>
+                </label>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <span class="alert-input-text"></span>
+</div>

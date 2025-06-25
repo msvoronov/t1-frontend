@@ -1,0 +1,29 @@
+{
+    "title": "Входим в топ рейтингов и гордимся достижениями команды",
+    "link": {
+        "label": "Все премии и награды",
+        "href": "#"
+    },
+    "list": [
+        {
+            "label": "CNews Analytics 2022 (1 место)",
+            "descr": "Среди компаний-разработчиков ПО и интеграторов",
+            "img": "achievements/achievements__img__1.png"
+        },
+        {
+            "label": "TAdviser100 2021 (2 место)",
+            "descr": "Крупнейшие поставщики ИТ-услуг",
+            "img": "achievements/achievements__img__2.png"
+        },
+        {
+            "label": "RAEX 2022 (2 место)",
+            "descr": "В области ИКТ в России",
+            "img": "achievements/achievements__img__3.png"
+        },
+        {
+            "label": "CNews AWARDS 2021",
+            "descr": "Компания года",
+            "img": "achievements/achievements__img__4.png"
+        }
+    ]
+}

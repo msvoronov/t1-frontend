@@ -1,0 +1,44 @@
+{
+  "title": "Вендоры",
+  "descr": "Наш портфель включает 300+ ведущих отечественных производителей и их число постоянно растёт. Глубокая экспертиза по продуктам и высокие партнёрские статусы обеспечивают качество работ и доступные цены",
+  "list": [
+    {
+        "img": "vendors/vendors__1"
+    },
+    {
+        "img": "vendors/vendors__2"
+    },
+    {
+        "img": "vendors/vendors__3"
+    },
+    {
+        "img": "vendors/vendors__4"
+    },
+    {
+        "img": "vendors/vendors__5"
+    },
+    {   "isImg": true,
+        "img": "vendors/vendors__6.png"
+    },
+    {
+        "img": "vendors/vendors__7"
+    },
+    {
+        "isImg": true,
+        "img": "vendors/vendors__8.png"
+    },
+    {
+        "img": "vendors/vendors__9"
+    },
+    {
+        "img": "vendors/vendors__10"
+    },
+    {
+        "isImg": true,
+        "img": "vendors/vendors__11.png"
+    },
+    {
+        "img": "vendors/vendors__12"
+    }
+  ]
+}

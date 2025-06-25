@@ -1,0 +1,98 @@
+$block-name: "block-digital-transformation-banner";
+
+.#{$block-name} {
+
+  padding: 0 0 88px;
+
+
+  
+  @include media-max-md() {
+    padding: 0 0 48px;
+
+  }
+  @include media-max-s() {
+    padding: 0 0 48px;
+
+  }
+
+  &__wrap {
+    @include flex();
+    @include bg-color(#2FB4FF);
+    @include position(relative);
+    @include min-size(null, 552px);
+
+    
+    padding: 48px;
+    
+    border-radius: 16px;
+    overflow: hidden;
+    
+    
+    
+    @include media-max-md() {
+      padding: 48px 16px;
+    }
+    @include media-max-s() {
+      @include min-size(null, 548px);
+      padding: 12px;
+      border-radius: 8px;
+    }
+    
+  }
+
+
+
+
+  &__img {
+    @include position(absolute, $bottom: -40px, $right: -191px);
+    
+    @include image-wrap(100%, 100%, contain);
+    
+    @include size(1264px, unset);
+    
+    @include media-max-md() {
+      @include position(absolute, $bottom: -17px, $right: -109px);
+      @include size(880px, unset);
+    }
+    
+    @include media-max-s() {
+      @include position(absolute, $bottom: 0, $right: -133px);
+      @include size(651px, unset);
+    }
+  }
+
+  &__title {
+    @include font-size(64px, 1, 500);
+    @include color(#fff);
+    @include max-size(912px);
+    
+    letter-spacing: -2.6px;
+    
+    @include media-max-md() {
+      @include font-size(48px, 1, 500);
+      @include max-size(400px);
+
+    }
+    @include media-max-s() {
+      @include font-size(36px, 1, 500);
+
+    }
+
+  }
+
+  &__btn {
+    @include flex(row, center, center, 10px);
+    @include font-size(20px, 1.4, 500);
+   letter-spacing: -0.8px;
+
+    svg {
+      @include size(24px, 24px);
+    }
+
+  }
+  
+  &__content {
+    @include flex(column, space-between);
+      @include position(relative);
+  }
+}

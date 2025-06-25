@@ -1,0 +1,21 @@
+<div class="b-block-accordion-new{{#if classNames}} {{classNames}}{{/if}}">
+    <div class="b-block-accordion-new__wrap">
+        {{#each list}}
+            {{#> accordion/accord classNameAccord="b-block-accordion-new__accord" isOpen=isOpen}}
+                {{#> accordion/accord__head classNameAccordHead="b-block-accordion-new__trigger"}}
+                    <div class="b-block-accordion-new__trigger__text">
+                        {{label}}
+                    </div>
+                    <div class="b-block-accordion-new__trigger__cross accord__cross"></div>
+                {{/accordion/accord__head}}
+                {{#> accordion/accord__body }}
+                    <div class="b-block-accordion-new__body">
+                        <p class="b-block-accordion-new__descr">
+                            {{{descr}}}
+                        </p>
+                    </div>
+                {{/accordion/accord__body}}
+            {{/accordion/accord}}
+        {{/each}}
+    </div>
+</div>

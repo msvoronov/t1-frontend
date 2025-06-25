@@ -1,0 +1,16 @@
+<div class="b-block-expertise">
+    <div class="b-block-expertise__wrap{{#if className}} {{className}}{{/if}}">
+        {{#each list}}
+        <a href="{{href}}" class="b-block-expertise__item">
+            {{{getSvg src=icon}}}
+            {{label}}
+        </a>
+        {{/each}}
+    </div>
+    {{#if link}}
+        <a href="{{link.href}}" class="section__link section__link--mob">
+			{{link.label}}
+			{{{getSvg src="arrow-link"}}}
+		</a>
+    {{/if}}
+</div>

@@ -1,0 +1,93 @@
+$block-name: "block-stats";
+
+.#{$block-name} {
+  padding: 0 0 72px;
+  
+  @include media-max-md() {
+    padding: 0 0 48px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @include media-max-md() {
+      @include flex();
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+
+    $gap: 8px;
+    $count: 2;
+    @include size(100%);
+
+    &--card-0 {
+      @include max-size(calc((58% - ($gap * 0.5))))
+    }
+    &--card-1 {
+      @include max-size(calc((42% - ($gap * 0.5))))
+      
+    }
+    
+    &--card-2 {
+      @include max-size(calc((50% - ($gap * 0.5))))
+      
+    }
+    &--card-3 {
+      @include max-size(calc((50% - ($gap * 0.5))))
+      
+    }
+
+    
+    @include bg-color(#F3F3F6);
+    padding: 16px;
+    border-radius: 16px;
+    
+    @include media-max-md() {
+      $gap: 8px;
+      $count: 2;
+
+      
+      &--card-0,
+      &--card-1,
+      &--card-2,
+      &--card-3 {
+        @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+      }
+    }
+    @include media-max-s() {
+      @include max-size(100%);
+
+      border-radius: 12px;
+      border-radius: 8px;
+    }
+    
+    &__label {
+      @include font-size(64px, 1, 500);
+          letter-spacing: -2.6px;
+      &.plus::after {
+          content: "+";
+          @include color(#00aae6);
+        }
+
+      @include media-max-md() {
+        @include font-size(48px, 1, 500);
+      }
+      @include media-max-s() {
+        @include font-size(40px, 1, 500);
+      }
+    }
+    
+    &__descr {
+      @include font-size(16px, 1.4, 500);
+      letter-spacing: -0.5px;
+      @include media-max-md() {
+        @include font-size(14px, 1.4, 500);
+      }
+    }
+  }
+}

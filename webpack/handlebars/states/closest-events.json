@@ -1,0 +1,60 @@
+{
+  "title": "Ближайшие события с участием Т1",
+  "list": [
+    {
+      "label": "Студфест: Т1 на студенческом фестивале",
+      "descr": "25 января · Москва",
+      "img": "closest-events/event__item__1.png"
+    },
+    {
+      "label": "T1 Analyst meetup #1",
+      "descr": "15 февраля · Москва",
+      "img": "closest-events/event__item__2.png"
+    },
+    {
+      "label": "Выставка \"Россия\": ИТ-программа от Т1",
+      "descr": "2 марта · Москва · Online",
+      "img": "closest-events/event__item__3.png",
+      "link": "https://t1.ru/news/item/kholding-t1-na-vystavke-rossiya-predstavit-sobstvennuyu-programmu-dlya-znakomstva-shkolnikov-i-stude/"
+    },
+    {
+      "label": "Студфест: Т1 на студенческом фестивале",
+      "descr": "25 января · Москва",
+      "img": "closest-events/event__item__1.png"
+    },
+    {
+      "label": "T1 Analyst meetup #1",
+      "descr": "15 февраля · Москва",
+      "img": "closest-events/event__item__2.png"
+    },
+    {
+      "label": "Выставка \"Россия\": ИТ-программа от Т1",
+      "descr": "2 марта · Москва · Online",
+      "img": "closest-events/event__item__3.png",
+      "link": "https://t1.ru/news/item/kholding-t1-na-vystavke-rossiya-predstavit-sobstvennuyu-programmu-dlya-znakomstva-shkolnikov-i-stude/"
+    },
+    {
+      "label": "Выставка \"Россия\": ИТ-программа от Т1",
+      "descr": "2 марта · Москва · Online",
+      "img": "closest-events/event__item__3.png",
+      "link": "https://t1.ru/news/item/kholding-t1-na-vystavke-rossiya-predstavit-sobstvennuyu-programmu-dlya-znakomstva-shkolnikov-i-stude/"
+    },
+    {
+      "label": "T1 Analyst meetup #1",
+      "descr": "15 февраля · Москва",
+      "img": "closest-events/event__item__2.png"
+    },
+    {
+      "label": "Выставка \"Россия\": ИТ-программа от Т1",
+      "descr": "2 марта · Москва · Online",
+      "img": "closest-events/event__item__3.png",
+      "link": "https://t1.ru/news/item/kholding-t1-na-vystavke-rossiya-predstavit-sobstvennuyu-programmu-dlya-znakomstva-shkolnikov-i-stude/"
+    },
+    {
+      "label": "Выставка \"Россия\": ИТ-программа от Т1",
+      "descr": "2 марта · Москва · Online",
+      "img": "closest-events/event__item__3.png",
+      "link": "https://t1.ru/news/item/kholding-t1-na-vystavke-rossiya-predstavit-sobstvennuyu-programmu-dlya-znakomstva-shkolnikov-i-stude/"
+    }
+  ]
+}

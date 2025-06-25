@@ -1,0 +1,89 @@
+$block-name: "block-silaron-stats";
+
+.#{$block-name} {
+
+  padding: 48px 0;
+
+  .section__descr {
+    font-weight: 400;
+  }
+
+  &__title {
+    @include font-size(36px, 39.6px, 500);
+    margin-bottom: 32px;
+    
+    @include media-max-md() {
+      @include font-size(28px, 33.6px, 500);
+    }
+    
+    @include media-max-s() {
+      @include font-size(24px, 28.8px, 500);
+      margin-bottom: 24px;
+    }
+  }
+
+  &__wrap {
+    @include flex($gap: 16px);
+    @include flex-wrap();
+    
+    @include media-max-s() {
+      @include flex($gap: 12px);
+    }
+  }
+
+  &__item {
+
+    $gap: 16px;
+    $count: 3;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    @include bg-color(rgba(243, 243, 246, 1));
+
+    padding: 16px;
+    border-radius: 16px;
+    
+    @include media-max-md() {
+      
+      $gap: 16px;
+      $count: 2;
+      
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    }
+    
+    @include media-max-s() {
+      @include max-size(100%);
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    &__title {
+      @include font-size(28px, 32px, 500);
+      letter-spacing: -0.02em;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      
+      @include media-max-md() {
+        margin-top: 24px;
+        @include font-size(28px, 32px, 500);
+        
+      }
+      @include media-max-s() {
+        @include font-size(24px, 28px, 500);
+      }
+    }
+    
+    &__descr {
+      @include font-size(20px, 28px, 500);
+      @include color(rgba(104, 125, 146, 1));
+
+      letter-spacing: -0.02em;
+      
+      @include media-max-s() {
+        @include font-size(16px, 24px, 500);
+      }
+    }
+  }
+}

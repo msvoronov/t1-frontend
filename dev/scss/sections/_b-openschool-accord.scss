@@ -1,0 +1,67 @@
+$block-name: "b-openschool-accord";
+
+.#{$block-name} {
+
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+
+  .b-block-accordion-new__trigger__text {
+    @include font-size(20px, 1.4, 500);
+
+    @include media-max-s() {
+      @include font-size(20px, 24px, 500);
+
+    }
+  }
+
+  &__content {
+    @include flex(column, $gap: 16px);
+
+    &__subtitle {
+      @include font-size(20px, 28px, 500);
+      letter-spacing: -0.02em;
+
+      margin-bottom: 8px;
+
+      @include media-max-s() {
+        @include font-size(16px, 24px, 500);
+
+      }
+    }
+
+    &__list-item {
+      @include position(relative);
+
+      &::before {
+        content: "";
+        @include position(absolute, $top: 9px, $left: -18px);
+        @include bg-color(#A5B4C3);
+        @include size(6px, 6px);
+
+        border-radius: 50%;
+      }
+    }
+
+    &__list {
+      @include font-size(20px, 1.2, 500);
+      @include color(#A5B4C3);
+      letter-spacing: -0.02em;
+
+      @include media-max-s() {
+        @include font-size(16px, 24px, 500);
+
+      }
+
+    }
+
+    &__btn {
+      @include font-size(16px, 1.2, 500);
+      letter-spacing: -0.03em;
+
+      padding: 6px 16px;
+    }
+  }
+}

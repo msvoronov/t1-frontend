@@ -1,0 +1,35 @@
+{{#> layouts/main title='Силарон' breadcrumbs=this.store.breadcrumbs.silaron}}
+
+  {{> sections/block-silaron-banner }}
+
+  
+  {{> sections/block-silaron-stats }}
+
+  {{#with this.store.silaronSlider}}
+    {{> sections/block-img-slider stickyArrows=true}}
+  {{/with}}
+
+  {{> sections/block-silaron-list }}
+  
+  {{#with this.store.silaronCards}}
+    {{> sections/block-silaron-cards }}
+  {{/with}}
+
+  {{#with this.store.silaronSteps}}
+    {{> shared/section__title title="Функции системы"}}
+    {{> sections/block-silaron-steps }}
+  {{/with}}
+
+
+
+  {{#with this.store.silaronCertificates}}
+
+    {{> sections/block-silaron-certificates }}
+  {{/with}}
+  {{#with this.store.silaronAwards}}
+    {{> shared/section__title title="Награды и премии"}}
+    {{> sections/block-silaron-awards }}
+  {{/with}}
+
+    {{> sections/block-silaron-form }}
+{{/layouts/main}}

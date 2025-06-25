@@ -1,0 +1,150 @@
+<div class="b-block-career-form b-block-career-form-new olympic" id="form">
+  <div class="b-block-career-form__wrap js-b-form">
+    <div class="b-block-career-form-new__title-wrap">
+
+      <div class="b-block-career-form-new__title">Принять участие</div>
+    </div>
+    <form action=""
+      class="b-block-career-form__form b-career-form form js-b-form__form js-form-validate">
+      <input class="js-url-query" type="hidden" name="url_query">
+      <div class="b-block-career-form__inputs-wrap js-b-form-inputs active">
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Имя<span class="required">*</span></span>
+            <input type="text" name="name" id="" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Фамилия<span class="required">*</span></span>
+            <input type="text" name="surname" id="" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          
+        </div>
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Отчество</span>
+            <input type="text" name="second-name" id="" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Дата рождения<span class="required">*</span></span>
+            <input type="text" name="legal-address-date" class="b-career-form__field__input js-b-input__field js-olympic-date"
+              data-required data-age onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" data-max-age="18" data-min-age="7">
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <div class="b-career-form__row">
+          {{> search-select/search-select classNames="js-country-select"}}
+
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Город<span class="required">*</span></span>
+            <input type="text" name="city" id="" class="b-career-form__field__input js-b-input__field" data-max-length="60"
+              data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+        <div class="b-career-form__row search-select__other js-c-search-input-other">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Напиши свой вариант<span class="required">*</span></span>
+            <input type="text" name="country-other" id="" class="b-career-form__field__input js-b-input__field"
+              data-required-hidden="">
+            <span class="alert-input-text"></span>
+          </label>
+        
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Дата рождения<span class="required">*</span></span>
+            <input type="text" name="legal-address-date" min="2017-04-01" max="2017-04-20" data-min="7" data-max="18" class="b-career-form__field__input js-b-input__field"
+              data-required onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Название учебного заведения<span class="required">*</span></span>
+            <input type="text" name="education" id="" class="b-career-form__field__input js-b-input__field" data-max-length="60"
+              data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">В каком классе обучаешься (1-11)<span class="required">*</span></span>
+            <input type="text" name="grade" id="" class="b-career-form__field__input js-b-input__field" data-numbers-max-length="2" data-max-value="11" data-min-value="1" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Телефон<span class="required">*</span></span>
+            <input type="tel" name="tel" id="" class="b-career-form__field__input js-b-input__field js-country-phone" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">E-mail<span class="required">*</span></span>
+            <input type="email" name="email" id="" class="b-career-form__field__input js-b-input__field" data-required
+              data-email>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Telegram<span class="required">*</span></span>
+            <input type="text" name="telegram" id="" class="b-career-form__field__input js-b-input__field js-telegram-mask"
+              data-telegram data-max-length="32" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Откуда узнал про олимпиаду<span class="required">*</span></span>
+            <input type="text" name="source" id="" class="b-career-form__field__input js-b-input__field" data-max-length="60"
+              data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <label class="b-career-form__checkbox">
+          <input type="checkbox" name="tel" id="" class="b-career-form__checkbox__input js-b-input__field"
+            data-required>
+          <span class="b-career-form__checkbox__holder"></span>
+          <span class="b-career-form__checkbox__label">Даю согласие на <a
+              href="https://t1.ru/documents/personal_data_politics/" target="_blank"
+              class="b-career-form__checkbox__link js-olympic-policy">обработку персональных данных</a></span>
+          <span class="alert-input-text"></span>
+        </label>
+        <label class="b-career-form__checkbox">
+          <input type="checkbox" name="tel" id="" class="b-career-form__checkbox__input">
+          <span class="b-career-form__checkbox__holder"></span>
+          <span class="b-career-form__checkbox__label">Я согласен на <a
+              href="https://t1.ru/documents/SOPD_personal_data_ad.pdf" target="_blank"
+              class="b-career-form__checkbox__link">получение
+              рекламы</a></span>
+          <span class="alert-input-text"></span>
+        </label>
+
+        <button type="submit" class="b-career-form__btn btn-white js-b-form-submit">Отправить</button>
+
+      </div>
+      <div class="b-block-career-form__response-success js-b-form-success">
+        {{{getImg src="form/success-img.png"}}}
+        <span class="b-block-career-form__response-msg">Спасибо, что заполнили анкету! </span>
+        <span class="b-block-career-form__response-msg">Для завершения регистрации необходимо перейти по ссылке из письма, которое было отправлено на почту, указанную при
+        регистрации на олимпиаду Т1 ГенИИ</span>
+        <span class="b-block-career-form__response-msg">Вопросы о стажировке в Т1 направляй на <a
+            href="mailto:future@t1.ru">future@t1.ru</a></span>
+      </div>
+      <div class="b-block-career-form__response-error js-b-form-error">
+        {{{getImg src="form/back.png"}}}
+        <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+        <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+      </div>
+      <div class="b-block-career-form__loader js-b-form-loader">
+        {{{getImg src="form/loader.png"}}}
+      </div>
+    </form>
+  </div>
+</div>

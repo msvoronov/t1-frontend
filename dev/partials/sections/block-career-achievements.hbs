@@ -1,0 +1,19 @@
+<div class="b-block-career-achievements">
+    <div class="b-block-career-achievements__wrap">
+        {{#each list}}
+        <div class="b-block-career-achievements__item">
+            <div class="b-block-career-achievements__item__img">
+                {{{getImg src=img}}}
+            </div>
+            <div class="b-block-career-achievements__item__label">{{label}}</div>
+            <div class="b-block-career-achievements__item__descr">{{descr}}</div>
+        </div>
+        {{/each}}
+    </div>
+    {{#if link}}
+    <a href="{{link.href}}" class="section__link section__link--mob">
+        {{link.label}}
+        {{{getSvg src="arrow-link"}}}
+    </a>
+    {{/if}}
+</div>

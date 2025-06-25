@@ -1,0 +1,55 @@
+{
+    "title": "Сотрудничаем с крупнейшими игроками рынка во всех отраслях",
+    "descr": "Сегодня заказчиками Холдинга Т1 являются более 600 компаний, среди которых лидеры отраслей с существенной долей инвестиций в ИТ: финансы, ритейл, госсектор, промышленность, телеком, транспорт.",
+    "link": {
+        "label": "Подробнее о  Холдинге Т1",
+        "href": "#"
+    },
+    "list": [
+        {
+            "img": "partners/partners__1.png"
+        },
+        {
+            "img": "partners/partners__2.png"
+        },
+        {
+            "img": "partners/partners__3.png"
+        },
+        {
+            "img": "partners/partners__4.png"
+        },
+        {
+            "img": "partners/partners__5.png"
+        },
+        {
+            "img": "partners/partners__6.png"
+        },
+        {
+            "img": "partners/partners__7.png"
+        },
+        {
+            "img": "partners/partners__8.png"
+        },
+        {
+            "img": "partners/partners__9.png"
+        },
+        {
+            "img": "partners/partners__10.png"
+        },
+        {
+            "img": "partners/partners__11.png"
+        },
+        {
+            "img": "partners/partners__12.png"
+        },
+        {
+            "img": "partners/partners__13.png"
+        },
+        {
+            "img": "partners/partners__14.png"
+        },
+        {
+            "img": "partners/partners__15.png"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+<div class="block-computing-systems-slider{{#if className}} {{className}}{{/if}}">
+  {{#> components/swiper class="block-computing-systems-slider__swiper js-computing-systems-slider" pagination=true}}
+    {{#each slides }}
+      {{#> components/swiper__slide }}
+        <div class="block-computing-systems-slider__slide">
+          <div class="block-computing-systems-slider__slide__content">
+            <div class="block-computing-systems-slider__slide__title">{{slideTitle}}</div>
+            <div class="block-computing-systems-slider__slide__img-mob">
+              {{{getImg src=img}}}
+            </div>
+            {{#each text}}
+            <div class="block-computing-systems-slider__slide__text-block">
+              <div class="block-computing-systems-slider__slide__text-block__title">{{itemTitle}}</div>
+              <div class="block-computing-systems-slider__slide__text-block__descr">{{{descr}}}</div>
+            </div>
+            {{/each}}
+            <div class="block-computing-systems-slider__slide__stats">
+              {{#each stats}}
+                <div class="block-computing-systems-slider__slide__stats__item">
+                  <div class="block-computing-systems-slider__slide__stats__item__value{{#if hasPlus}} hasPlus{{/if}}">{{value}}</div>
+                  <div class="block-computing-systems-slider__slide__stats__item__label">{{label}}</div>
+                </div>
+              {{/each}}
+            </div>
+            <a href="" class="btn-blue">Читать</a>
+          </div>
+          <div class="block-computing-systems-slider__slide__img">
+            {{{getImg src=img}}}
+          </div>
+        </div>
+      {{/components/swiper__slide}}
+    {{/each}}
+  {{/components/swiper}}
+</div>

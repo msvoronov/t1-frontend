@@ -1,0 +1,90 @@
+$block-name: "b-block-career-achievements";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+  margin-bottom: 0 !important;
+
+  a {
+    text-decoration: unset !important;
+  }
+
+  &__wrap {
+    @include flex($gap: 16px);
+    @include flex-wrap();
+  }
+
+  &__item {
+    $gap: 16px;
+    $count: 4;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    // @include hover() {
+    //   .b-block-career-achievements__item__img {
+    //     @include bg-color($gray-light-2);
+
+    //     img {
+    //       @include max-size(80%, 70%);
+    //       transform: translate(-50%, -50%);
+    //     }
+    //   }
+
+    //   .b-block-career-achievements__item__label {
+    //     @include color($blue);
+    //   }
+    // }
+
+    @include media-max-md() {
+      $gap: 16px;
+      $count: 2;
+
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    }
+
+    @include media-max-s() {
+      @include max-size(100%);
+    }
+
+    &__img {
+      @include position(relative);
+      @include bg-color($gray-light);
+      @include transition(background-color);
+
+      padding-top: 62%;
+      margin-bottom: 16px;
+
+      border-radius: 16px;
+
+      @include media-max-md() {
+        border-radius: 8px;
+        margin-bottom: 8px;
+      }
+
+      img {
+        @include position(absolute, $top: 48%, $left: 50%);
+        @include size(100%, 100%);
+        @include max-size(70%, 60%);
+        @include transition(#{max-width, max-height});
+        transform-origin: center;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__label {
+      @include transition(color);
+      @include color(#000);
+    }
+
+    &__label,
+    &__descr {
+      @include font-size(1rem, 1.4, 500);
+      letter-spacing: -0.6px;
+    }
+
+    &__descr {
+      @include color($gray);
+    }
+  }
+}

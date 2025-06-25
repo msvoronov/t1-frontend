@@ -1,0 +1,41 @@
+$block-name: "block-team-slider";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+
+  &__wrap {}
+
+  &__item {
+    @include size(100%);
+    @include max-size(100%);
+
+
+    &__img {
+      @include image-wrap(100%, 100%, contain);
+
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+
+    &__label,
+    &__descr {
+      @include font-size(20px, 1.4, 500);
+         letter-spacing: -.9px;
+      
+      @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+      }
+    }
+
+    &__descr {
+      @include max-size(98%);
+      @include color($gray);
+
+      a {
+        @include color($blue);
+      }
+    }
+  }
+}

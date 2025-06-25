@@ -1,0 +1,50 @@
+<div class="block-accreditation-form__organization">
+  <label class="b-career-form__checkbox">
+    <input type="checkbox" name="personal-data" class="b-career-form__checkbox__input js-b-input__field js-organization-input">
+    <span class="b-career-form__checkbox__holder"></span>
+    <span class="b-career-form__checkbox__label">Саморегулируемая организация (СРО)</span>
+    <span class="alert-input-text"></span>
+  </label>
+  <div class="block-accreditation-form__organization__sro js-organization-wrap">
+  {{#with this.store.accrediatationOrganization}}
+    {{#each list}}
+      <div class="block-accreditation-form__organization__radio-wrap">
+        <div class="block-accreditation-form__organization__radio-wrap__info">
+          <div class="block-accreditation-form__organization__radio-wrap__title">{{title}}</div>
+          <div class="block-accreditation-form__organization__radio-wrap__subtitle">{{subtitle}}</div>
+        </div>
+        <div class="block-accreditation-form__organization__radio-wrap__inputs-wrap">
+          <label class="block-accreditation-form__organization__radio-wrap__label">
+            <input type="radio" name="{{name}}" value="yes">
+            <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+            <span class="block-accreditation-form__organization__radio-wrap__label__text">Да</span>
+          </label>
+          <label class="block-accreditation-form__organization__radio-wrap__label">
+            <input type="radio" name="{{name}}" value="no">
+            <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+            <span class="block-accreditation-form__organization__radio-wrap__label__text">Нет</span>
+          </label>
+        </div>
+      </div>
+    {{/each}}
+  {{/with}}
+  </div>
+  <div class="block-accreditation-form__organization__radio-wrap">
+    <div class="block-accreditation-form__organization__radio-wrap__info">
+      <div class="block-accreditation-form__organization__radio-wrap__title">Наличие сертификатов качества ISO</div>
+      <div class="block-accreditation-form__organization__radio-wrap__subtitle">При наличии, предоставьте скан-копию</div>
+    </div>
+    <div class="block-accreditation-form__organization__radio-wrap__inputs-wrap">
+      <label class="block-accreditation-form__organization__radio-wrap__label">
+        <input type="radio" name="Наличие сертификатов качества ISO" value="yes">
+        <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+        <span class="block-accreditation-form__organization__radio-wrap__label__text">Да</span>
+      </label>
+      <label class="block-accreditation-form__organization__radio-wrap__label">
+        <input type="radio" name="Наличие сертификатов качества ISO" value="no">
+        <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+        <span class="block-accreditation-form__organization__radio-wrap__label__text">Нет</span>
+      </label>
+    </div>
+  </div>
+</div>

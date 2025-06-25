@@ -1,0 +1,39 @@
+<div class="b-block-blue-slider{{#if className}} {{className}}{{/if}}">
+    <span class="b-tabs-switch b-tabs-switch--desk">
+        <div class="b-tabs-switch__wrap">
+            {{#each tags}}
+                <span data-index="{{increment @index}}" class="b-tabs-switch__tab js-b-tabs-switch__tab">
+                    {{this}}
+                </span>
+            {{/each}}
+            <span class="b-tabs-switch__tab-bg js-b-tabs-switch__tab-bg"></span>
+        </div>
+    </span>
+    <span class="b-tabs-switch b-tabs-switch--mob">
+        {{#> components/swiper class="js-tabs-swiper"}}
+            {{#each tags }}
+                {{#> components/swiper__slide }}
+                    <span data-index="{{increment @index}}" class="b-tabs-switch__tab js-b-tabs-switch__mob-tab">
+                        {{this}}
+                    </span>
+                {{/components/swiper__slide}}
+            {{/each}}
+        {{/components/swiper}}
+    </span>
+    {{#> components/swiper class="b-block-blue-slider__swiper js-block-blue-slider" pagination=true}}
+        {{#each list }}
+            {{#> components/swiper__slide }}
+                <div class="b-block-blue-slider__item">
+                    <div class="b-block-blue-slider__item__info">
+                        <div class="b-block-blue-slider__item__label">{{{label}}}</div>
+                        <div class="b-block-blue-slider__item__descr">{{{descr}}}</div>
+                        {{#if href}}
+                        <a href="{{href}}" class="b-block-blue-slider__item__link btn-white">Присоединиться</a>
+                        {{/if}}
+                    </div>
+                    <div class="b-block-blue-slider__item__img">{{{getImg src=img}}}</div>
+                </div>
+            {{/components/swiper__slide}}
+        {{/each}}
+    {{/components/swiper}}
+</div>

@@ -1,0 +1,35 @@
+<div class="b-openschool-accord b-block-accordion-new">
+  <div class="b-block-accordion-new__wrap">
+    {{#each list}}
+    {{#> accordion/accord classNameAccord="b-block-accordion-new__accord" isOpen=isOpen}}
+    {{#> accordion/accord__head classNameAccordHead="b-block-accordion-new__trigger"}}
+    <div class="b-block-accordion-new__trigger__text">
+      {{title}}
+    </div>
+    <div class="b-block-accordion-new__trigger__cross accord__cross"></div>
+    {{/accordion/accord__head}}
+    {{#> accordion/accord__body }}
+    <div class="b-block-accordion-new__body b-openschool-accord__content">
+      <div class="b-openschool-accord__content__list-wrap">
+        <div class="b-openschool-accord__content__subtitle">Что в программе интенсива</div>
+        <ul class="b-openschool-accord__content__list">
+          {{#each programm}}
+          <div class="b-openschool-accord__content__list-item">{{this}}</div>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="b-openschool-accord__content__list-wrap">
+        <div class="b-openschool-accord__content__subtitle">Что мы ждем от кандидатов</div>
+        <ul class="b-openschool-accord__content__list">
+          {{#each requirements}}
+          <div class="b-openschool-accord__content__list-item">{{this}}</div>
+          {{/each}}
+        </ul>
+      </div>
+      <a href="{{href}}" class="b-openschool-accord__content__btn btn-blue">Подробнее</a>
+    </div>
+    {{/accordion/accord__body}}
+    {{/accordion/accord}}
+    {{/each}}
+  </div>
+</div>

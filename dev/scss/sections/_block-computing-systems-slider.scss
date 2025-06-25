@@ -1,0 +1,122 @@
+$block-name: "block-computing-systems-slider";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+
+  .btn-blue {
+    @include hover() {
+      color: #fff !important;
+    }
+  }
+
+  a {
+    text-decoration: unset;
+  }
+  &__slide {
+    @include bg-color(#F7F7F8);
+    @include flex(row, space-between, $gap: 24px);
+
+    border-radius: 16px;
+    padding: 48px;
+    padding-bottom: 56px;
+    
+    @include media-max-md() {
+      border-radius: 8px;
+      padding: 14px;
+
+    }
+
+    &__img-mob {
+      display: none; 
+      img {
+        @include image-wrap(100%, 100%, contain);
+      }
+
+      @include media-max-md() {
+        @include flex();
+        @include size(100%);
+        @include max-size(244px);
+        margin-bottom: 24px;
+      }
+      
+      @include media-max-s() {
+        @include max-size(100%);
+        margin-bottom: 16px;
+      }
+    }
+
+    &__content {
+      @include size(100%);
+    }
+
+    &__title {
+      @include font-size(28px, 33.6px, 500);
+      letter-spacing: -0.03em;
+
+      margin-bottom: 16px;
+
+    }
+
+    &__text-block {
+
+      margin-bottom: 16px;
+      
+      &:last-child {
+        margin-bottom: 32px;
+      }
+
+      &__title,
+      &__descr {
+        @include font-size(20px, 28px, 500);
+      }
+
+      &__descr,
+      a {
+        @include color(#A5B4C3);  
+      }
+    }
+
+    &__stats {
+      @include flex($gap: 24px);
+      
+      margin-bottom: 32px;
+      
+      @include media-max-s() {
+        @include flex(column, $gap: 12px);
+      }
+
+      &__item {
+        &__value {
+          @include font-size(48px, 48px, 500);
+          letter-spacing: -0.04em;
+
+          &.hasPlus {
+            &::after {
+              content: "+";
+              @include color(#00aae6)
+            }
+          }
+        }
+        
+        &__label {
+          @include font-size(16px, 22.4px, 500);
+
+        }
+      }
+    }
+
+    &__img {
+      @include image-wrap(100%, 100%, contain);
+      @include max-size(244px);
+
+      @include media-max-md() {
+        display: none;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    @include position(absolute, $bottom: 24px);
+    bottom: 24px !important;
+  }
+}

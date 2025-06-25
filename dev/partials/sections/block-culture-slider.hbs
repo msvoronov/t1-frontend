@@ -1,0 +1,26 @@
+<div class="b-block-culture-slider{{#if classNames}} {{classNames}}{{/if}}">
+    {{#> components/swiper class="js-culture-slider" arrows=true}}
+        {{#each list }}
+            {{#> components/swiper__slide }}
+                <div class="b-block-culture-slider__item">
+                    <div class="b-block-culture-slider__item__img">
+                        {{!-- {{{getImg src=img}}} --}}
+                        {{{getImg swiperLazy=true src=img}}}
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div class="b-block-culture-slider__item__label">{{label}}</div>
+                    {{#if descr}}
+                        <div class="b-block-culture-slider__item__descr">{{descr}}</div>
+                    {{/if}}
+                </div>
+            {{/components/swiper__slide}}
+        {{/each}}
+    {{/components/swiper}}
+    <div class="custom-pagination js-custom-pagination"></div>
+    {{#if link}}
+        <a href="{{link.href}}" class="section__link section__link--mob">
+            {{link.label}}
+            {{{getSvg src="arrow-link"}}}
+        </a>
+    {{/if}}
+</div>

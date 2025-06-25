@@ -1,0 +1,15 @@
+<div class="b-block-past-events">
+  <div class="b-block-past-events__wrap">
+    {{#each list}}
+      <a href="#" class="b-block-past-events__item">
+        <div class="b-block-past-events__item__date">{{date}}</div>
+        <div class="b-block-past-events__item__label">{{label}}</div>
+        {{#if img}}
+          <div class="b-block-past-events__item__img">
+            {{{getImg src=img}}}
+          </div>
+        {{/if}}
+      </a>
+    {{/each}}
+  </div>
+</div>

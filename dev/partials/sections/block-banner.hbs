@@ -1,0 +1,19 @@
+<div class="b-block-banner{{#if className}} {{className}}{{/if}}">
+    <div class="b-block-banner__wrap">
+        {{#if img}}
+            <div class="b-block-banner__bg">
+                {{{getPicture src=img s=s}}}
+            </div>
+        {{/if}}
+        <div class="b-block-banner__content">
+            <h2 class="b-block-banner__content__title">{{{ titleLabel }}}</h1>
+            {{#if subtitle}}
+                <div class="b-block-banner__content__subtitle">{{{subtitle}}}</div>
+            {{/if}}
+            {{#if bannerDescr}}
+                <div class="b-block-banner__content__descr">{{{bannerDescr}}}</div>
+            {{/if}}
+            <a href={{href}} class="link btn-blue js-link{{#if btnClass}} {{btnClass}}{{/if}}">{{ link }}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+$block-name: "b-block-internship-hero";
+
+.#{$block-name} {
+    @include position(relative);
+    margin-bottom: 0 !important;
+
+    a {
+        text-decoration: unset !important;
+    }
+
+    &__wrap {
+        @include flex();
+    }
+
+    &__info {
+        @include max-size(912px);
+        // @include min-size(500px); 
+    }
+
+    &__img {
+        @include size(100%, 100%);
+        @include max-size(560px, 560px);
+        @include min-size(280px, 280px);
+        @include position(relative, $top: -100px);
+
+        @include media-max-md() {
+            @include position(relative, $top: 0);
+            @include max-size(400px, 400px);
+            @include min-size(280px, 280px);
+        }
+
+        @include media-max-s() {
+            display: none
+        }
+
+        img {
+            @include size(100%, 100%);
+        }
+    }
+
+    &__descr {
+        @include font-size(1.8rem, 1.1, 500);
+
+        letter-spacing: -1.08px;
+        margin-bottom: 30px;
+
+        @include media-max-s() {
+            margin-bottom: 10px;
+
+        }
+    }
+}

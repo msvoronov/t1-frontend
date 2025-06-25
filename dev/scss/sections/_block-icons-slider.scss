@@ -1,0 +1,77 @@
+$block-name: "block-icons-slider";
+
+.#{$block-name} {
+  padding: 0 0 48px;
+  margin-bottom: 0 !important;
+
+  .section__title {
+    margin-bottom: 0.8rem;
+  }
+
+  .section__text-wrap {
+    margin-bottom: 64px;
+     @include media-max-md() {
+      margin-bottom: 24px;
+    }
+  }
+
+  .swiper {
+    padding-bottom: 20px;
+  }
+  .swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+  }
+
+  a {
+    text-decoration: unset !important;
+
+  }
+
+  &__wrap {
+    @include flex($gap: 16px);
+    @include flex-wrap();
+  }
+
+  &__item {
+
+    @include size(100%, 100%);
+    @include max-size(100%);
+    @include bg-color($gray-light);
+
+    border-radius: 16px;
+    padding: 16px;
+
+    @include media-max-md() {
+      @include size(null, 100%);
+
+    }
+
+
+    &__img {
+      @include image-wrap(100%, null, contain);
+      @include max-size(100px, 100px);
+      margin-bottom: 48px;
+
+      @include media-max-s() {
+        @include max-size(80px, 80px);
+        margin-bottom: 24px;
+
+      }
+    }
+
+    &__label,
+    &__descr {
+      @include font-size(16px, 1.4, 500);
+      letter-spacing: -0.6px;
+    }
+
+    &__descr {
+      @include max-size(98%);
+      @include color($gray);
+
+      a {
+        @include color($blue);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="30.2145" y="40.657" width="9.65799" height="12.4941" fill="#02C2FD"/>
+<rect x="24.6" y="52.8" width="21" height="2.4" rx="1.2" fill="#02C2FD"/>
+<g clip-path="url(#bgblur_0_235_78_clip_path)" data-figma-skip-parse="true"><foreignObject x="2.65511" y="4.46987" width="64.778" height="52.7672"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(6.14px);height:100%;width:100%"></div></foreignObject></g><g data-figma-bg-blur-radius="12.284">
+<rect x="14.9391" y="16.7538" width="40.21" height="28.1992" rx="4.60649" fill="#02C2FD"/>
+<rect x="15.3141" y="17.1288" width="39.46" height="27.4492" rx="4.23149" stroke="white" stroke-opacity="0.15" stroke-width="0.75"/>
+</g>
+<ellipse cx="35.0441" cy="41.3663" rx="1.3715" ry="1.3715" fill="#FFFFFD"/>
+<g clip-path="url(#bgblur_1_235_78_clip_path)" data-figma-skip-parse="true"><foreignObject x="-5.44275" y="-5.72961" width="49.9321" height="49.9321"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(5.41px);height:100%;width:100%"></div></foreignObject></g><g data-figma-bg-blur-radius="10.817">
+<circle cx="19.5233" cy="19.2365" r="14.1491" fill="#00ADE9" fill-opacity="0.1"/>
+<circle cx="19.5233" cy="19.2365" r="13.5215" stroke="white" stroke-opacity="0.15" stroke-width="1.25513"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_235_78_clip_path"><rect x="14.9391" y="16.7538" width="40.21" height="28.1992" rx="4.60649"/>
+</clipPath><clipPath id="bgblur_1_235_78_clip_path"><circle cx="19.5233" cy="19.2365" r="14.1491"/>
+</clipPath></defs>
+</svg>

@@ -1,0 +1,21 @@
+<div class="b-block-computing-systems-vendors">
+  <div class="b-block-computing-systems-vendors__wrap">
+    {{#each list}}
+    <div class="b-block-computing-systems-vendors__item">
+      <div class="b-block-computing-systems-vendors__img">
+        {{#if isImg}}
+        {{{getImg src=img }}}
+        {{else}}
+        {{{getSvg src=img }}}
+        {{/if}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{#if link}}
+  <a href="{{link.href}}" class="section__link section__link--mob">
+    {{link.label}}
+    {{{getSvg src="arrow-link"}}}
+  </a>
+  {{/if}}
+</div>

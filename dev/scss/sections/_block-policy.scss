@@ -1,0 +1,430 @@
+$block-name: "block-policy";
+
+.block-policy-container {
+  @include max-size(912px);
+}
+.#{$block-name} {
+
+  a {
+    text-decoration: unset
+  }
+
+
+  .policy-alert {
+    @include color(#FA4A14);
+    @include font-size(20px, 28px, 500);
+
+    margin-bottom: 16px;
+    display: none;
+    pointer-events: none;
+
+    &.active {
+      display: block;
+      pointer-events: all;
+    }
+
+    a {
+      @include color(#00AAE6);
+    }
+  }
+
+  &__inputs-wrap {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  &__wrap {
+    @include position(relative);
+    margin-bottom: 48px
+  }
+
+  &__title {
+    @include font-size(36px, 40px, 500);
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+
+    @include media-max-md() {
+      @include font-size(28px, 32px, 500);
+      margin-bottom: 16px;
+
+    }
+
+    @include media-max-s() {
+      @include font-size(24px, 28px, 500);
+
+    }
+  }
+
+  &__text {
+    @include font-size(20px, 28px, 400);
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+
+    @include media-max-md() {
+      margin-bottom: 16px;
+
+    }
+
+    @include media-max-s() {
+      @include font-size(16px, 24px, 400);
+
+    }
+  }
+
+  &__form-wrap {
+    @include flex(column, $gap: 20px);
+    @include bg-color(#F7F7F8);
+    padding: 16px;
+
+    border-radius: 16px;
+
+    @include media-max-s() {
+      @include flex(column, $gap: 16px);
+      padding: 12px;
+    }
+
+    &.site {
+      .custom-select__list {
+        @include size(100%, 300px);
+      }
+    }
+
+    &__aim-wrap {
+      @include flex(row, null, center, 10px);
+          font-size: 20px;
+
+
+          @include media-max-md() {
+            @include flex(column, null, unset);
+          }
+      .tip-text {
+        @include size(204px);
+      }
+    }
+    &__copy-wrap {
+      @include flex(column, $gap: 16px);
+    }
+
+
+
+    &__wrap {
+      @include size(100%);
+      @include flex(column, $gap: 16px)
+    }
+
+    &__text {
+      @include font-size(20px, 28px, 500);
+      letter-spacing: -0.02em;
+    }
+
+    &__inputs {
+      @include flex(column, $gap: 16px)
+    }
+
+    &__row {
+      @include flex(row, $gap: 16px);
+
+
+      .block-policy__field,
+      .block-policy__form-wrap__wrap,
+      .custom-select {
+        @include size(50%);
+
+        @include media-max-s() {
+          @include size(100%);
+        }
+      }
+
+      .block-policy__form-wrap__wrap .block-policy__field {
+        @include size(100%);
+
+      }
+
+      @include media-max-s() {
+        @include flex(column, $gap: 16px);
+      }
+    }
+
+  }
+
+  &__checkbox {
+    @include position(relative);
+    @include flex(row, $gap: 16px);
+
+    cursor: pointer;
+
+    @include media-max-s() {
+      @include flex(row, $gap: 12px);
+    }
+
+    &.has-error {
+      .alert-input-text {
+        opacity: 1;
+      }
+    }
+
+    .alert-input-text {
+      @include position(absolute, $top: 100%, $left: 0);
+      @include flex();
+      @include size(max-content);
+      @include font-size(12px, 1.2, 500);
+      @include color($red-input);
+
+      @include transition(opacity);
+
+      opacity: 0;
+
+      letter-spacing: -0.24px;
+    }
+
+    &__input {
+      display: none;
+
+      &:checked~.block-policy__checkbox__holder::after {
+        opacity: 1;
+      }
+
+      // &:-webkit-autofill,
+      // &:-webkit-autofill:hover,
+      // &:-webkit-autofill:focus,
+      // &:-webkit-autofill:active {
+      //     -webkit-box-shadow: 0 0 0 30px $blue inset !important;
+      //     background-color: transparent !important;
+      // }
+    }
+
+    &__label {
+      @include font-size(16px, 1.4, 500);
+      letter-spacing: -0.48px;
+
+      @include media-max-s() {
+        @include font-size(14px, 1.4, 500);
+        letter-spacing: -0.28px;
+      }
+
+      &--pale {
+        @include color(#A5B4C3);
+      }
+    }
+
+    &__link {
+      @include color(#b2e5f7);
+      @include transition(#{color, text-decoration});
+
+      cursor: pointer;
+
+      @include hover() {
+        @include color(#fff);
+        text-decoration: underline;
+      }
+    }
+
+    &__holder {
+      @include position(relative);
+      @include size(18px, 18px);
+      @include min-size(18px, 18px);
+      @include bg-color(#fff);
+      @include border(1px, solid, rgba(0, 0, 0, 0.1));
+      @include transition(background-color);
+
+      overflow: hidden;
+      border-radius: 3px;
+
+      &::after {
+        content: "";
+
+        @include position(absolute, $top: 0, $left: -1px);
+        @include flex();
+        @include size(18px, 18px);
+        @include transition(opacity);
+
+        opacity: 0;
+
+        // background-image: url("/assets/svg/icons/checkbox-dark.svg");
+        background-image: url("/local/templates/t1-new/assets/svg/icons/checkbox.svg");
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-position: center;
+      }
+    }
+  }
+
+  &__field {
+    @include position(relative);
+    @include bg-color(#fff);
+    @include border(#E1E5EA, 1px, solid);
+
+    @include size(100%, fit-content);
+
+    border-radius: 8px;
+    padding: 23px 16px 7px;
+
+    @include media-max-s() {
+      border-radius: 6px;
+      padding: 23px 12px 7px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    &.required {
+      .block-policy__field__label::after {
+        content: "*";
+        @include color(#FA4A14);
+      }
+    }
+
+    &.url-select {
+      .block-policy__field__label {
+        top: 5px;
+        transform: scale(.7);
+      }
+    }
+
+    &__label {
+      @include font-size(20px, 18px, 400);
+      letter-spacing: -0.02em;
+      @include color(#A0B0BF);
+
+      @include transition(#{transform, top});
+      transform-origin: left;
+
+      @include position(absolute, $top: 50%, $left: 16px);
+      transform: translateY(-50%);
+
+      @include media-max-s() {
+        @include position(absolute, $top: 50%, $left: 12px);
+      }
+    }
+
+
+    .alert-input-text {
+      @include position(absolute, $left: 0, $top: 100%);
+      @include font-size(12px, 16px, 400);
+      @include color(#FA4A14);
+    }
+
+    &__input {
+      @include size(100%, 28px);
+      @include bg-color(transparent);
+      @include color(#000);
+      @include font-size(20px, 1.4, 500);
+
+      letter-spacing: -0.6px;
+
+      @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+
+        letter-spacing: -0.48px;
+      }
+    }
+
+    &[data-focused] {
+      .block-policy__field__label {
+        top: 4px;
+        transform: scale(.7);
+      }
+    }
+  }
+
+  &__list {
+    @include flex(column, $gap: 16px);
+    padding-left: 30px;
+
+    @include media-max-md() {}
+
+
+    li {
+      @include font-size(20px, 28px, 400)
+    }
+  }
+
+  &__submit {
+    @include size(100%);
+    @include font-size(28px, 32px, 500);
+    @include flex(row, center, center);
+    margin-bottom: 16px;
+    padding: 36px 0;
+
+    @include media-max-s() {
+      @include font-size(24px, 28px, 500);
+      padding: 24px 0;
+    }
+
+    &.disabled {
+      opacity: 0.6;
+      pointer-events: none
+    }
+  }
+
+  &__link {
+    @include font-size(20px, 28px, 500);
+    @include color(#00AAE6);
+    letter-spacing: -0.02em;
+    @include transition(color);
+
+    @include hover() {
+      @include color(#005aae);
+
+    }
+
+    @include media-max-s() {
+      @include font-size(16px, 24px, 500);
+
+    }
+  }
+
+  &__add {
+    @include flex(row, null, center, 4px);
+    @include size(fit-content);
+
+    @include font-size(14px, 19.6px, 500);
+    letter-spacing: -0.02em;
+    cursor: pointer;
+
+    @include hover() {
+      .#{$block-name}__add__label {
+        @include color(#005aae);
+      }
+
+      svg path {
+        fill: #005aae;
+      }
+    }
+
+    svg {
+      @include size(10px, 10px);
+
+      path {
+        @include transition(fill)
+      }
+    }
+
+    &__label {
+      @include color(#00AAE6);
+      @include transition(color);
+    }
+
+    &__count {
+      @include color(#A5B4C3);
+    }
+  }
+
+  .b-block-career-form__back {
+    @include color(#00aae6);
+
+    @include hover() {
+      @include color(#005aae);
+
+    }
+  }
+
+  .b-block-career-form__loader,
+  .b-block-career-form__response-error,
+  .b-block-career-form__response-success {
+    margin: auto;
+  }
+}

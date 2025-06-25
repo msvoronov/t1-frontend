@@ -1,0 +1,17 @@
+<div class="block-silaron-certificates">
+    {{> shared/section__title}}
+  <div class="block-silaron-certificates__wrap">
+    {{#each list}}
+    <a href="{{href}}" target="_blank" class="block-silaron-certificates__item{{#if isDisabled}} disable{{/if}}">
+      <div class="block-silaron-certificates__item__img">
+        {{{getImg src=src}}}
+      </div>
+      <div class="block-silaron-certificates__item__title">{{{title}}}</div>
+      <div class="block-silaron-certificates__item__link">
+        Подробнее
+        {{{getSvg src="arrow-link-gray"}}}
+      </div>
+    </a>
+    {{/each}}
+  </div>
+</div>

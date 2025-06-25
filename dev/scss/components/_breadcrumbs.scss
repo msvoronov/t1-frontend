@@ -1,0 +1,35 @@
+.breadcrumbs {
+  padding: 16px 0 24px;
+
+  ol, ul, li {
+    list-style: none;
+  }
+
+  &__list {
+    @include flex($gap: 12px);
+    @include flex-wrap();
+  }
+
+  &__item {
+    &::after {
+      content: "/";
+      font-size: 1rem;
+      margin-left: 12px;
+    }
+  }
+
+  &__link {
+    @include color(#000);
+    @include font-size(1rem, 1rem, 500);
+    @include transition(opacity);
+    
+    text-decoration: unset !important;
+
+    letter-spacing: -0.03em;
+
+    @include hover() {
+      @include color(#000);
+      text-decoration: underline !important;
+    }
+  }
+}

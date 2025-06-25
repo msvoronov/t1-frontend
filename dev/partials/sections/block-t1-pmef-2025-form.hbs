@@ -1,0 +1,197 @@
+<div class="b-block-career-form b-block-career-form-new b-block-career-form-debut" id="form">
+  <div class="b-block-career-form__wrap js-b-form">
+    <div class="b-block-career-form-new__title-wrap">
+
+      <div class="b-block-career-form-new__title">Вечернее мероприятие Т1 на ПМЭФ-2025</div>
+    </div>    
+    <form action="/local/templates/t1-new/ajax/t1-pmef-2025_callback.php" 
+      class="b-block-career-form__form b-career-form form js-b-form__form js-form-validate">
+      <input class="js-url-query" type="hidden" name="url_query">
+      <div class="b-block-career-form__inputs-wrap js-b-form-inputs active">
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Фамилия<span class="required">*</span></span>
+            <input type="text" name="surname" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Имя<span class="required">*</span></span>
+            <input type="text" name="first-name" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Отчество<span class="required">*</span></span>
+            <input type="text" name="patronymic" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Компания<span class="required">*</span></span>
+            <input type="text" name="company" class="b-career-form__field__input js-b-input__field" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Должность<span class="required">*</span></span>
+            <input type="text" name="position" class="b-career-form__field__input js-b-input__field" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Телефон<span class="required">*</span></span>
+            <input type="tel" name="tel" class="b-career-form__field__input js-b-input__field js-phone-mask js-ini-tel"
+              data-required data-tel>
+            <div class="country-select js-flag-select">
+              <div class="country-select__trigger js-country-trigger">
+                <div class="country-select__flag js-country-flag"></div>
+              </div>
+              <div class="country-select__dropdown js-flag-dropdown">
+                <div class="country-select__list">
+                  <div class="country-select__option js-country-option" data-value="ru">
+                    <div class="country-select__option__flag"></div>
+                    Россия
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="by">
+                    <div class="country-select__option__flag"></div>
+                    Беларусь
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="kz">
+                    <div class="country-select__option__flag"></div>
+                    Казахстан
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="uz">
+                    <div class="country-select__option__flag"></div>
+                    Узбекистан
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="kg">
+                    <div class="country-select__option__flag"></div>
+                    Кыргызстан
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="tj">
+                    <div class="country-select__option__flag"></div>
+                    Таджикистан
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="am">
+                    <div class="country-select__option__flag"></div>
+                    Армения
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="az">
+                    <div class="country-select__option__flag"></div>
+                    Азербайджан
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="md">
+                    <div class="country-select__option__flag"></div>
+                    Молдова
+                  </div>
+                  <div class="country-select__option js-country-option" data-value="ge">
+                    <div class="country-select__option__flag"></div>
+                    Грузия
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="alert-input-text"></span>
+          </label>
+
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Email<span class="required">*</span></span>
+            <input type="email" name="email" class="b-career-form__field__input js-b-input__field" data-required
+              data-email>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+        
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Укажите ФИО представителя Т1, пригласившего Вас на мероприятие<span class="required">*</span></span>
+            <input type="text" name="invited-by" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-cyrLat-name data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <br/>
+        <span class="b-career-form__checkbox__label">Укажите Ваши паспортные данные:</span>
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Серия<span class="required">*</span></span>
+            <input type="text" name="pasport-series" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-numbers-only data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Номер<span class="required">*</span></span>
+            <input type="text" name="pasport-number" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-numbers-only data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Дата выдачи<span class="required">*</span></span>
+            <input type="text" name="pasport-issue-date" class="b-career-form__field__input js-b-input__field"
+              data-max-length="60" data-date data-required>
+            <span class="alert-input-text"></span>
+          </label>
+        </div>
+
+        <div class="b-career-form__row">
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Место рождения<span class="required">*</span></span>
+            <input type="text" name="pasport-birthplace" class="b-career-form__field__input js-b-input__field"
+              data-max-length="120" data-required>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__field js-b-input">
+            <span class="b-career-form__field__label">Кем выдан<span class="required">*</span></span>
+            <input type="text" name="pasport-issued-by" class="b-career-form__field__input js-b-input__field"
+              data-max-length="120" data-required>
+            <span class="alert-input-text"></span>
+          </label>          
+        </div>
+
+        <label class="b-career-form__checkbox">
+          <input type="checkbox" name="advert" class="b-career-form__checkbox__input js-b-input__field" data-required>
+          <span class="b-career-form__checkbox__holder"></span>
+          <span class="b-career-form__checkbox__label">Я соглашаюсь с <a
+              href="/dev/assets/docs/events/t1-pmef-2025/????.pdf" target="_blank"
+              class="b-career-form__checkbox__link">офертой на участие в мероприятии и условиями обработки персональных данных</a></span>
+          <span class="alert-input-text"></span>
+        </label>
+
+        <label class="b-career-form__checkbox">
+          <input type="checkbox" name="personal-data" class="b-career-form__checkbox__input js-b-input__field">
+          <span class="b-career-form__checkbox__holder"></span>
+          <span class="b-career-form__checkbox__label">Я предоставляю свое согласие на <a
+              href="/dev/assets/docs/events/t1-pmef-2025/????.pdf" target="_blank"
+              class="b-career-form__checkbox__link">получение рекламы и информационных материалов</a></span>
+          <span class="alert-input-text"></span>
+        </label>        
+        <input type="button" onclick="" class="b-career-form__btn btn-white js-b-form-submit" value="Зарегистрироваться">
+        <label class="b-career-form__checkbox">
+          <span class="b-career-form__checkbox__label">
+            <a href="/dev/assets/docs/events/t1-pmef-2025/????.pdf" target="_blank"
+              class="b-career-form__checkbox__link">Политика обработки персональных данных</a>
+          </span>
+        </label>
+
+      </div>
+      <div class="b-block-career-form__response-success js-b-form-success">
+        {{{getImg src="form/success-img.png"}}}
+        <span class="b-block-career-form__response-msg">Спасибо! Заявка принята.</span>
+      </div>
+      <div class="b-block-career-form__response-error js-b-form-error">
+        {{{getImg src="form/back.png"}}}
+        <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+        <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+      </div>
+      <div class="b-block-career-form__loader js-b-form-loader">
+        {{{getImg src="form/loader.png"}}}
+      </div>
+    </form>
+  </div>
+</div>

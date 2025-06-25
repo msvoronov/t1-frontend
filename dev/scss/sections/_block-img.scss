@@ -1,0 +1,18 @@
+$block-name: "b-block-img";
+
+.#{$block-name} {
+
+    padding: 24px 0;
+    margin-bottom: 0 !important;
+
+    &__img-wrap {
+        @include image-wrap(100%, 100%, contain);
+        overflow: hidden;
+        border-radius: 16px;
+
+        @include media-max-md() {
+            border-radius: 8px;
+
+        }
+    }
+}

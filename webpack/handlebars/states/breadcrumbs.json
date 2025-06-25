@@ -1,0 +1,78 @@
+{
+    "silaron": {
+        "pages": [
+                        {
+                "title": "Главная",
+                "href": "/"
+            }
+        ]
+    },
+    "olympicAI": {
+        "pages": [
+            {
+                "title": "Мероприятия",
+                "href": "/"
+            }
+        ]
+    },
+    "computingSystems": {
+        "pages": [
+            {
+                "title": "Главная",
+                "href": "/"
+            },
+            {
+                "title": "Корпоративные сервисы",
+                "href": "/competencies"
+            }
+        ]
+    },
+    "alumni": {
+        "pages": [
+            {
+                "title": "Карьера",
+                "href": "/career/"
+            },
+            {
+                "title": "Бенефиты и условия",
+                "href": "/benefits/"
+            }
+        ]
+    },
+    "openschool": {
+        "pages": [
+            {
+                "title": "Карьера",
+                "href": "/career/"
+            },
+            {
+                "title": "Открытые школы",
+                "href": "/openschool/"
+            }
+        ]
+    },
+    "debut": {
+        "pages": [
+            {
+                "title": "Карьера",
+                "href": "/career/"
+            },
+            {
+                "title": "Начало карьеры",
+                "href": "/start-career/"
+            }
+        ]
+    },
+    "camp": {
+        "pages": [
+            {
+                "title": "Карьера",
+                "href": "/career/"
+            },
+            {
+                "title": "Начало карьеры",
+                "href": "/start-career/"
+            }
+        ]
+    }
+}

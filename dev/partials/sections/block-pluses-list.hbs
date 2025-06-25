@@ -1,0 +1,40 @@
+<div class="block-pluses-list">
+  {{> shared/section__title}}
+  <div class="block-pluses-list__wrap desk">
+    {{#each list}}
+      <div class="block-pluses-list__item">
+        <div class="block-pluses-list__item__title">{{label}}</div>
+        <div class="block-pluses-list__item__list">
+          {{#each list}}
+            <div class="block-pluses-list__item__list-item">
+              {{{getSvg src="plus"}}}
+              {{{this}}}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="block-pluses-list__wrap mob">
+    {{#> components/swiper class="js-block-pluses-slider" pagination=true}}
+      {{#each list }}
+        {{#> components/swiper__slide }}
+          <div class="block-pluses-list__item">
+            <div class="block-pluses-list__item__title">{{label}}</div>
+            <div class="block-pluses-list__item__list">
+              {{#each list}}
+              <div class="block-pluses-list__item__list-item">
+                {{{getSvg src="plus"}}}
+                {{{this}}}
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        {{/components/swiper__slide}}
+      {{/each}}
+    {{/components/swiper}}
+    {{#each list}}
+      
+    {{/each}}
+  </div>
+</div>

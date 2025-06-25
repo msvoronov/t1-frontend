@@ -1,0 +1,16 @@
+{{#> layouts/main title='Вакансии' }}
+    {{> shared/menu-gray activeIndex=1}}
+    {{#with this.store.banner.vacancies}}
+        {{> sections/block-banner}}
+    {{/with}}
+    {{#with this.store.topVacancies}}
+        {{> shared/section__title}}
+        {{> sections/block-accordion}}
+    {{/with}}
+    {{#with this.store.clusters}}
+        {{> shared/section__title}}
+        {{> sections/block-clusters}}
+    {{/with}}
+
+    {{> sections/block-career-form}}
+{{/layouts/main}}

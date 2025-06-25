@@ -1,0 +1,22 @@
+<div class="search-select js-c-search-select{{#if classNames}} {{classNames}}{{/if}}">
+    <input class="input js-c-university-input js-b-input__field" type="hidden" name="country" data-required>
+    <div class="search-select__label js-c-dropdown-trigger">
+        <div class="search-select__label__text js-c-label">Страна<span class="required">*</span></div>
+        <div class="search-select__label__arrow">
+            {{{getSvg src="arrow-select"}}}
+        </div>
+    </div>
+    <div class="search-select__dropdown js-c-dropdown">
+        <div class="search-select__search-wrap js-c-search-wrap">
+            <div class="search-select__search-wrap__icon">
+                {{{getSvg src="icons/search-icon"}}}
+            </div>
+            <input class="search-select__search-wrap__input js-c-search-input" type="text" name="search"
+                placeholder="Поиск">
+        </div>
+        {{#with this.store.universities}}
+        {{> search-select/search-select__list-new}}
+        {{/with}}
+    </div>
+    <div class="alert-input-text"></div>
+</div>

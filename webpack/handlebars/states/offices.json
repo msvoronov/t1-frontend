@@ -1,0 +1,70 @@
+{
+    "title": "Офисы Т1",
+    "list": [
+        {
+            "title": "Санкт-Петербург",
+            "links": [
+                {
+                    "label": "ул. Марата 69/71, БЦ \"Ренессанс Плаза\"",
+                    "href": "https://yandex.by/maps/org/renessans_plaza/108862001872/?ll=30.343016%2C59.921091&z=14.16"
+                }
+            ]
+
+        },
+        {
+            "title": "Ижевск",
+            "links": [
+                {
+                    "label": "ул. Ленина, 21, Деловой центр «Форум»",
+                    "href": "https://yandex.by/maps/org/forum/1308049642/?display-text=%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2021%2C%20%D0%94%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%C2%AB%D0%A4%D0%BE%D1%80%D1%83%D0%BC%C2%BB&ll=53.222063%2C56.845390&mode=search&sctx=ZAAAAAgBEAAaKAoSCWlTdY9snEpAEcAJhQg4bExAEhIJnigJibSNjz8RR3alZaTecz8iBgABAgMEBSgKOABAw58NSAFqAnVhnQHNzEw9oAEAqAEAvQEycW02wgEF6oHd7wTqAQDyAQD4AQCCAkDRg9C7LiDQm9C10L3QuNC90LAsIDIxLCDQlNC10LvQvtCy0L7QuSDRhtC10L3RgtGAIMKr0KTQvtGA0YPQvMK7igIAkgICNDSaAgxkZXNrdG9wLW1hcHOqAk42MDAxOTkzLDYwMDMyMDYsNjAwMjgzNiw0MzY0MjEwMjcwOCwxOTI1NzE0NzA2OTAsODc3OTc4NjQ3MDIsOTk0MTYwMjgzLDYwMDIxNjCwAgE%3D&sll=53.222063%2C56.845390&sspn=0.015840%2C0.004987&text=%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2021%2C%20%D0%94%D0%B5%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%C2%AB%D0%A4%D0%BE%D1%80%D1%83%D0%BC%C2%BB&z=16.96"
+                }
+            ]
+
+        },
+        {
+            "title": "Тверь",
+            "links": [
+                {
+                    "label": "пр. Калинина, 17, БЦ «Калина»",
+                    "href": "https://yandex.by/maps/org/kalina_tsentr/159029787076/?ll=35.943080%2C56.854043&mode=search&sctx=ZAAAAAgBEAAaKAoSCVJJnYAmnEpAEfnZyHVTbExAEhIJhAzk2eVbfz8R3UHsTKHzaj8iBgABAgMEBSgKOABAgqANSAFqAnVhnQHNzEw9oAEAqAEAvQHIONjPwgEGxPOnt9AE6gEA8gEA%2BAEAggIx0L%2FRgC4g0JrQsNC70LjQvdC40L3QsCwgMTcsINCR0KYgwqvQmtCw0LvQuNC90LDCu4oCAJICBjEwMTMyNZoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=35.943080%2C56.854043&sspn=0.243112%2C0.076522&text=%D0%BF%D1%80.%20%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B0%2C%2017%2C%20%D0%91%D0%A6%20%C2%AB%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0%C2%BB&z=13.02"
+                }
+            ]
+
+        },
+        {
+            "title": "Рязань",
+            "links": [
+                {
+                    "label": "ул. Павлова, 5",
+                    "href": "https://yandex.by/maps/11/ryazan/house/ulitsa_pavlova_5/Z0AYcQVnSEcFQFtufXpzeXxjZQ==/?ll=39.727122%2C54.628001&z=17.11"
+                }
+            ]
+
+        },
+        {
+            "title": "Москва",
+            "links": [
+                {
+                    "label": "Ленинградский пр., 36с41, БЦ «Арена»",
+                    "href": "https://yandex.by/maps/213/moscow/house/leningradskiy_prospekt_36s41/Z04YcwBgSUAGQFtvfXt5eHVnYw==/?ll=37.570051%2C55.789947&z=17.11"
+                },
+                {
+                    "label": "Пресненская наб., 12, Москва-Сити, башня Федерация-Восток",
+                    "href": "https://yandex.by/maps/213/moscow/house/presnenskaya_naberezhnaya_12/Z04YcwRnTUYDQFtvfXt1eHpgZw==/?indoorLevel=1&ll=37.537434%2C55.749633&z=17.11"
+                },
+                {
+                    "label": "Ленинградский пр., 72, БЦ «Алкон»",
+                    "href": "https://yandex.by/maps/213/moscow/house/leningradskiy_prospekt_72k4/Z04YcwZpQUMEQFtvfXRxdH5mZA==/?indoorLevel=1&ll=37.519863%2C55.805250&z=17.11"
+                },
+                {
+                    "label": "ул. Ленинская слобода, 19, БЦ «Омега Плаза»",
+                    "href": "https://yandex.by/maps/org/omega_plaza/174125663567/?ll=37.653510%2C55.708521&z=14.33"
+                },
+                {
+                    "label": "ул. Профсоюзная, 76, БЦ «Галерея 76»",
+                    "href": "https://yandex.by/maps/org/galereya_76/22896749332/?ll=37.543560%2C55.660760&z=17.05"
+                }
+            ]
+        }
+    ]
+}

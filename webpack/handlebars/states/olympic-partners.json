@@ -1,0 +1,17 @@
+{
+    "title": "Наши партнеры",
+    "list": [
+        {
+            "img": "olympic-partners/partners__1.png",
+            "href": "https://innopraktika.ru/"
+        },
+        {
+            "img": "olympic-partners/partners__2.png",
+            "href": "https://mipt.ru"
+        },
+        {
+            "img": "olympic-partners/partners__3.png",
+            "href": "https://go2phystech.ru"
+        }
+    ]
+}

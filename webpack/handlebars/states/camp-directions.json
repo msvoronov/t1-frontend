@@ -1,0 +1,30 @@
+{
+  "title": "Направления",
+  "descr": "Направления подготовки взаимосвязаны с программами стажировок Т1.Дебют. В рамках ИТ-лагеря ты можешь попробовать себя в нескольких или выбрать одно направление.",
+  "link": {
+      "label": "Узнать больше про стажировку Т1.Дебют",
+      "href": "/debut"
+  },
+  "list": [
+    {
+        "label": "Разработка frontend (JavaScript + React)",
+        "img": "camp-directions/directions__1.png"
+    },
+    {
+        "label": "Разработка backend (Java)",
+        "img": "camp-directions/directions__2.png"
+    },
+    {
+        "label": "Ручное функциональное тестирование",
+        "img": "camp-directions/directions__3.png"
+    },
+    {
+        "label": "Системный анализ",
+        "img": "camp-directions/directions__4.png"
+    },
+    {
+        "label": "DevOps",
+        "img": "camp-directions/directions__5.png"
+    }
+  ]
+}

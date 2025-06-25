@@ -1,0 +1,41 @@
+{
+  "title": "Направления",
+  "list": [
+    {
+      "img": "openschool-directions/direction__1.png",
+      "label": "Системный аналитик",
+      "href": "/openschool/system-analysts/"
+    },
+    {
+      "img": "openschool-directions/direction__2.png",
+      "label": "Разработчик Java",
+      "href": "/openschool/java-developers/"
+    },
+    {
+      "img": "openschool-directions/direction__3.png",
+      "disabled": true,
+      "label": "Разработчик JS+React",
+      "href": "/openschool/js-react-developers/"
+    },
+    {
+      "img": "openschool-directions/direction__4.png",
+      "label": "Ручной тестировщик",
+      "href": "/openschool/testers/"
+    },
+    {
+      "img": "openschool-directions/direction__5.png",
+      "label": "Автотестировщик",
+      "href": "/openschool/autotesters/"
+    },
+    {
+      "img": "openschool-directions/direction__6.png",
+      "label": "Прикладной администратор L2",
+      "href": "/internship/item/otkrytaya-shkola-dlya-prikladnykh-administratorov-l2/"
+    },
+    {
+      "img": "openschool-directions/direction__7.png",
+      "label": "Инженер по нагрузочному тестированию",
+      "href": "/internship/item/inzhener-po-nagruzochnomu-testirovaniyu/"
+    }
+  ]
+}

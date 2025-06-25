@@ -1,0 +1,71 @@
+$block-name: "block-silaron-steps";
+
+.#{$block-name} {
+  padding: 48px 0;
+
+  &__wrap {
+    @include flex(row, $gap: 16px);
+    @include flex-wrap();
+
+    margin-bottom: 32px;
+    
+    @include media-max-s() {
+      margin-bottom: 24px;
+      @include flex(row, $gap: 12px);
+    }
+  }
+
+  &__item {
+    $gap: 16px;
+    $count: 3;
+    
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    
+    padding: 16px 0;
+    
+    @include media-max-md() {
+      $gap: 16px;
+      $count: 2;
+      
+      padding: 12px 0;
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+      
+    }
+    
+    @include media-max-s() {
+      padding: 8px 0;
+      @include max-size(100%);
+    }
+  }
+
+  &__icon {
+    @include size(100%, 100%);
+    @include max-size(60px, 60px);
+    
+    svg {
+      
+      @include size(100%, 100%);
+    }
+  }
+
+  &__descr {
+    @include font-size(20px, 28px, 400);
+    letter-spacing: -0.02em;
+    
+    @include media-max-s() {
+      @include font-size(16px, 24px, 400);
+    }
+  }
+
+  &__img {
+    @include image-wrap(100%);
+    overflow: hidden;
+    border-radius: 16px;
+    
+    @include media-max-s() {
+      border-radius: 8px;
+    }
+  }
+}

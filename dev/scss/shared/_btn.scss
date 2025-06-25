@@ -1,0 +1,93 @@
+.btn {
+    &-blue {
+        @include flex();
+        @include size(fit-content);
+        @include bg-color($blue);
+        @include color(#fff);
+        @include transition(background-color);
+        @include font-size(1rem, 1.4, 500);
+
+        text-decoration: unset !important;
+
+        @include hover() {
+            @include bg-color($blue-dark);
+            @include color(#fff);
+
+        }
+
+        border-radius: 227.5px;
+        padding: 17px 80px;
+        letter-spacing: -0.6px;
+
+        cursor: pointer;
+
+        @include media-max-md() {
+            @include font-size(20px, 1.4, 500);
+
+        }
+
+        @include media-max-s() {
+            @include size(100%);
+            @include flex(row, center);
+            padding: 8px 20px;
+        }
+    }
+
+    &-transparent {
+
+        @include flex(row, center, center, );
+        @include size(fit-content);
+        @include bg-color(transparent);
+        @include color(#fff);
+        @include transition(background-color, 0.5s);
+        @include font-size(1rem, 1.4, 500);
+        @include border(1px, solid, #fff);
+
+        @include hover() {
+            @include bg-color($blue-dark);
+
+        }
+
+        border-radius: 227.5px;
+        padding: 17px 80px;
+
+        cursor: pointer;
+
+        @include media-max-s() {
+            @include size(100%);
+            @include flex(row, center);
+            padding: 8px 20px;
+        }
+    }
+
+    &-white {
+        @include flex();
+        @include size(fit-content);
+        @include bg-color(#fff);
+        @include color($blue);
+        @include transition(background-color);
+        @include font-size(1rem, 1.4, 500);
+
+        @include hover() {
+            @include bg-color($gray-light);
+
+        }
+
+        @include media-max-s() {
+                font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+        }
+
+        border-radius: 227.5px;
+        padding: 17px 80px;
+
+        cursor: pointer;
+
+        @include media-max-s() {
+            @include size(100%);
+            @include flex(row, center);
+            padding: 8px 20px;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+$block-name: "block-silaron-cards";
+
+.#{$block-name} {
+  padding-bottom: 48px;
+  &__wrap {
+    @include flex(row, $gap: 16px);
+    @include flex-wrap();
+
+    @include media-max-s() {
+      @include flex(row, $gap: 12px);
+    }
+  }
+
+  &__card {
+
+    $gap: 16px;
+    $count: 3;
+    
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+    padding: 16px;
+
+    border-radius: 16px;
+
+    @include bg-color(rgba(247, 247, 248, 1));
+    
+    @include media-max-md() {
+      $gap: 16px;
+      $count: 2;
+      
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+      
+    }
+    
+    @include media-max-s() {
+      @include max-size(100%);
+      border-radius: 8px;
+    }
+
+
+    &__icon {
+      @include size(100%, 100%);
+      @include max-size(60px, 60px);
+      margin-bottom: 16px;
+      svg {
+        
+        @include size(100%, 100%);
+      }
+      @include media-max-s() {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__title {
+      @include font-size(20px, 28px, 400);
+      letter-spacing: -0.01em;
+      
+      margin-bottom: 8px;
+      
+      @include media-max-s() {
+        @include font-size(16px, 24px, 400);
+        margin-bottom: 0;
+      }
+
+    }
+
+    &__descr {
+      @include font-size(16px, 24px, 400);
+      @include color(rgba(104, 125, 146, 1));
+      letter-spacing: -0.01em;
+      
+      
+      @include media-max-s() {
+        @include font-size(14px, 20px, 400);
+      }
+    }
+  }
+}

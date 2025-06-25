@@ -1,0 +1,10 @@
+<div class="block-stats">
+  <div class="block-stats__wrap">
+    {{#each list}}
+      <div class="block-stats__item block-stats__item--card-{{@key}}">
+        <div class="block-stats__item__label{{#if hasPlus}} plus{{/if}}">{{label}}</div>
+        <div class="block-stats__item__descr">{{descr}}</div>
+      </div>
+    {{/each}}
+  </div>
+</div>

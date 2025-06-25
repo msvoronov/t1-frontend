@@ -1,0 +1,44 @@
+{
+    "title": "Делимся экспертизой",
+    "link": {
+        "label": "Блог",
+        "href": "#"
+    },
+    "list": [
+        {
+            "label": "Мероприятия",
+            "icon": "icons/t1",
+            "href": ""
+        },
+        {
+            "label": "Блог на Хабр",
+            "icon": "icons/habr",
+            "href": ""
+        },
+        {
+            "label": "Блог на VC",
+            "icon": "icons/vc",
+            "href": ""
+        },
+        {
+            "label": "Блог на Tproger",
+            "icon": "icons/tproger",
+            "href": ""
+        },
+        {
+            "label": "Телеграм-канал про жизнь в Т1",
+            "icon": "icons/tg",
+            "href": ""
+        },
+        {
+            "label": "Вконтакте",
+            "icon": "icons/vk",
+            "href": ""
+        },
+        {
+            "label": "Подкаст Т1",
+            "icon": "icons/podcast",
+            "href": ""
+        }
+    ]
+}

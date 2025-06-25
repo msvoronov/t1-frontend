@@ -1,0 +1,246 @@
+.tags-select {
+  @include position(relative);
+  @include size(100%);
+  ul {
+    margin-bottom: unset;
+  }
+  ul > li {
+    margin-bottom: unset;
+  }
+
+  &.has-error {
+    .alert-input-text {
+      opacity: 1;
+    }
+    .tags-select__label {
+      border-color: $red-input;
+    }
+  }
+  .alert-input-text {
+    @include position(absolute, $top: 100%, $left: 0);
+    @include font-size(12px, 1.2, 500);
+    @include color($red-input);
+    @include transition(opacity);
+    @include flex();
+    @include size(max-content);
+    opacity: 0;
+    letter-spacing: -0.24px;
+  }
+
+  &.has-value {
+    .tags-select__label__text {
+      transform: translateY(-60%) scale(0.7);
+    }
+  }
+
+  &.open {
+    .tags-select__label__arrow {
+      transform: rotate(180deg);
+    }
+
+    .tags-select__dropdown {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0);
+    }
+  }
+
+  &__other {
+    display: none;
+
+    @include media-max-md() {
+      display: none;
+    }
+
+    @include media-max-s() {
+      display: none;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__tags-wrap {
+    @include min-size(null, 27px);
+  }
+
+  &__label {
+    @include position(relative);
+    @include size(100%);
+    @include border(1px, solid, #fff, bottom);
+    @include transition(border-color);
+    padding: 24px 0 8px;
+
+    cursor: pointer;
+
+    @include media-max-s() {
+      padding: 16px 0 15px;
+    }
+
+    &__text {
+      @include position(absolute, $top: 16px, $left: 0);
+
+      @include transition(transform);
+
+      transform-origin: left;
+
+      letter-spacing: -0.6px;
+
+      @include font-size(20px, 1.4, 500);
+
+      letter-spacing: -0.6px;
+
+      @include media-max-md() {
+      }
+
+      @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+      }
+    }
+
+    &__arrow {
+      @include position(absolute, $top: calc(50% - 12px), $right: 4px);
+      @include size(24px, 24px);
+
+      @include transition(transform);
+    }
+  }
+
+  &__tags-wrap {
+    @include min-size(null, 27px);
+    @include flex(row, $gap: 4px);
+    @include flex-wrap();
+  }
+
+  &__tag-item {
+    @include max-size(95%);
+    @include font-size(20px, 1.4, 500);
+    @include flex(row, center, center, 8px);
+    
+    @include bg-color(rgb(0, 0, 0), 0.08);
+    
+    padding: 0 8px;
+    
+    border-radius: 4px;
+    letter-spacing: -0.6px;
+    
+    @include media-max-md() {
+      @include font-size(16px, 1.4, 500);
+    }
+
+    &__cross {
+      @extend %clickable;
+
+      @include flex();
+      @include size(18px, 18px);
+      @include bg-color(rgb(0, 0, 0), 0.1);
+      @include position(relative);
+
+      border-radius: 50%;
+
+      padding: 3px;
+
+      &::after,
+      &::before {
+        content: "";
+        @include bg-color(#fff);
+        @include position(absolute, $left: 4px, $top: 9px);
+        @include size(10px, 1px);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__dropdown {
+    @include position(absolute, $top: calc(100% + 4px));
+    @include bg-color(#fff);
+    @include border(1px, solid, #e9e9ef);
+    @include size(100%);
+
+    @include transition(#{opacity, transform});
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+
+    border-radius: 16px;
+    padding: 6px 0;
+
+    z-index: 100;
+
+    overflow: hidden;
+  }
+
+  &__list {
+    // @extend %custom-srollbar-select-y;
+
+    @include font-size(20px, 1.4, 500);
+    letter-spacing: -0.6px;
+
+    @include max-size(null, 200px);
+
+    list-style: none;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      @include size(6px);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      @include bg-color(#d8d8d8);
+      border-radius: 3px;
+    }
+
+    &__item {
+      list-style: none;
+
+      padding-left: unset;
+
+      @include flex(column);
+      @include color(#000);
+
+      @include transition(background-color);
+
+      @include hover() {
+        @include bg-color(#f7f7f8);
+      }
+
+      &__label {
+        padding: 8px 12px;
+        @include flex(row, null, center);
+      }
+
+      &__value {
+        @include font-size(16px, 1.4, 500);
+      }
+
+      &__label-text {
+        @include media-max-md() {
+          @include font-size(16px, 1.4, 500);
+        }
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  ul, ol, li {
+    list-style: none;
+  }
+
+  li {
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+$block-name: "b-block-expertise";
+
+.#{$block-name} {
+
+    padding: 0 0 48px;
+    margin-bottom: 0 !important;
+
+    a {
+        text-decoration: unset !important;
+    }
+
+
+    &__wrap {
+        @include grid($gap: 16px);
+
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        
+        @include media-max-md() {
+            @include flex(column, $gap: 16px);
+        }
+        
+        &.row-3 {
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+
+    &__item {
+
+        @include flex($align: center, $gap: 16px);
+        @include color($blue-light);
+        @include font-size(28px, 1.2, 500);
+        @include transition(color);
+        
+        letter-spacing: -0.84px;
+        
+        @include hover() {
+            @include color($blue-dark);
+            
+            svg .blue {
+                fill: $blue-dark;
+            }
+        }
+        
+        @include media-max-s() {
+            @include font-size(20px, 1.2, 500);
+            @include flex($align: center, $gap: 8px);
+        }
+
+        svg {
+            @include size(34px, 34px);
+            @include min-size(34px, 34px);
+
+            @include media-max-s() {
+                @include size(28px, 28px);
+                @include min-size(28px, 28px);
+
+            }
+
+            .blue {
+                @include transition(fill)
+            }
+        }
+    }
+}

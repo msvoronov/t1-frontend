@@ -1,0 +1,30 @@
+{
+    "title": "Какие направления тебе интересны?",
+    "list": [
+        {
+            "value": "Системный анализ",
+            "label": "Системный анализ"
+        },
+        {
+            "value": "Разработчик backend (Java)",
+            "label": "Разработчик backend (Java)"
+        },
+        {
+            "value": "Разработчик frontend (JavaScript + React)",
+            "label": "Разработчик frontend (JavaScript + React)"
+        },
+        {
+            "value": "Ручное функциональное тестирование",
+            "label": "Ручное функциональное тестирование"
+        },
+        {
+            "value": "DevOps инженер",
+            "label": "DevOps инженер"
+        },
+        {
+            "name": "direction-other",
+            "value": "Другое",
+            "label": "Другое"
+        }
+    ]
+}

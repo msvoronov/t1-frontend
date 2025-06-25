@@ -1,0 +1,25 @@
+{
+  "title": "Годовые отчеты",
+  "years": [
+    {
+      "year": "2024"
+    },
+    {
+      "year": "2023",
+      "isSelected": true
+    },
+    {
+      "year": "2022"
+    }
+  ],
+  "list": [
+    {
+      "year": "2023",
+      "img": "reports/reports__1.jpg",
+      "title": "Отчет Холдинга Т1 за 2023 год",
+      "descr": "",
+      "pdfLink": "",
+      "databookLink": ""
+    }
+  ]
+}

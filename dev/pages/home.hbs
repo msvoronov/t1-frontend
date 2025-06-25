@@ -1,0 +1,50 @@
+{{#> layouts/main title='Работа в T1' }}
+    {{> shared/menu-gray activeIndex=0}}
+
+        {{> sections/block-video-banner }}
+
+    {{#with this.store.banner.main}}
+        {{> sections/block-banner className="b-block-banner--large"}}
+    {{/with}}
+
+    {{#with this.store.internshipStats}}
+        {{> shared/section__title }}
+        {{> sections/block-career-stats-new}}
+    {{/with}}
+
+    
+    {{#with this.store.infoItems.work}}
+        {{> shared/section__title}}
+        {{> sections/block-career-items}}
+    {{/with}}
+
+    {{#with this.store.achievements}}
+        {{> shared/section__title}}
+        {{> sections/block-career-achievements}}
+    {{/with}}
+
+    {{> sections/block-figures}}
+    {{> sections/block-img}}
+    
+    {{#with this.store.imgSliders.work}}
+        {{> shared/section__title}}
+        {{> sections/block-img-slider stickyArrows=true}}
+    {{/with}}
+
+    {{#with this.store.expertise}}
+        {{> shared/section__title}}
+        {{> sections/block-expertise}}
+    {{/with}}
+    
+    {{#with this.store.steps}}
+        {{> shared/section__title}}
+        {{> sections/block-steps}}
+    {{/with}}
+
+    {{#with this.store.banner.join}}
+        {{> sections/block-banner className="b-block-banner--black"}}
+    {{/with}}
+    
+    {{> sections/block-career-form}}
+
+{{/layouts/main}}

@@ -1,0 +1,39 @@
+{{#> layouts/main title=' ' titleValue=" " breadcrumbs=this.store.breadcrumbs.computingSystems }}
+
+{{> sections/block-computing-systems-hero}}
+
+{{#with this.store.computingSystemsDirections}}
+  {{> shared/section__title}}
+  {{> sections/block-computing-systems-directions}}
+{{/with}}
+
+{{> sections/block-computing-systems-presentation}}
+
+{{#with this.store.computingSystemsSteps}}
+  {{> shared/section__title}}
+  {{> sections/block-computing-systems-steps}}
+{{/with}}
+{{#with this.store.computingSystemsList}}
+  {{> shared/section__title}}
+  {{> sections/block-computing-systems-list}}
+{{/with}}
+
+{{#with this.store.computingSystemsVideo}}
+  {{> shared/section__title}}
+  {{> sections/block-video }}
+{{/with}}
+
+  {{> sections/block-computing-systems-email-form}}
+
+{{#with this.store.computingSystemsSlider}}
+  {{> sections/block-computing-systems-slider}}
+{{/with}}
+
+{{#with this.store.vendors}}
+  {{> shared/section__title}}
+  {{> sections/block-computing-systems-vendors}}
+{{/with}}
+
+
+  {{> sections/block-computing-systems-form}}
+{{/layouts/main}}

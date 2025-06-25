@@ -1,0 +1,15 @@
+@keyframes bounceSelection {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.05);
+    }
+    60% {
+        transform: scale(1.025);
+    }
+}

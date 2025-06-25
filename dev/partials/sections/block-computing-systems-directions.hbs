@@ -1,0 +1,18 @@
+<div class="block-computing-systems-directions">
+  {{#each list}}
+  <div class="block-computing-systems-directions__item">
+    <div class="block-computing-systems-directions__item__img">
+      {{{getSvg src=icon }}}
+    </div>
+    <div class="block-computing-systems-directions__item__label">{{label}}</div>
+    <ul class="block-computing-systems-directions__item__list">
+      {{#each list}}
+        <li class="block-computing-systems-directions__item__list-item">
+          {{{getSvg src="icons/checkbox-thin"}}}
+          {{this}}
+          </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/each}}
+</div>

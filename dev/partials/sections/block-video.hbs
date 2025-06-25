@@ -1,0 +1,16 @@
+<div class="b-block-video js-video-wrap stoped{{#if className}} {{className}}{{/if}}">
+  <div class="b-block-video__wrap js-video-container">
+    <div class="b-block-video__modal__close js-video-close"></div>
+    <video src="{{ video }}" {{#if controls}}controls{{/if}} class="video js-video"></video>
+    <div class="b-block-video__name">{{ name }}</div>
+    <div class="b-block-video__time js-timer">{{ time }}</div>
+    <div class="b-block-video__btn js-video-btn">
+      <div class="b-block-video__btn__icon play">
+        {{{ getSvg src="play" }}}
+      </div>
+      <div class="b-block-video__btn__icon pause">
+        {{{ getSvg src="pause" }}}
+      </div>
+    </div>
+  </div>
+</div>

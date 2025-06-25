@@ -1,0 +1,145 @@
+$block-name: "b-block-culture-slider";
+
+.#{$block-name} {
+  margin-bottom: 0 !important;
+  @include position(relative);
+
+  &.camp {
+    .b-block-culture-slider__item {
+      pointer-events: none;
+    }
+  }
+
+  a {
+    text-decoration: unset !important;
+  }
+
+   .custom-pagination {
+    @include size(100%);
+    @include flex(row, center, center, $gap: 12px);
+
+    @include transition(all, 0.1s);
+
+    margin-top: 24px;
+    
+    @include media-max-s() {
+      margin-top: 16px;
+    }
+
+    .custom-pagination-bullet {
+      @include size(8px, 8px);
+      @include bg-color(#382323, 0.2);
+      @include transition(#{background-color, opacity});
+
+      border-radius: 50%;
+
+      cursor: pointer;
+
+      &.active {
+        @include bg-color(#000000, 1);
+      }
+      
+      @include hover() {
+        @include bg-color(#000000, 1);
+      }
+    }
+  }
+
+  .custom-pagination {
+      // @include position(absolute);
+      z-index: 1;
+    }
+
+  .swiper {
+    // overflow: visible;
+    .custom-pagination {
+      // @include position(absolute);
+      z-index: 1;
+    }
+    .swiper-pagination-bullet {
+      border: unset !important;
+      background-color: #000;
+      opacity: 0.2;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #000;
+      opacity: 1;
+    }
+  }
+
+  padding: 0 0 48px;
+
+  @include media-max-md() {
+    padding: 0 0 48px;
+  }
+
+  .section__link {
+    @include media-max-md() {
+      margin-top: 24px;
+    }
+  }
+
+  &__item {
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    pointer-events: none;
+    
+    @include media-max-md() {
+      border-radius: 8px;
+    }
+
+    &.def {
+      @include hover() {
+      .#{$block-name}__item__label {
+        @include color(#000);
+      }
+    }
+    }
+
+    @include hover() {
+      .#{$block-name}__item__label {
+        @include color($blue);
+      }
+    }
+
+    &__img {
+      @include image-wrap(100%, null, contain);
+      @include max-size(100%);
+
+      overflow: hidden;
+
+      border-radius: 16px;
+      margin-bottom: 16px;
+
+      @include media-max-md() {
+        border-radius: 8px;
+      }
+    }
+
+    &__label,
+    &__descr {
+      @include font-size(20px, 28px, 500);
+      letter-spacing: -0.6px;
+      
+      @include media-max-s() {
+        @include font-size(16px, 22.4px, 500);
+
+      }
+    }
+
+    &__label {
+      @include transition(color);
+      @include color(#000);
+    }
+
+    &__descr {
+      @include color($gray);
+    }
+  }
+
+  a.b-block-culture-slider__item {
+    pointer-events: all !important;
+  }
+}

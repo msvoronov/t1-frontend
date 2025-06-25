@@ -1,0 +1,84 @@
+$block-name: "block-openschool-all";
+
+.#{$block-name} {
+  &__wrap {
+    @include flex($gap: 24px 16px);
+    @include flex-wrap();
+    
+    @include media-max-md() {
+      @include flex($gap: 16px);
+
+    }
+
+  }
+  &__item {
+    $count: 3;
+    $gap: 16px;
+
+    cursor: pointer;
+
+    text-decoration: unset !important;
+    
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    
+
+    
+    @include media-max-md() {
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+      $count: 2;
+      $gap: 16px;
+    }
+
+    @include media-max-s() {
+      @include max-size(100%);
+    }
+
+    &.def {
+      @include hover() {
+      .#{$block-name}__item__label {
+        @include color(#000);
+      }
+    }
+    }
+
+    @include hover() {
+      .#{$block-name}__item__label {
+        @include color($blue);
+      }
+    }
+
+    &__img {
+      @include image-wrap(100%, null, contain);
+      @include max-size(100%);
+
+      overflow: hidden;
+      border-radius: 16px;
+      margin-bottom: 16px;
+
+      @include media-max-md() {
+        border-radius: 8px;
+      }
+    }
+
+    &__label,
+    &__descr {
+      @include font-size(20px, 28px, 500);
+      letter-spacing: -0.6px;
+      
+      @include media-max-s() {
+        @include font-size(16px, 22.4px, 500);
+
+      }
+    }
+
+    &__label {
+      @include transition(color);
+      @include color(#000);
+    }
+
+    &__descr {
+      @include color($gray);
+    }
+  }
+}

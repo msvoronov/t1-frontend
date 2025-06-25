@@ -1,0 +1,450 @@
+$block-name: "b-career-form";
+
+.#{$block-name} {
+
+  &__disclamer {
+    @include font-size(16px, 1.2, 500);
+    @include color(#a5b4c3);
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #00aae6 inset !important;
+    -webkit-text-fill-color: #fff !important;
+  }
+
+  .required {
+    @include color($red-input);
+  }
+
+  &__row {
+    @include flex($gap: 16px);
+
+    @include media-max-md() {
+      @include flex(column, $gap: 16px);
+    }
+  }
+
+  &__checkbox {
+    @include position(relative);
+    @include flex(row, $gap: 16px);
+
+    cursor: pointer;
+
+    @include media-max-s() {
+      @include flex(row, $gap: 12px);
+    }
+
+    &.has-error {
+      .alert-input-text {
+        opacity: 1;
+      }
+    }
+
+    .alert-input-text {
+      @include position(absolute, $top: 100%, $left: 0);
+      @include flex();
+      @include size(max-content);
+      @include font-size(12px, 1.2, 500);
+      @include color($red-input);
+
+      @include transition(opacity);
+
+      opacity: 0;
+
+      letter-spacing: -0.24px;
+    }
+
+    &__input {
+      display: none;
+
+      &:checked~.b-career-form__checkbox__holder::after {
+        opacity: 1;
+      }
+
+      // &:-webkit-autofill,
+      // &:-webkit-autofill:hover,
+      // &:-webkit-autofill:focus,
+      // &:-webkit-autofill:active {
+      //     -webkit-box-shadow: 0 0 0 30px $blue inset !important;
+      //     background-color: transparent !important;
+      // }
+    }
+
+    &__label {
+      @include font-size(16px, 1.4, 500);
+      letter-spacing: -0.48px;
+
+      @include media-max-s() {
+        @include font-size(14px, 1.4, 500);
+        letter-spacing: -0.28px;
+      }
+
+      &--pale {
+        @include color(#A5B4C3);
+      }
+    }
+
+    &__link {
+      @include color(#b2e5f7);
+      @include transition(#{color, text-decoration});
+
+      cursor: pointer;
+
+      @include hover() {
+        @include color(#fff);
+        text-decoration: underline;
+      }
+    }
+
+    &__holder {
+      @include position(relative);
+      @include size(18px, 18px);
+      @include min-size(18px, 18px);
+      @include bg-color(#fff);
+      @include border(1px, solid, rgba(0, 0, 0, 0.1));
+      @include transition(background-color);
+
+      overflow: hidden;
+      border-radius: 3px;
+
+      &::after {
+        content: "";
+
+        @include position(absolute, $top: 0, $left: -1px);
+        @include flex();
+        @include size(18px, 18px);
+        @include transition(opacity);
+
+        opacity: 0;
+
+        // background-image: url("/assets/svg/icons/checkbox.svg");
+        background-image: url("/local/templates/t1-new/assets/svg/icons/checkbox.svg");
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-position: center;
+      }
+    }
+  }
+
+  &__field {
+    @include position(relative);
+    @include size(100%);
+
+    @include border(1px, solid, #fff, bottom);
+
+    @include transition(border-color);
+
+    padding: 24px 0 8px;
+
+    @include media-max-s() {
+      // padding: 16px 0 15px;
+    }
+
+    textarea {
+      @include size(null, 74px);
+      @include max-size(null, unset);
+
+      resize: none;
+
+      @include media-max-s() {
+        @include size(null, 78px);
+      }
+
+      &::placeholder {
+        @include color(#B2E5F7);
+      }
+    }
+
+    &.has-error {
+      @include border(1px, solid, $red-input, bottom);
+
+      .alert-input-text {
+        opacity: 1;
+      }
+    }
+
+    .alert-input-text {
+      @include position(absolute, $top: 100%, $left: 0);
+      @include font-size(12px, 1.2, 500);
+      @include color($red-input);
+      @include flex();
+      @include size(max-content);
+
+      @include transition(opacity);
+
+      opacity: 0;
+
+      letter-spacing: -0.24px;
+    }
+
+    &__label {
+      @include position(absolute, $top: 16px, $left: 0);
+
+      @include font-size(20px, 1.4, 500);
+      @include transition(transform);
+
+      transform-origin: left;
+
+      letter-spacing: -0.6px;
+
+      @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+
+        letter-spacing: -0.48px;
+      }
+    }
+
+    &__label-comment {
+      @include font-size(20px, 1.4, 500);
+      letter-spacing: -0.6px;
+       @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+
+        letter-spacing: -0.48px;
+      }
+    }
+
+    &__sublabel {
+      @include font-size(16px, 22.4px, 500);
+      @include color(#b2e5f7);
+      @include max-size(660px);
+      @include flex();
+
+      margin-top: 4px
+    }
+
+    &__input {
+      @include size(100%);
+      @include max-size(null, 22px);
+      @include bg-color(transparent);
+      @include color(#fff);
+      @include font-size(20px, 1.4, 500);
+
+      letter-spacing: -0.6px;
+
+      @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+
+        letter-spacing: -0.48px;
+      }
+    }
+
+    &[data-focused] {
+      .b-career-form__field__label {
+        transform: translateY(-60%) scale(0.7);
+      }
+    }
+  }
+
+  &__btn {
+    @include font-size(20px, 1.4, 500);
+    letter-spacing: -0.6px;
+
+    @include media-max-s() {
+      @include font-size(20px, 1.4, 500);
+      letter-spacing: -0.6px;
+    }
+  }
+
+  &--light {
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+      -webkit-text-fill-color: #000 !important;
+    }
+
+    .#{$block-name}__field {
+      @include border(1px, solid, #bdbdbd, bottom);
+
+      &.has-error {
+        @include border(1px, solid, $red-input, bottom);
+      }
+    }
+
+    .#{$block-name}__field__input {
+      @include color(#000);
+    }
+
+    .#{$block-name}__checkbox__holder {
+      @include bg-color(transparent);
+      @include border(1px, solid, rgba(0, 0, 0, 0.1));
+
+      &::after {
+        @include bg-color($blue);
+        background-image: url("/local/templates/t1-new/assets/svg/icons/checkbox-light.svg");
+      }
+    }
+  }
+}
+
+.b-block-career-form-camp {
+
+  margin-bottom: 48px;
+  .b-block-career-form-new__subtitle {
+    a {
+      @include color(#fff);
+      @include transition(opacity);
+      @include hover() {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.b-block-career-form-new {
+
+  &.block-computing-systems-email-form {
+    margin-top: unset;
+    padding:  0 0 48px;
+
+    .b-block-career-form__wrap {
+      @include min-size(null, unset);
+    }
+
+    input {
+      @include color(#000);
+    }
+
+  }
+
+  
+  &.block-computing-systems-form {
+    .b-block-career-form__wrap {
+      @include bg-color(#F7F7F8);
+      @include color(#000);
+
+      @include media-max-s() {
+        @include flex(column, $gap: 24px);
+      }
+    }
+
+    .b-career-form__field {
+      border-color: #BDBDBD;
+    }
+
+    .b-career-form__row:nth-child(1),
+    .b-career-form__row:nth-child(2) {
+      margin-bottom: 16px
+    }
+
+    .btn-white {
+      @include color(#fff);
+      @include bg-color(#00AAE6);
+    }
+    
+    .b-career-form__checkbox__input:checked~.b-career-form__checkbox__holder {
+      @include bg-color(#00AAE6);
+    }
+    
+    .b-career-form__checkbox__holder::after {
+      background-image: url("/local/templates/t1-new/assets/svg/icons/checkbox-light.svg")
+    }
+    
+    .b-career-form__checkbox__link {
+      @include color(#00AAE6);
+
+    }
+  }
+
+  &.debut {
+    padding-bottom: 48px;
+  }
+
+  .b-career-form__field {
+    &.has-value {
+      .b-career-form__field__label {
+        transform: translateY(-60%) scale(0.7);
+      }
+      .b-career-form__field__label.double-line {
+        transform: translateY(-20%) scale(0.7);
+      }
+    }
+  }
+
+  .b-block-career-form__wrap {
+    @include flex(row, space-between);
+
+    @include media-max-md() {
+      @include flex(column, space-between);
+    }
+  }
+
+  &__title-wrap {
+    @include max-size(50%);
+
+    @include media-max-md() {
+      @include max-size(100%);
+
+    }
+  }
+
+  &__title {
+    @include size(100%);
+    @include font-size(48px, 1, 500);
+
+    letter-spacing: -1.92px;
+
+    @include media-max-md() {
+      @include size(100%);
+      @include font-size(28px, 1.2, 500);
+
+      letter-spacing: -0.84px;
+    }
+  }
+
+  &__subtitle {
+    @include font-size(20px, 1.4, 500);
+    @include max-size(608px);
+    margin-top: 32px;
+    letter-spacing: -0.6px;
+
+    @include media-max-md() {
+      @include font-size(16px, 1.4, 500);
+      margin-top: 16px;
+
+    }
+  }
+
+  .js-resize-input {
+    min-height: 60px;
+    
+    @include media-max-md() {
+      // min-height: 55px;
+    }
+  }
+  div.nice-select {
+          display: flex;
+      align-items: flex-end;
+  }
+
+  .nice-select {
+    @include size(null, 100%);
+    align-items: center;
+
+    min-height: 28px;
+    border: unset;
+
+    .current {
+      padding: 0;
+    }
+  }
+}
+
+.b-block-alumni-form,
+.b-block-internship-form {
+
+  .b-block-career-form__wrap {
+    justify-content: space-between;
+  }
+
+}
+  
+.b-block-internship-form {
+  padding: 0 0 48px;
+}

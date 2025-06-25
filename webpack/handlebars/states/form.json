@@ -1,0 +1,429 @@
+{
+    
+    "activity": [
+        {
+            "label": "Backend",
+            "value": "backend",
+            "stack": [
+                {
+                  "label": "Java",
+                  "value": "java"
+                },
+                {
+                  "label": ".Net",
+                  "value": ".net"
+                },
+                {
+                  "label": "PHP",
+                  "value": "php"
+                },
+                {
+                  "label": "Node.JS",
+                  "value": "node.js"
+                },
+                {
+                  "label": "C++\\C",
+                  "value": "c++\\c"
+                },
+                {
+                  "label": "Python",
+                  "value": "python"
+                },
+                {
+                  "label": "Go",
+                  "value": "go"
+                },
+                {
+                  "label": "другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "Big Data",
+            "value": "big_data",
+            "stack": [
+                {
+                  "label": "Data Engineer",
+                  "value": "data_engineer"
+                },
+                {
+                  "label": "BI аналитик",
+                  "value": "bi_analyst"
+                },
+                {
+                  "label": "Data аналитик",
+                  "value": "data_analyst"
+                },
+                {
+                  "label": "Архитектор ETL\\DWH",
+                  "value": "etl_dwh_architect"
+                },
+                {
+                  "label": "разработчик DWH",
+                  "value": "dwh_developer"
+                },
+                {
+                  "label": "другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "Edtech",
+            "value": "edtech",
+            "stack": [
+                {
+                  "label": "разработка курсов",
+                  "value": "course_development"
+                },
+                {
+                  "label": "продажи",
+                  "value": "sales"
+                },
+                {
+                  "label": "методист",
+                  "value": "methodologist"
+                },
+                {
+                  "label": "преподаватель",
+                  "value": "teacher"
+                },
+                {
+                  "label": "другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "Front",
+            "value": "front",
+            "stack": [
+                {
+                  "label": "React",
+                  "value": "react"
+                },
+                {
+                  "label": "Angular",
+                  "value": "angular"
+                },
+                {
+                  "label": "Vue",
+                  "value": "vue"
+                },
+                {
+                  "label": "другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "Mobile",
+            "value": "mobile",
+            "stack": [
+                {
+                  "label": "IOS",
+                  "value": "ios"
+                },
+                {
+                  "label": "Android",
+                  "value": "android"
+                },
+                {
+                  "label": "другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "SAP",
+            "value": "sap",
+            "stack": [
+                {
+                  "label": "разработчик",
+                  "value": "developer"
+                },
+                {
+                  "label": "консультант",
+                  "value": "consultant"
+                },
+                {
+                  "label": "архитектор",
+                  "value": "architect"
+                },
+                {
+                  "label": "другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "1С",
+            "value": "1c",
+            "stack": [
+                  {
+                    "label": "разработчик",
+                    "value": "developer"
+                  },
+                  {
+                    "label": "аналитик",
+                    "value": "analyst"
+                  },
+                  {
+                    "label": "архитектор",
+                    "value": "architect"
+                  },
+                  {
+                    "label": "другое",
+                    "value": "other"
+                  }
+            ]
+        },
+        {
+            "label": "Аналитика",
+            "value": "analytics",
+            "stack": [
+                {
+                  "label": "Аналитик данных",
+                  "value": "data_analyst"
+                },
+                {
+                  "label": "Бизнес-аналитик",
+                  "value": "business_anалysts"
+                },
+                {
+                  "label": "Аналитик веб-трафика",
+                  "value": "web_traffic_analyst"
+                },
+                {
+                  "label": "Аналитик социальных медиа",
+                  "value": "social_media_analyst"
+                },
+                {
+                  "label": "другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "Аэрокосмос",
+            "value": "aerospace",
+            "stack": [
+              {
+                "label": "Дистанционное зондирование земли",
+                "value": "remote_sensing"
+              },
+              {
+                "label": "БАС",
+                "value": "bas"
+              },
+              {
+                "label": "Спутниковые технологии",
+                "value": "satellite_technologies"
+              },
+              {
+                "label": "Другое",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "label": "Бэк-офис",
+            "value": "back_office",
+            "stack": [
+              {
+                "label": "Маркетинг",
+                "value": "marketing"
+              },
+              {
+                "label": "HR",
+                "value": "hr"
+              },
+              {
+                "label": "Кадровое администрирование",
+                "value": "personnel_administration"
+              },
+              {
+                "label": "Бухгалтерия и финансы",
+                "value": "accounting_and_finance"
+              },
+              {
+                "label": "АХО, закупки",
+                "value": "procurement"
+              },
+              {
+                "label": "Юридический блок",
+                "value": "legal"
+              },
+              {
+                "label": "GR",
+                "value": "gr"
+              },
+              {
+                "label": "Другое",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "label": "Дизайн",
+            "value": "design",
+            "stack": [
+              {
+                "label": "UI\\UX",
+                "value": "ui_ux"
+              },
+              {
+                "label": "графический дизайн",
+                "value": "graphic_design"
+              },
+              {
+                "label": "продуктовый дизайн",
+                "value": "product_design"
+              },
+              {
+                "label": "диджитал дизайн",
+                "value": "digital_design"
+              },
+              {
+                "label": "промышленный дизайн",
+                "value": "industrial_design"
+              },
+              {
+                "label": "информационный дизайн",
+                "value": "information_design"
+              },
+              {
+                "label": "другое",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "label": "Информационная безопасность",
+            "value": "infosec",
+            "stack": [
+              {
+                "label": "SIEM",
+                "value": "siem"
+              },
+              {
+                "label": "DLP",
+                "value": "dlp"
+              },
+              {
+                "label": "SOC",
+                "value": "soc"
+              },
+              {
+                "label": "SAST",
+                "value": "sast"
+              },
+              {
+                "label": "DAST",
+                "value": "dast"
+              },
+              {
+                "label": "пентестер",
+                "value": "pentester"
+              },
+              {
+                "label": "архитектор",
+                "value": "architect"
+              },
+              {
+                "label": "другое",
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "label": "Инфраструктура",
+            "value": "infrastructure",
+            "stack": [
+              {
+                "label": "DevOps",
+                "value": "devops"
+              },
+              {
+                "label": "сетевое администрирование и сопровождение",
+                "value": "network_administration"
+              },
+              {
+                "label": "Техническая поддержка",
+                "value": "technical_support"
+              },
+              {
+                "label": "Другое",
+                "value": "other"
+              }
+            ]
+          },
+        {
+            "label": "Консалтинг",
+            "value": "consulting",
+            "stack": [
+                {
+                    "label": "Техническая поддержка",
+                    "value": "technical_support"
+                },
+                {
+                  "label": "Другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "Развитие бизнеса",
+            "value": "business_development",
+            "stack": [
+              {
+                "label": "Поддержка продаж",
+                "value": "sales_support"
+              },
+              {
+                "label": "Продажи",
+                "value": "sales"
+              },
+              {
+                "label": "PR",
+                "value": "pr"
+              },
+              {
+                "label": "Другое",
+                "value": "other"
+              }
+            ]
+        },
+        {
+            "label": "Тестирование",
+            "value": "testing",
+            "stack": [
+                {
+                  "label": "Автоматизированное тестирование",
+                  "value": "automated_testing"
+                },
+                {
+                  "label": "Ручное тестирование",
+                  "value": "manual_testing"
+                },
+                {
+                  "label": "Другое",
+                  "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "Управление продуктами",
+            "value": "product_management"
+        },
+        {
+            "label": "Управление проектами",
+            "value": "project_management"
+        },
+        {
+            "label": "Другое",
+            "value": "other"
+        }
+    ]
+}

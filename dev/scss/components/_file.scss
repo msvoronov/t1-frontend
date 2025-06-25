@@ -1,0 +1,163 @@
+$block-name: "b-file";
+
+.#{$block-name} {
+    &__file-list {
+        @include flex(column)
+    }
+
+    &__input {
+        display: none
+    }
+
+    &__input-wrap {
+        @include position(relative);
+        display: block;
+
+        &.has-error {
+            .alert-input-text {
+                opacity: 1;
+            }
+
+        }
+
+        .alert-input-text {
+            @include position(absolute, $top: 100%, $left: 0);
+            @include font-size(12px, 1.2, 500);
+            @include color($red-input);
+            @include flex();
+            @include size(max-content);
+            
+            @include transition(opacity);
+            
+            opacity: 0;
+            
+            letter-spacing: -0.24px;
+            
+            // @include media-max-custom() {
+            //     @include position(absolute, $top: 100%, $left: 0);
+
+            // }
+
+        }
+    }
+
+    &__label {
+        @include flex($gap: 8.236px);
+        @include font-size(20px, 1.4, 500);
+
+        letter-spacing: -0.6px;
+        margin-bottom: 8px;
+        padding: 6.589px 16.472px;
+
+        @include media-max-s() {
+            @include font-size(16px, 1.4, 500);
+
+
+            padding: 6px 16px;
+
+            letter-spacing: -0.48px;
+        }
+
+        &.btn-transparent {
+            padding: 6.589px 16.472px;
+
+            @include media-max-s() {
+                padding: 6px 16px;
+
+            }
+
+        }
+
+        svg {
+            @include size(26px, 20px);
+
+            @include media-max-s() {
+
+                @include size(18px, 18px);
+            }
+        }
+    }
+
+    &__prompt {
+        @include font-size(16px, 1.4, 500);
+        @include color(#B2E5F7);
+
+        letter-spacing: -0.48px;
+
+        margin-bottom: 16px;
+
+        @include media-max-s() {
+
+            @include font-size(14px, 1.4, 500);
+
+            letter-spacing: -0.28px;
+        }
+    }
+
+    &__item {
+        @include flex(row, space-between, center);
+
+        padding: 8px 0;
+
+        list-style: none;
+        &::after {
+            display: none !important;
+        }
+
+        &__name {
+            @include font-size(16px, 1.4, 500);
+
+            letter-spacing: -0.48px;
+
+            @include media-max-s() {
+                @include font-size(14px, 1.4, 500);
+
+                letter-spacing: -0.28px;
+
+            }
+
+        }
+
+        &__cross {
+            $offset: calc(100% / 2);
+            @extend %clickable;
+
+            @include position(relative);
+            @include size(12px, 12px);
+
+            @include media-max-md() {
+                @include size(18px, 18px);
+
+            }
+
+            &::before,
+            &::after {
+                content: "";
+
+                @include flex();
+                @include size(100%, 1px);
+                @include transition(#{background-color, top, bottom, transform, width, opacity});
+                @include bg-color(#fff);
+                @include position(absolute);
+
+                border-radius: 1.5px;
+
+                transform-origin: center;
+            }
+
+            &::before {
+                @include position($top: $offset);
+
+                transform: rotate(45deg);
+
+            }
+
+            &::after {
+                @include position($top: $offset);
+
+                transform: rotate(-45deg);
+            }
+
+        }
+    }
+}

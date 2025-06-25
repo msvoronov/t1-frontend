@@ -1,0 +1,180 @@
+$block-name: "b-block-olympic-banner";
+
+.#{$block-name} {
+  padding: 8px 0 56px;
+
+  .br-tab {
+    display: none;
+
+    @include media-max-md() {
+      display: block;
+    }
+    @include media-max-s() {
+      display: none;
+    }
+  }
+  .br-mob {
+    display: none;
+
+    @include media-max-s() {
+      display: block;
+    }
+  }
+  
+  @include media-max-md() {
+    padding: 8px 0 48px;
+  }
+
+    @include media-max-s() {
+    padding: 8px 0 48px;
+  }
+
+  &__wrap {
+    @include position(relative);
+    @include min-size(null, 400px);
+    @include flex(column);
+    @include bg-color(#4366F5);
+
+    border-radius: 16px;
+
+
+    overflow: hidden;
+    padding: 20px 34px;
+    
+    @include media-max-md() {
+      padding: 20px 16px;
+    }
+    @include media-max-s() {
+      padding: 12px;
+    }
+
+    &__logos {
+      @include position(relative);
+      @include flex(row, space-between);
+      margin-bottom: 55px;
+
+      z-index: 1;
+      
+      @include media-max-md() {
+        margin-bottom: 52px;
+
+      }
+      @include media-max-s() {
+        margin-bottom: 44px;
+
+      }
+    }
+
+    &__logo-left {
+      @include media-max-s() {
+        @include max-size(139px);
+        svg {
+          @include size(100%, 100%);
+    
+        }
+      }
+    }
+
+    &__logo-right {
+      @include media-max-s() {
+        @include position(relative, $left: 4px);
+        svg {
+          @include size(100%, 100%);
+
+        }
+        @include max-size(64px);
+      }
+    }
+
+    &__content {
+      @include position(relative);
+      @include color(#fff);
+      @include flex(column, $gap: 28px);
+      @include max-size(956px);
+      
+      z-index: 1;
+      margin-left: 128px;
+      
+      @include media-max-md() {
+        @include flex(column, $gap: 16px);
+        margin-left: 0;
+
+      }
+
+      &__title {
+        @include font-size(68.64px, 57.65px, 500);
+        letter-spacing: -0.015em;
+        
+        @include media-max-md() {
+          @include font-size(48px, 48px, 500);
+          letter-spacing: -.04em;
+
+        }
+        
+        @include media-max-s() {
+          @include font-size(36px, 35.9px, 500);
+          letter-spacing: -.03em;
+
+        }
+      }
+      
+      &__descr {
+        @include font-size(20px, 28px, 500);
+        letter-spacing: -0.02em;
+        
+        @include media-max-md() {
+          @include font-size(20px, 28px, 500);
+          
+        }
+        
+        @include media-max-s() {
+          @include font-size(16px, 24px, 500);
+
+        }
+      }
+    }
+
+    &__bg {
+      @include position(absolute, $top: 187px, $left: -124px);
+      transform: translateY(-50%);
+      pointer-events: none;
+      z-index: 0;
+
+
+      
+      @include media-max-md() {
+        @include position(absolute, $top: 183px, $left: -202px);
+        @include size(1321.5px, 685.2px);
+        img {
+          @include size(100%, 100%);
+        }
+        
+      }
+      @include media-max-s() {
+        @include position(absolute, $top: 176px, $left: -180px);
+        @include size(1105px, 703px);
+                img {
+          @include size(100%, 100%);
+        }
+      }
+    }
+
+    &__triangle {
+      @include position(absolute, $top: 36px, $left: 0);
+      @include size(199px, 138px);
+      clip-path: polygon(0 100%, 0 0, 100% 100%);
+      @include bg-color(#4366F5);
+      z-index: 2;
+
+      @include media-max-md() {
+        @include position(absolute, $top: 126px, $left: 0);
+        @include size(63px, 42px);
+
+      }
+      @include media-max-s() {
+        @include position(absolute, $top: 127px, $left: 0);
+        @include size(42px, 34px);
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+$block-name: "b-block-schedule";
+
+
+.#{$block-name} {
+  padding: 0 0 48px;
+  
+  @include media-max-md() {
+    padding: 14px 0 40px;
+  }
+  @include media-max-s() {
+    padding: 18px 0 24px;
+  }
+
+  &__wrap {
+        display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px 12px;
+
+    &__item {
+      padding: 0 0 16px;
+      @include flex(row, null, center, 6px);
+      letter-spacing: -0.6px;
+      
+      @include media-max-s() {
+        @include flex(row, null, center, 4px);
+        padding: 0 0 32px;
+          
+        }
+
+      &__date {
+        @include font-size(20px, 28px, 500);
+
+        @include color(#00AAE6);
+        // @include size(136px);
+        
+        @include media-max-s() {
+          @include size(104px);
+          @include font-size(16px, 22.4px, 500);
+        }
+
+      }
+      
+      &__event {
+        @include font-size(20px, 28px, 400);
+
+        @include media-max-s() {
+          @include font-size(16px, 22.4px, 400);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Сертификаты",
+  "descr": "Решение для применения на объектах критической информационной инфраструктуры Российской Федерации",
+  "list": [
+    {
+      "href": "https://reestr.digital.gov.ru/reestr/2992908/ ",
+      "src": "silaron/silaron-certificates-1.png",
+      "title": "Единый реестр российских<br> программ для ЭВМ и БД: №26142 от&nbsp;27.01.2025"
+    },
+    {
+      "href": "https://pub.fsa.gov.ru/rds/declaration/view/19763318/common",
+      "src": "silaron/silaron-certificates-2.png",
+      "title": "Единый&nbsp;реестр&nbsp;сертификатов<br> и деклараций&nbsp;о&nbsp;соответствии: <br>№RU&nbsp;Д-RU.РА11.В.89391/24"
+    },
+    {
+      "href": "",
+      "src": "silaron/silaron-certificates-3.png",
+      "title": "Статус регистрации: заявка подана на&nbsp;получение, регистрация ожидается в феврале 2025 года",
+      "isDisabled": true
+    },
+    {
+      "href": "",
+      "src": "silaron/silaron-certificates-4.png",
+      "title": "Статус регистрации: утверждение типа средств измерений, регистрация ожидается в мае 2025 года",
+      "isDisabled": true
+    }
+  ]
+}

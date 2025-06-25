@@ -1,0 +1,80 @@
+$block-name: "block-silaron-certificates";
+
+.#{$block-name} {
+  padding: 64px 0;
+  
+  @include media-max-s() {
+    padding: 48px 0;
+  }
+
+  &__wrap {
+    @include flex($gap: 16px);
+    @include flex-wrap();
+    
+    @include media-max-s() {
+      @include flex($gap: 24px);
+    }
+  }
+
+  &__item {
+    $gap: 16px;
+    $count: 4;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    
+    @include media-max-md {
+      $gap: 16px;
+      $count: 2;
+  
+      @include size(100%);
+      @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+    }
+
+    @include media-max-s {
+      @include max-size(100%);
+    }
+
+    @include hover() {
+      .#{$block-name}__item__title {
+          @include color(#00AAE6);
+      }
+    }
+
+    &.disable {
+      pointer-events: none;
+      .#{$block-name}__item__title {
+        @include color(#889CAF);
+      }
+      .#{$block-name}__item__link {
+        display: none
+      }
+    }
+
+    &__img {
+      @include image-wrap(100%);
+
+      border-radius: 16px;
+      overflow: hidden;
+
+      margin-bottom: 16px;
+
+    }
+
+    &__title {
+      @include font-size(20px, 28px, 500);
+      @include color(#000);
+
+      @include transition(color);
+      
+      margin-bottom: 16px;
+    }
+    
+    &__link {
+      @include font-size(12px, 16px, 500);
+      @include color(#889CAF);
+      @include flex(row, null, center);
+
+    }
+  }
+}

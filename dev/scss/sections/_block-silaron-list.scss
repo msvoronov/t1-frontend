@@ -1,0 +1,32 @@
+$block-name: "block-silaron-list";
+
+.#{$block-name} {
+  padding: 96px 0;
+
+  @include max-size(1376px);
+
+  &__list {
+
+    @include flex(row, space-between, $gap: 8px);
+
+    @include media-max-s() {
+      @include flex(column);
+    }
+  }
+
+  &__col {
+    @include flex(column, $gap: 16px);
+  }
+
+  &__item {
+    @include flex(row, null, null, 8px);
+    @include font-size(20px, 28px, 400);
+    letter-spacing: -0.02em;
+
+    svg {
+      margin-top: 4px;
+      @include size(100%, 100%);
+      @include max-size(20px, 20px);
+    }
+  }
+}

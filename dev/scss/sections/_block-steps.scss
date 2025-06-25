@@ -1,0 +1,155 @@
+$block-name: "b-block-steps";
+
+.#{$block-name} {
+    padding: 0 0 48px;
+    margin-bottom: 0 !important;
+
+    &.olimp {
+        .b-block-steps__item__img {
+
+            @include max-size(60px);
+            margin-bottom: 16px;
+            
+            @include media-max-md() {
+                margin-bottom: 32px;
+                @include max-size(100px);
+            }
+            @include media-max-s() {
+                margin-bottom: 24px;
+                @include max-size(80px);
+            }
+
+            svg {
+                @include size(100%, 100%);
+            }
+        }
+    }
+    
+    &.col-3 {
+        padding: 0 0 104px;
+
+        .b-block-steps__wrap {
+            @include media-max-s() {
+                gap: 12px;
+            }
+        }
+        
+        @include media-max-md() {
+            padding: 12px 0 48px;
+            
+        }
+        .#{$block-name}__item {
+            $gap: 16px;
+            $count: 3;
+            
+            @include size(100%);
+            @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+            @include media-max-md() {
+                $gap: 16px;
+                $count: 2;
+
+                @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+            }
+
+            @include media-max-s() {
+
+                padding: 12px;
+
+                @include max-size(100%);
+            }
+
+            &__label {
+                @include font-size(20px, 28px, 500);
+                
+                @include media-max-md() {
+                    @include font-size(16px, 22.4px, 500);
+                    margin-bottom: 0;
+                }
+                margin-bottom: 8px
+            }
+
+            &__img {
+                @include image-wrap(100%, null, contain);
+                @include max-size(60px, 60px);
+                margin-bottom: 16px;
+
+                svg {@include size(100%, 100%);}
+                
+                @include media-max-md() {
+                    @include max-size(100px, 100px);
+                    margin-bottom: 32px;
+                }
+                
+                @include media-max-s() {
+                    @include max-size(80px, 80px);
+                    margin-bottom: 24px;
+
+                }
+            }
+        }
+    }
+
+    a {
+        text-decoration: unset !important;
+        
+    }
+
+    &__wrap {
+        @include flex($gap: 16px);
+        @include flex-wrap();
+    }
+
+    &__item {
+        $gap: 16px;
+        $count: 4;
+
+        @include size(100%);
+        @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+        @include bg-color($gray-light);
+
+        border-radius: 16px;
+        padding: 16px;
+
+        @include media-max-md() {
+            $gap: 16px;
+            $count: 2;
+
+            @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+            border-radius: 8px
+        }
+
+        @include media-max-s() {
+
+            @include max-size(100%);
+        }
+
+        &__img {
+            @include image-wrap(100%, null, contain);
+            @include max-size(100px, 100px);
+            margin-bottom: 42px;
+            
+            @include media-max-s() {
+                @include max-size(80px, 80px);
+                margin-bottom: 24px;
+
+            }
+        }
+
+        &__label,
+        &__descr {
+            @include font-size(16px, 1.4, 500);
+            letter-spacing: -0.6px;
+        }
+
+        &__descr {
+            @include max-size(98%);
+            @include color($gray);
+
+            a {
+                @include color($blue);
+            }
+        }
+    }
+}

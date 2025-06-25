@@ -1,0 +1,44 @@
+$block-name: "b-block-intern";
+
+.#{$block-name} {
+
+    margin-bottom: 0 !important;
+
+    a {
+        text-decoration: unset !important;
+    }
+
+    &__title {
+        @include font-size(48px, 1, 500);
+        letter-spacing: -1.92px;
+
+        margin-bottom: 20px;
+
+        @include media-max-md() {
+            @include font-size(32px, 1, 500);
+
+            margin-bottom: 16px;
+        }
+    }
+
+    &__list {
+        @include flex(column);
+        padding-left: 36px;
+
+        @include media-max-md() {
+            padding-left: 24px;
+        }
+    }
+
+    &__item {
+        @include font-size(36px, 1, 500);
+        letter-spacing: -1.44px;
+
+        list-style: initial !important;
+
+        @include media-max-md() {
+            @include font-size(24px, 1, 500);
+
+        }
+    }
+}

@@ -1,0 +1,111 @@
+$block-name: "b-block-internship";
+
+.past-events-new .#{$block-name} {
+  &__items {
+    overflow: hidden;
+    @include transition(all);
+  }
+
+  &__item {
+    @include flex();
+    
+    padding: 16px 0 32px;
+    margin-bottom: 0;
+
+    border-bottom: unset;
+
+    @include border(#000, 1px, solid, top);
+    @include media-max-md() {
+      @include flex(column);
+    }
+  }
+  
+  &__item-description {
+    @include flex();
+    @include media-max-md() {
+      @include flex(column);
+    }
+  }
+
+  &__item-image {
+    @include flex();
+    
+    display: flex !important;
+    order: 2;
+
+    @include media-max-md() {
+      margin-bottom: 8px;
+      @include size(100%);
+      @include max-size(100%);
+      order: 1;
+    }
+
+    &:after {
+      display: none
+    }
+  }
+  
+  &__item-img {
+    @include media-max-md() {
+      @include size(100%);
+    }
+
+  }
+  
+  &__item-description {
+    @include flex();
+    order: 1;
+    @include media-max-md() {
+      order: 2;
+    }
+  }
+  
+  &__item-title {
+    @include flex();
+    order: 2;
+
+    @include font-size(28px, 34px,500);
+    
+    @include media-max-md() {
+      @include font-size(16px, 22px,500);
+      letter-spacing: -0.03em;
+
+      order: 1;
+    }
+  }
+  
+  &__item-date {
+    @include font-size(20px, 28px,500);
+    @include color(#000);
+    @include flex();
+    @include size(160px);
+    margin-right: 32px;
+    order: 1;
+    
+    @include media-max-md() {
+      @include font-size(16px, 22px,500);
+      letter-spacing: -0.03em;
+      order: 2;
+      @include color(#A5B4C3);
+    }
+  }
+
+  &__more {
+    @include font-size(20px, 28px, 500);
+    letter-spacing: -0.03em;
+
+    padding: 16px 80px;
+    
+    @include media-max-md() {
+      @include size(100%);
+      padding: 8px 0;
+      @include flex(row, center, center);
+
+    }
+
+  }
+}
+
+.past-events-new {
+  padding: 0 0 48px;
+}

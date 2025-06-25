@@ -1,0 +1,28 @@
+<div class="block-reports-presentation">
+  <div class="block-reports-presentation__wrap">
+    {{!-- <div class="block-reports-presentation__filter">
+      {{#each filter}}
+      <label class="block-reports-presentation__filter__item">
+        <input type="checkbox" name="filter" value="{{type}}" class="js-filter-input">
+        <div class="block-reports-presentation__filter__item__btn">
+          {{label}}
+        </div>
+      </label>
+      {{/each}}
+    </div> --}}
+    <div class="block-reports-presentation__content">
+      {{#each list}}
+      <div class="block-reports-presentation__item js-filter-card active" data-type="{{type}}">
+        <div class="block-reports-presentation__item__img">
+          {{{ getImg src=img}}}
+        </div>
+        <div class="block-reports-presentation__item__title">{{{title}}}</div>
+        <a href="{{doc}}" class="block-reports-presentation__item__link" download>
+          {{{ getSvg src="icons/download-blue" }}}
+          PDF
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

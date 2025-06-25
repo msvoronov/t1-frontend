@@ -1,0 +1,9 @@
+{{#> layouts/main title='FAQ' }}
+    {{> shared/menu-gray activeIndex=6}}
+    {{#with this.store.faq}}
+        {{> sections/block-accordion}}
+    {{/with}}
+
+    {{> sections/block-feedback mail="dreamjob@t1.ru"}}
+    
+{{/layouts/main}}

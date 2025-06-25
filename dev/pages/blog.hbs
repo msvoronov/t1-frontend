@@ -1,0 +1,6 @@
+{{#> layouts/main title='Блог' }}
+    {{> shared/menu-gray activeIndex=5}}
+    {{#with this.store.blog}}
+        {{> sections/block-career-blog}}
+    {{/with}}
+{{/layouts/main}}

@@ -1,0 +1,34 @@
+{{#> layouts/main title='Направления деятельности' }}
+{{> shared/menu-gray activeIndex=4}}
+{{> sections/block-internship-hero}}
+
+<div class="c-space"></div>
+<hr>
+{{#with this.store.internship.list1}}
+{{> shared/section__title}}
+{{> sections/block-internship-items}}
+{{/with}}
+<div class="c-space"></div>
+<hr>
+{{> sections/block-intern}}
+<div class="c-space"></div>
+{{#with this.store.internship.list3}}
+{{> shared/section__title}}
+{{> sections/block-internship-items classNames="b-block-internship-items--large"}}
+{{/with}}
+<div class="c-space"></div>
+<hr>
+{{#with this.store.internship.past}}
+{{> shared/section__title}}
+{{> sections/block-internship-list}}
+{{/with}}
+<div class="c-space"></div>
+<hr>
+{{#with this.store.internship.list2}}
+{{> shared/section__title}}
+{{> sections/block-internship-items}}
+{{/with}}
+<div class="c-space"></div>
+
+{{> sections/block-intern-form}}
+{{/layouts/main}}

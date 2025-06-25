@@ -1,0 +1,92 @@
+$block-name: "b-block-feedback";
+
+.#{$block-name} {
+  padding: 0;
+  margin-bottom: 0 !important;
+
+  &.olympic {
+    @include media-max-md() {
+      .b-block-feedback__title {
+        @include font-size(28px, 33.6px, 500);
+      }
+
+      .b-block-feedback__wrap {
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .btn-blue {
+        padding: 8px 20px;
+      }
+    }
+    
+    @include media-max-s() {
+      .b-block-feedback__title {
+
+        @include font-size(24px, 28.8px, 500);
+      }
+      .b-block-feedback__wrap {
+        border-radius: 8px;
+        padding: 12px;
+        gap: 16px;
+      }
+    }
+  }
+
+  a {
+    text-decoration: unset !important;
+  }
+
+  a:hover {
+    @include color(#fff);
+  }
+
+  .btn-blue {
+    @include media-max-s() {
+      @include size(100%);
+    }
+  }
+
+  @include media-max-md() {
+    padding: 0;
+  }
+
+  &__wrap {
+    @include flex(row, space-between, center, $gap: 24px);
+    @include flex-wrap();
+    @include bg-color($gray-light);
+
+    padding: 32px 48px;
+    border-radius: 16px;
+
+    @include media-max-md() {
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    @include media-max-s() {
+      @include flex(column, space-between, flex-start, $gap: 24px);
+    }
+  }
+
+  &__title {
+    @include font-size(36px, 1.1, 500);
+
+    letter-spacing: -1.08px;
+
+    @include media-max-s() {
+      @include font-size(24px, 1.2, 500);
+      margin-bottom: 8px;
+    }
+  }
+
+  &__descr {
+    @include font-size(20px, 1.4, 500);
+    margin-top: 16px;
+    letter-spacing: -0.6px;
+
+    @include media-max-s() {
+      @include font-size(16px, 1.4, 500);
+      letter-spacing: -0.48px;
+    }
+  }
+}

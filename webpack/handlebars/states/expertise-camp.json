@@ -1,0 +1,39 @@
+{
+  "title": "Поключайся к нашим каналам <br>и будь в курсе новостей",
+  "link": {
+    "label": "Блог по карьерной тематике",
+    "href": "/blog"
+  },
+  "list": [
+    {
+      "label": "Телеграм-канал про карьеру в Т1",
+      "icon": "icons/tg",
+      "href": "https://t.me/t1career"
+    },
+    {
+      "label": "Телеграм-канал для школьников и студентов",
+      "icon": "icons/tg",
+      "href": "https://t.me/KudaidtivIT"
+    },
+    {
+      "label": "Вконтакте",
+      "icon": "icons/vk",
+      "href": "https://vk.com/t1career"
+    },
+    {
+      "label": "Блог на Хабр",
+      "icon": "icons/habr",
+      "href": "https://habr.com/ru/companies/T1Holding/articles/"
+    },
+    {
+      "label": "Блог на VC",
+      "icon": "icons/vc",
+      "href": "https://vc.ru/t1holding"
+    },
+    {
+      "label": "Блог на Tproger",
+      "icon": "icons/tproger",
+      "href": "https://tproger.ru/company/innoteh"
+    }
+  ]
+}

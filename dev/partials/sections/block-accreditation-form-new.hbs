@@ -1,0 +1,265 @@
+<div class="block-accreditation-form block-accreditation-form__new js-accreditation-form js-b-form b-block-career-form">
+  <div class="block-accreditation-form__wrap">
+    <div class="block-accreditation-form__title">Заявка на аккредитацию</div> 
+    <div class="block-accreditation-form__descr">
+      Если вы хотите предложить свою продукцию и получать уведомления о новых закупках в профильных категориях — заполните
+      анкету, а также ваши предложения по продукции.
+    </div> 
+    <form class="block-accreditation-form__form form js-b-form__form js-form-validate" action="">
+
+      <div class="block-accreditation-form__pages-wrap b-block-career-form__inputs-wrap js-b-form-inputs active">
+
+          <div class="block-accreditation-form__page__title">Основные сведения о контрагенте</div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Организационно-правовая форма</span>
+              <input type="text" name="organizational-legal-form" class="b-career-form__field__input js-b-input__field"
+                data-required data-numbers-only>
+              <span class="alert-input-text"></span>
+            </label>
+
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Полное наименование</span>
+              <input type="text" name="full-name" class="b-career-form__field__input js-b-input__field" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">ИНН</span>
+              <input type="text" name="inn" class="b-career-form__field__input js-b-input__field js-inn-mask" data-required data-inn>
+              <span class="alert-input-text"></span>
+            </label>
+
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">КПП</span>
+              <input type="text" name="kpp" class="b-career-form__field__input js-b-input__field js-kpp-mask" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Web-сайт<span class="b-career-form__field__label--pale">(если
+                  есть)</span></span>
+              <input type="text" name="kpp" class="b-career-form__field__input js-b-input__field">
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Юридический адрес</span>
+              <input type="text" name="legal-address" class="b-career-form__field__input js-b-input__field"
+                data-required>
+              <span class="alert-input-text"></span>
+            </label>
+
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Дата создания юридиеского лица</span>
+              <input type="text" name="legal-address-date" class="b-career-form__field__input js-b-input__field"
+                data-required onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">ФИО контактного лица</span>
+              <input type="text" name="name" class="b-career-form__field__input js-b-input__field" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Должность контактного лица</span>
+              <input type="text" name="position" class="b-career-form__field__input js-b-input__field" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Телефон контактного лица</span>
+              <input type="tel" name="tel" class="b-career-form__field__input js-b-input__field js-phone-mask"
+                data-required>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Email контактного лица</span>
+              <input type="email" name="text" class="b-career-form__field__input js-b-input__field"
+                data-required data-email>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+
+          <div class="block-accreditation-form__page__title">Опыт выполнения работ</div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Перечень крупнейших заказчиков <span
+                  class="b-career-form__field__label--pale">(не обязательно)</span></span>
+              <textarea type="text" name="clients" class="b-career-form__field__input js-b-input__field"
+                data-max-length="200"></textarea>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Опыт работы с Т1 (наименование проекта) <span
+                  class="b-career-form__field__label--pale">(не обязательно)</span></span>
+              <textarea type="text" name="experience" class="b-career-form__field__input js-b-input__field"
+                data-max-length="200"></textarea>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__page__title">Наиболее значимые проекты, реализованные за последние 3 год
+          </div>
+
+          {{> components/accreditation-projects}}
+
+
+          <div class="block-accreditation-form__page__title">Дополнительные сведения о контрагенте</div>
+
+          {{> components/organization}}
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Лицензии на основные виды деятельности, не требующие вступления
+                в СРО</span>
+              <textarea type="text" name="licenses" class="b-career-form__field__input js-b-input__field" data-required
+                data-max-length="200"></textarea>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Партнерские статусы</span>
+              <textarea type="text" name="partner-stauses" class="b-career-form__field__input js-b-input__field"
+                data-required data-max-length="200"></textarea>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="block-accreditation-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Общая штатная численность персонала</span>
+              <input type="text" name="name" class="b-career-form__field__input js-b-input__field" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+
+          <div class="block-accreditation-form__file">
+
+            <div class="block-accreditation-form__file__title">Приложения</div>
+            <div class="block-accreditation-form__file__subtitle">Приложите файлы (сканы сертификатов и т. д.)</div>
+
+
+            <div class="block-accreditation-form__row">
+              <div class="b-file js-c-file" data-c-inited="">
+
+                <label class="js-input-file b-file__input-wrap js-c-file-label">
+                  <div class="b-file__label btn-white">
+                    {{{getSvg src="icons/upload-blue"}}}
+
+                    Загрузить резюме
+                  </div>
+                  <input name="file[]" type="file" class="b-file__input js-b-input__field js-c-input__file"
+                    data-max-count="5" data-size="10" data-accept="pdf, jpg, png, doc" accept="pdf, jpg, png, doc"
+                    data-name="files[]" multiple="">
+                  <span class="alert-input-text"></span>
+                </label>
+                <div class="b-file__prompt">Допустимый формат файлов: PDF, JPG, PNG, DOC</div>
+                <ul class="b-file__file-list js-c-file-list">
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="block-accreditation-form__page__title">Категория продукции</div>
+
+          <div class="block-accreditation-form__checkboxes">
+            {{#with this.store.accrediatationСategory}}
+            <div class="block-accreditation-form__checkboxes__col">
+              {{#each left}}
+              <label class="b-career-form__checkbox">
+                <input type="checkbox" name="personal-data" class="b-career-form__checkbox__input js-b-input__field">
+                <span class="b-career-form__checkbox__holder"></span>
+                <span class="b-career-form__checkbox__label">{{label}}</span>
+                <span class="alert-input-text"></span>
+              </label>
+              {{/each}}
+            </div>
+            <div class="block-accreditation-form__checkboxes__col">
+              {{#each center}}
+              <label class="b-career-form__checkbox">
+                <input type="checkbox" name="{{label}}" class="b-career-form__checkbox__input js-b-input__field">
+                <span class="b-career-form__checkbox__holder"></span>
+                <span class="b-career-form__checkbox__label">{{label}}</span>
+                <span class="alert-input-text"></span>
+              </label>
+              {{/each}}
+            </div>
+            <div class="block-accreditation-form__checkboxes__col">
+              {{#each right}}
+              <label class="b-career-form__checkbox">
+                <input type="checkbox" name="{{label}}" class="b-career-form__checkbox__input js-b-input__field">
+                <span class="b-career-form__checkbox__holder"></span>
+                <span class="b-career-form__checkbox__label">{{label}}</span>
+                <span class="alert-input-text"></span>
+              </label>
+              {{/each}}
+            </div>
+            {{/with}}
+          </div>
+          <label class="b-career-form__checkbox block-accreditation-form__checkbox">
+            <input type="checkbox" name="personal-data" class="b-career-form__checkbox__input js-b-input__field">
+            <span class="b-career-form__checkbox__holder"></span>
+            <span class="b-career-form__checkbox__label">Прочее (вид продукции, не вошедший в перечень)</span>
+            <span class="alert-input-text"></span>
+          </label>
+
+          <label class="b-career-form__checkbox policy">
+            <input type="checkbox" name="personal-data" id="" class="b-career-form__checkbox__input js-b-input__field"
+              data-required data-required="">
+            <span class="b-career-form__checkbox__holder"></span>
+            <span class="b-career-form__checkbox__label">Даю&nbsp;согласие на&nbsp;<a
+                href="https://t1.ru/documents/personal_data_politics/" target="_blank"
+                class="b-career-form__checkbox__link">обработку персональных
+                данных</a></span>
+            <span class="alert-input-text"></span>
+          </label>
+
+
+          <button type="submit" class="b-career-form__btn btn-blue js-b-form-submit">Отправить</button>
+
+
+      </div>
+      <div class="b-block-career-form__response-success js-b-form-success">
+        {{{getImg src="form/success-img-blue.png"}}}
+        <span class="b-block-career-form__response-msg">Спасибо!</span>
+      </div>
+      <div class="b-block-career-form__response-error js-b-form-error">
+        {{{getImg src="form/back-blue.png"}}}
+        <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+        <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+      </div>
+      <div class="b-block-career-form__loader js-b-form-loader">
+        {{{getImg src="form/loader-blue.png"}}}
+      </div>
+    </form>
+  </div>
+</div>

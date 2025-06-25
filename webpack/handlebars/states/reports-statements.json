@@ -1,0 +1,153 @@
+{
+  "title": "Отчетность",
+  "categories": [
+    {
+      "checked": true,
+      "label": "МСФО",
+      "value": "msfo"
+    },
+    {
+      "label": "РСБУ",
+      "value": "rsbu"
+    },
+    {
+      "label": "Отчет эмитента",
+      "value": "emitent"
+    }
+  ],
+  "years": [
+    "2024",
+    "2023",
+    "2022"
+  ],
+
+  "yearsContent": [
+    {
+      "year": "2023",
+      "category": "msfo",
+      "list": [
+        {
+          "title": "Отчетность за 2023&nbsp;год",
+          "descr": "4 квартал",
+          "year": "2023",
+          "category": "msfo",
+          "doc": "/assets/docs/T1_IFRS_statements_2023.pdf"
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "category": "rsbu",
+      "list": [
+        {
+          "title": "Отчетность за 9&nbsp;месяцев 2023&nbsp;года",
+          "descr": "2 квартал",
+          "year": "2023",
+          "category": "rsbu",
+          "doc": "/assets/docs/T1_RAS_statements_9M2023.pdf"
+        },
+        {
+          "title": "Отчетность за 2023&nbsp;год",
+          "descr": "",
+          "year": "2023",
+          "category": "rsbu",
+          "doc": "/assets/docs/T1_RAS_statements_2023.pdf"
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "category": "emitent",
+      "list": [
+        {
+          "title": "Отчетность за 2023&nbsp;год",
+          "descr": "2 квартал",
+          "year": "2023",
+          "category": "emitent",
+          "doc": "/assets/docs/T1_Issuer_report_2023.pdf"
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "category": "msfo",
+      "list": [
+        {
+          "title": "Отчетность за 2022&nbsp;год",
+          "descr": "4 квартал",
+          "year": "2022",
+          "category": "msfo",
+          "doc": "/assets/docs/T1_IFRS_statements_2022.pdf"
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "category": "rsbu",
+      "list": [
+        {
+          "title": "Отчетность за 2022&nbsp;год",
+          "descr": "2 квартал",
+          "year": "2022",
+          "category": "rsbu",
+          "doc": "/assets/docs/T1_RAS_statements_2022.pdf"
+        }
+      ]
+    },
+    {
+      "isActive": true,
+      "year": "2024",
+      "category": "rsbu",
+      "list": [
+        {
+          "title": "Отчетность за 1&nbsp;квартал 2024&nbsp;года",
+          "descr": "1 квартал",
+          "year": "2024",
+          "category": "rsbu",
+          "doc": "/assets/docs/T1_RAS_statements_1Q2024.pdf"
+        },
+        {
+          "title": "Отчетность за 6&nbsp;месяцев 2024&nbsp;года",
+          "descr": "2 квартал",
+          "year": "2024",
+          "category": "rsbu",
+          "doc": "/assets/docs/T1_RAS_statements_6M2024.pdf"
+        },
+        {
+          "title": "Отчетность за 9&nbsp;месяцев 2024&nbsp;года",
+          "descr": "3 квартал",
+          "year": "2024",
+          "category": "rsbu",
+          "doc": "/assets/docs/T1_RAS_statements_9M2024.pdf"
+        },
+        {
+          "title": "Отчетность за 2024&nbsp;год",
+          "descr": "4 квартал",
+          "year": "2024",
+          "category": "rsbu",
+          "doc": "/assets/docs/T1_RAS_statements_2024.pdf"
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "category": "msfo",
+      "list": [
+        {
+          "title": "Отчетность за 6&nbsp;месяцев 2024&nbsp;года",
+          "descr": "2 квартал",
+          "year": "2024",
+          "category": "msfo",
+          "doc": "/assets/docs/T1_IFRS_statements_6M2024.pdf"
+        },
+        {
+          "title": "Отчетность за 2024&nbsp;год",
+          "descr": "4 квартал",
+          "year": "2024",
+          "category": "msfo",
+          "doc": "/assets/docs/T1_IFRS_statements_2024.pdf"
+        }
+      ]
+    }
+  ]
+}

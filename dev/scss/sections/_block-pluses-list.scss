@@ -1,0 +1,86 @@
+$block-name: "block-pluses-list";
+
+.#{$block-name} {
+  padding: 0 0 88px;
+  
+  @include media-max-md() {
+    padding: 0 0 48px;
+  }
+
+  .section__title {
+    margin-bottom: 0.8rem;
+  }
+
+  .section__text-wrap {
+    margin-bottom: 64px;
+    
+    @include media-max-md() {
+      margin-bottom: 24px;
+    }
+  }
+
+  .swiper {
+    padding-bottom: 20px;
+  }
+  &__wrap {
+    @include flex($gap: 16px);
+    @include flex-wrap();
+
+    &.desk {
+      @include media-max-md() {
+        display: none;
+      }
+    }
+    &.mob {
+      display: none;
+      @include media-max-md() {
+        display: flex;
+      }
+    }
+  }
+
+  &__item {
+
+    $gap: 16px;
+    $count: 3;
+
+    @include size(100%);
+    @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+
+
+
+    border-radius: 16px;
+    @include bg-color(#F3F3F6);
+    padding: 16px;
+
+    @include media-max-md() {
+      @include max-size(100%);
+      @include size(null, 100%);
+    }
+
+
+    &__title {
+      @include font-size(28px, 1.2, 500);
+      letter-spacing: -0.8px;
+      margin-bottom: 16px;
+
+    }
+
+    &__list {
+      @include flex(column, $gap: 16px)
+    }
+
+    &__list-item {
+      @include flex($gap: 8px);
+      @include font-size(16px, 1.4, 500);
+      letter-spacing: -0.5px;
+      svg {
+        @include size(16px, 16px);
+        @include min-size(16px);
+        margin-top: 6px;
+      }
+
+    }
+  }
+}

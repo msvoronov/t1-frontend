@@ -1,0 +1,14 @@
+<div class="b-block-computing-systems-list">
+  {{#each cols}}
+  <div class="b-block-computing-systems-list__col">
+    {{#each items}}
+    <div class="b-block-computing-systems-list__item">
+      <div class="b-block-computing-systems-list__item__img">
+        {{{ getSvg src="plus"}}}
+      </div>
+      <div class="b-block-computing-systems-list__item__text">{{item}}</div>
+    </div>
+    {{/each}}
+  </div>
+  {{/each}}
+</div>

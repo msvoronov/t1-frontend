@@ -1,0 +1,19 @@
+<div class="b-block-internship-list js-b-resize-list" data-max="3">
+    <div class="b-block-internship-list__wrap js-b-resize-wrap">
+        {{#each list}}
+            <a href="#" class="b-block-internship-list__item js-b-list-item">
+                {{#if img}}
+                <div class="b-block-internship-list__item__img">
+                    {{{getImg src=img}}}
+                </div>
+                {{/if}}
+                <div class="b-block-internship-list__item__info">
+                    <div class="b-block-internship-list__item__label">{{label}}</div>
+                    <div class="b-block-internship-list__item__descr">{{descr}}</div>
+                </div>
+            </a>
+        {{/each}}
+    </div>
+
+    <div class="b-block-internship-list__more btn-blue js-b-trigger">Показать ешё</div>
+</div>

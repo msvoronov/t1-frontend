@@ -1,0 +1,34 @@
+<div class="block-reports-annual js-annual">
+  <div class="block-reports-statements__select">
+    <label class="b-career-form__field js-nice-select-wrap">
+      <select name="year" id="" class="nice-select js-b-input__field js-nice-select">
+        {{#each years}}
+        <option value="{{year}}" {{#if isSelected}} selected{{/if}}>{{year}}</option>
+        {{/each}}
+      </select>
+    </label>
+  </div>
+  <div class="block-reports-annual__wrap">
+    {{#each list}}
+      <div class="block-reports-annual__item js-annual-card" data-year="{{year}}">
+        <div class="block-reports-annual__item__img">
+          {{{ getImg src=img }}}
+        </div>
+        <div class="block-reports-annual__item__text">
+          <div class="block-reports-annual__item__title">{{{title}}}</div>
+          <div class="block-reports-annual__item__descr">{{descr}}</div>
+        </div>
+        <div class="block-reports-annual__item__buttons">
+          <a href="{{pdfLink}}" class="block-reports-annual__item__file pdf" data-ajax-url="{{pdfLink}}" download>
+            {{{ getSvg src="icons/download-blue" }}}
+            PDF
+          </a>
+          <a href="{{databookLink}}" class="block-reports-annual__item__file databook js-download" data-ajax-url="{{databookLink}}" download>
+            {{{ getSvg src="icons/download-blue" }}}
+            Databook
+          </a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

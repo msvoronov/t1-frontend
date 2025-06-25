@@ -1,0 +1,33 @@
+<div class="block-transformation-services">
+  {{> shared/section__title}}
+  <div class="block-transformation-services__wrap desk">
+    {{#each list}}
+      <div class="block-transformation-services__item">
+        <div class="block-transformation-services__item__img">{{{getSvg src=img}}}</div>
+        <div class="block-transformation-services__item__label">{{label}}</div>
+        <div class="block-transformation-services__item__list">
+          {{#each list}}
+            <div class="block-transformation-services__item__list-item">{{{this}}}</div>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="block-transformation-services__wrap mob">
+      {{#> components/swiper class="js-block-team-slider" pagination=true}}
+        {{#each list }}
+            {{#> components/swiper__slide }}
+            <div class="block-transformation-services__item">
+                <div class="block-transformation-services__item__img">{{{getSvg src=img}}}</div>
+                <div class="block-transformation-services__item__label">{{label}}</div>
+                <div class="block-transformation-services__item__list">
+                  {{#each list}}
+                    <div class="block-transformation-services__item__list-item">{{{this}}}</div>
+                  {{/each}}
+                </div>
+            </div>
+            {{/components/swiper__slide}}
+        {{/each}}
+      {{/components/swiper}}
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="b-block-career-items{{#if classNames}} {{classNames}}{{/if}}">
+
+    <div class="b-block-career-items__wrap">
+        {{#each list}}
+            <a href="" class="b-block-career-items__item">
+                <div class="b-block-career-items__item__img">
+                    {{{getImg src=img}}}
+                    {{#if tags}}
+                        <div class="b-block-career-items__item__tags-wrap">
+                            {{#each tags}}
+                                <div class="b-block-career-items__item__tag">
+                                    {{{getSvg src="icons/schedule"}}}
+                                    {{this}}
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="b-block-career-items__item__label">{{label}}</div>
+                <div class="b-block-career-items__item__descr">{{descr}}</div>
+            </a>
+        {{/each}}
+    </div>
+    {{#if link}}
+        <a href="{{link.href}}" class="section__link section__link--mob">
+            {{link.label}}
+            {{{getSvg src="arrow-link"}}}
+        </a>
+    {{/if}}
+</div>

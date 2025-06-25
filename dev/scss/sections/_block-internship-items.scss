@@ -1,0 +1,96 @@
+$block-name: "b-block-internship-items";
+
+.#{$block-name} {
+
+    padding: 24px 0;
+    margin-bottom: 0 !important;
+
+    a {
+        text-decoration: unset !important;
+    }
+
+    &__wrap {
+        @include flex($gap: 16px);
+        @include flex-wrap();
+    }
+
+    &__item {
+
+        $gap: 16px;
+        $count: 3;
+
+        @include size(100%);
+        @include max-size(calc((100% - ($gap * ($count - 1))) / $count));
+
+        @include media-max-s() {
+            @include max-size(100%);
+        }
+
+        @include hover() {
+            .b-block-internship-items__item__label {
+                @include color($blue);
+            }
+        }
+
+        &__img {
+            @include position(relative);
+            @include bg-color($gray-light);
+
+            padding-top: 62%;
+            margin-bottom: 1rem;
+
+            border-radius: 16px;
+
+            @include media-max-md() {
+                border-radius: 8px
+            }
+
+            img {
+                @include position(absolute, $top: 50%, $left: 50%);
+                @include size(100%, 100%);
+                @include max-size(140px, 140px);
+                @include min-size(140px, 140px);
+                transform: translate(-50%, -50%);
+
+                @include media-max-md() {
+                    @include max-size(80px, 80px);
+                    @include min-size(80px, 80px);
+                    border-radius: 8px
+                }
+            }
+
+        }
+
+        &__label,
+        &__descr {
+            @include font-size(1rem, 1.4, 500);
+            letter-spacing: -0.6px;
+        }
+
+        &__label {
+            @include color(#000);
+            @include transition(color);
+        }
+
+        &__descr {
+            @include color($gray);
+        }
+
+
+    }
+
+    &--large {
+        .#{$block-name}__item__img {
+            img {
+                @include max-size(100%, 100%);
+                @include min-size(100%, 100%);
+
+                @include media-max-md() {
+                    @include max-size(100%, 100%);
+                    @include min-size(100%, 100%);
+                    border-radius: 8px
+                }
+            }
+        }
+    }
+}

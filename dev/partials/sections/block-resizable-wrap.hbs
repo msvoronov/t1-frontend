@@ -1,0 +1,14 @@
+<div class="b-block-resizable-wrap js-show-more" data-visable-count="6">
+  <div class="b-block-resizable-wrap__wrap js-resizable-wrap">
+    {{#each list}}
+    <a href="{{link}}" class="b-block-resizable-wrap__item js-card">
+      <div class="b-block-resizable-wrap__item__img">
+        {{{getImg src=img}}}
+      </div>
+      <div class="b-block-resizable-wrap__item__label">{{label}}</div>
+      <div class="b-block-resizable-wrap__item__descr">{{descr}}</div>
+    </a>
+    {{/each}}
+  </div>
+  <div class="b-block-resizable-wrap__btn btn-blue js-trigger">Загрузить ещё</div>
+</div>

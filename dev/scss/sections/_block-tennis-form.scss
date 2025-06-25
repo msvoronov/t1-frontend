@@ -1,0 +1,50 @@
+.block-tennis-form {
+
+  .b-block-career-form {
+    padding-bottom: 16px;
+  }
+  
+
+  .map iframe {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .map-desk {
+    display: block;
+
+
+    @include media-max-custom(1550px) {
+      display: none;
+    }
+  }
+  .map-mob {
+    display: none;
+    
+    @include media-max-custom(1550px) {
+      display: block;
+    }
+  }
+
+  .b-block-career-form-new__title-wrap {
+        max-width: 47%;
+    width: 100%;
+  }
+
+  @include media-max-custom(1550px) {
+    .b-block-career-form-new .b-block-career-form__wrap {
+      flex-direction: column;
+    }
+
+    .b-block-career-form-new__title-wrap,
+    .b-block-career-form__form {
+      @include size(100%);
+    }
+  }
+
+  @include media-max-custom(390px) {
+    .b-career-form__field__label {
+      @include font-size(14px, 1.4, 500)
+    }
+  }
+}

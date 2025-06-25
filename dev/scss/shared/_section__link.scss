@@ -1,0 +1,58 @@
+.section__link {
+    @include flex(row, flex-start, center, $gap: 0);
+    @include size(null, fit-content);
+    @include color($blue);
+    @include font-size(20px, 1.4, 500);
+
+    letter-spacing: -0.6px;
+
+    @include transition(#{color, gap, opacity}, 0.3s);
+
+    svg {
+        @include transition(left);
+        @include position(relative, $left: 0);
+
+        path {
+            @include transition(fill);
+        }
+    }
+
+    @include hover() {
+        opacity: 0.6;
+        // @include flex(row, flex-start, center, $gap: 8px);
+
+
+
+        svg {
+            @include position(relative, $left: 8px);
+
+            path {
+                fill: $blue-dark;
+            }
+        }
+    }
+
+    @include media-max-s() {
+        @include font-size(16px, 1.4, 500);
+        letter-spacing: -0.48px;
+
+        margin-top: 24px
+    }
+
+    &--desk {
+        @include flex();
+
+        @include media-max-md() {
+            display: none;
+        }
+    }
+
+    &--mob {
+        display: none;
+
+        @include media-max-md() {
+            display: flex;
+            margin-top: 24px;
+        }
+    }
+}

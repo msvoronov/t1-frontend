@@ -1,0 +1,31 @@
+{
+  "title": "Презентации",
+  "filter": [
+    {
+      "label": "По продуктам",
+      "type": "products"
+    },
+    {
+      "label": "По доменам",
+      "type": "domains"
+    },
+    {
+      "label": "Для инвесторов",
+      "type": "investors"
+    }
+  ],
+  "list": [
+    {
+      "img": "presentation/presentation__1.png",
+      "title": "Холдинг Т1",
+      "doc": "/assets/docs/t1-holding-presentation-2024-q2.pdf",
+      "type": "products"
+    },
+    {
+      "img": "presentation/presentation__2.png",
+      "title": "Итоги 2022 года Холдинга Т1",
+      "doc": "/assets/docs/Holding_T1_annual_report_2022.pdf",
+      "type": "products"
+    }
+  ]
+}

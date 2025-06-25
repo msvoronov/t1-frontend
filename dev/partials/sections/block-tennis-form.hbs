@@ -1,0 +1,198 @@
+<div class="block-tennis-form">
+  <div class="b-block-career-form b-block-career-form-new b-block-career-form-debut" id="form">
+    <div class="b-block-career-form__wrap js-b-form">
+      <div class="b-block-career-form-new__title-wrap">
+  
+        <div class="b-block-career-form-new__title">Теннисный турнир</div>
+      </div>
+      <form action="/local/templates/t1-new/ajax/tennis_callback.php"
+        class="b-block-career-form__form b-career-form form js-b-form__form js-form-validate">
+        <input class="js-url-query" type="hidden" name="url_query">
+        <div class="b-block-career-form__inputs-wrap js-b-form-inputs active">
+          <div class="b-career-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Имя<span class="required">*</span></span>
+              <input type="text" name="name" id="" class="b-career-form__field__input js-b-input__field"
+                data-max-length="60" data-cyrLat-name data-required>
+              <span class="alert-input-text"></span>
+            </label>
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Фамилия<span class="required">*</span></span>
+              <input type="text" name="surname" id="" class="b-career-form__field__input js-b-input__field"
+                data-max-length="60" data-cyrLat-name data-required>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+  
+          <div class="b-career-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Компания<span class="required">*</span></span>
+              <input type="text" name="company" id="" class="b-career-form__field__input js-b-input__field" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Должность<span class="required">*</span></span>
+              <input type="text" name="position" id="" class="b-career-form__field__input js-b-input__field"
+                data-required>
+              <span class="alert-input-text"></span>
+            </label>
+            
+          </div>
+  
+          <div class="b-career-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Телефон<span class="required">*</span></span>
+              <input type="tel" name="tel" id="" class="b-career-form__field__input js-b-input__field js-phone-mask" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Email<span class="required">*</span></span>
+              <input type="email" name="email" id="" class="b-career-form__field__input js-b-input__field" data-required
+                data-email>
+              <span class="alert-input-text"></span>
+            </label>
+          </div>
+
+          <div class="b-career-form__row">
+            <label class="b-career-form__field js-b-input js-resize-input">
+              <span class="b-career-form__field__label js-resize-label">В каком возрасте вы начали играть в теннис?<span class="required">*</span></span>
+              <input type="text" name="start-age" id="" class="b-career-form__field__input js-b-input__field" data-required="" data-numbers-max-length="2" data-max-value="99" data-min-value="1">
+              <span class="alert-input-text"></span>
+            </label>
+          
+          </div>
+          <div class="b-career-form__row">
+            <label class="b-career-form__field js-nice-select-wrap js-resize-input">
+              <span class="b-career-form__field__label js-resize-label">Знаете ли вы свой уровень игры по рейтингу NTRP? Если да, то укажите его, пожалуйста<span class="required">*</span></span>
+              <select name="rating-ntrp" id="" class="nice-select js-b-input__field js-nice-select" data-required>
+                <option selected="" disabled="" value=""></option>
+                <option value="1.0">1.0</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0">2.0</option>
+                <option value="2.5">2.5</option>
+                <option value="3.0">3.0</option>
+                <option value="3.5">3.5</option>
+                <option value="4.0">4.0</option>
+                <option value="4.5">4.5</option>
+                <option value="5.0">5.0</option>
+                <option value="5.5">5.5</option>
+                <option value="6.0">6.0</option>
+                <option value="6.5">6.5</option>
+                <option value="7.0">7.0</option>
+                <option value="no-rating">Не знаю</option>
+              </select>
+              <span class="alert-input-text"></span>
+            </label>
+          
+          </div>
+
+          <div class="b-career-form__row">
+            <div class="block-accreditation-form__organization__radio-wrap blue">
+              <div class="block-accreditation-form__organization__radio-wrap__info">
+                <div class="block-accreditation-form__organization__radio-wrap__title">Участвуете ли вы в любительских турнирах по теннису?<span class="required">*</span></div>
+              </div>
+              <div class="block-accreditation-form__organization__radio-wrap__inputs-wrap">
+                <label class="block-accreditation-form__organization__radio-wrap__label js-b-input">
+                  <input type="radio" name="tournaments" value="yes" class="js-b-input__field" data-required>
+                  <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+                  <span class="block-accreditation-form__organization__radio-wrap__label__text">Да</span>
+                </label>
+                <label class="block-accreditation-form__organization__radio-wrap__label js-b-input">
+                  <input type="radio" name="tournaments" value="no" class="js-b-input__field" data-required>
+                  <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+                  <span class="block-accreditation-form__organization__radio-wrap__label__text">Нет</span>
+                </label>
+                <span class="alert-input-text"></span>
+              </div>
+            </div>
+          </div>
+          <div class="b-career-form__row">
+            <div class="block-accreditation-form__organization__radio-wrap blue">
+              <div class="block-accreditation-form__organization__radio-wrap__info">
+                <div class="block-accreditation-form__organization__radio-wrap__title">Играете ли вы в теннис на счет?<span class="required">*</span></div>
+              </div>
+              <div class="block-accreditation-form__organization__radio-wrap__inputs-wrap">
+                <label class="block-accreditation-form__organization__radio-wrap__label js-b-input">
+                  <input type="radio" name="score-playing" value="yes" class="js-b-input__field" data-required>
+                  <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+                  <span class="block-accreditation-form__organization__radio-wrap__label__text">Да</span>
+                </label>
+                <label class="block-accreditation-form__organization__radio-wrap__label js-b-input">
+                  <input type="radio" name="score-playing" value="no" class="js-b-input__field" data-required>
+                  <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+                  <span class="block-accreditation-form__organization__radio-wrap__label__text">Нет</span>
+                </label>
+                <span class="alert-input-text"></span>
+              </div>
+            </div>
+          </div>
+          <div class="b-career-form__row">
+            <div class="block-accreditation-form__organization__radio-wrap blue">
+              <div class="block-accreditation-form__organization__radio-wrap__info">
+                <div class="block-accreditation-form__organization__radio-wrap__title">Есть ли у вас навыки парной игры в теннис?<span class="required">*</span></div>
+              </div>
+              <div class="block-accreditation-form__organization__radio-wrap__inputs-wrap">
+                <label class="block-accreditation-form__organization__radio-wrap__label js-b-input">
+                  <input type="radio" name="doubles" value="yes" class="js-b-input__field" data-required>
+                  <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+                  <span class="block-accreditation-form__organization__radio-wrap__label__text">Да</span>
+                </label>
+                <label class="block-accreditation-form__organization__radio-wrap__label js-b-input">
+                  <input type="radio" name="doubles" value="no" class="js-b-input__field" data-required>
+                  <div class="block-accreditation-form__organization__radio-wrap__label__holder"></div>
+                  <span class="block-accreditation-form__organization__radio-wrap__label__text">Нет</span>
+                </label>
+                <span class="alert-input-text"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="b-career-form__row">
+            <label class="b-career-form__field js-b-input">
+              <span class="b-career-form__field__label">Укажите, пожалуйста, ваш возраст<span class="required">*</span></span>
+              <input type="text" name="age" id="" class="b-career-form__field__input js-b-input__field"
+                data-numbers-max-length="2" data-max-value="99" data-min-value="1" data-required>
+              <span class="alert-input-text"></span>
+            </label>
+          
+          </div>
+  
+  
+          <label class="b-career-form__checkbox">
+            <input type="checkbox" name="personal-data" id="" class="b-career-form__checkbox__input js-b-input__field"
+              data-required>
+            <span class="b-career-form__checkbox__holder"></span>
+            <span class="b-career-form__checkbox__label">Даю согласие на <a
+                href="https://t1.ru/documents/personal_data_politics/" target="_blank"
+                class="b-career-form__checkbox__link">обработку персональных данных</a></span>
+            <span class="alert-input-text"></span>
+          </label>
+          <label class="b-career-form__checkbox">
+            <input type="checkbox" name="advert" id="" class="b-career-form__checkbox__input">
+            <span class="b-career-form__checkbox__holder"></span>
+            <span class="b-career-form__checkbox__label">Я согласен на <a
+                href="https://t1.ru/documents/SOPD_personal_data_ad.pdf" target="_blank"
+                class="b-career-form__checkbox__link">получение рекламы</a></span>
+            <span class="alert-input-text"></span>
+          </label>
+  
+          <button type="submit" class="b-career-form__btn btn-white js-b-form-submit">Зарегистрироваться</button>
+  
+        </div>
+        <div class="b-block-career-form__response-success js-b-form-success">
+          {{{getImg src="form/success-img.png"}}}
+          <span class="b-block-career-form__response-msg">Спасибо, Ваша заявка отправлена!</span>
+          <span class="b-block-career-form__response-msg">При одобрении мы добавим тебя в закрытый телеграм-канал.</span>
+        </div>
+        <div class="b-block-career-form__response-error js-b-form-error">
+          {{{getImg src="form/back.png"}}}
+          <span class="b-block-career-form__response-msg">Не удалось отправить форму.</span>
+          <div class="b-block-career-form__back js-b-form-back">Попробовать еще раз</div>
+        </div>
+        <div class="b-block-career-form__loader js-b-form-loader">
+          {{{getImg src="form/loader.png"}}}
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,137 @@
+.country-select {
+  @include position(absolute, $right: 0, $top: 20px);
+  @include size(100%, 24px);
+  z-index: 100000000;
+
+  
+
+  &.open {
+
+    &.country-select__trigger:after {
+      transform: rotate(-180deg) translateY(50%);
+    }
+
+    .country-select__dropdown {
+
+      pointer-events: all;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__trigger {
+
+    cursor: pointer;
+    @include flex(row, null, center, $gap: 4px);
+    
+    margin-left: auto;
+    @include size(fit-content);
+
+
+    &::after {
+    content: "";
+    @include size(24px, 24px);
+    @include transition(transform);
+    display: block;
+    pointer-events: none;
+
+    // @include position(absolute, $top: 50%, $right: 4px);
+    // transform: translateY(-50%);
+
+    // background-image: url("/assets/svg/arrow-select.svg");
+    background-image: url("/local/templates/t1-new/assets/svg/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+
+    z-index: 12;
+
+    @include media-max-md() {
+      @include size(24px, 24px);
+      background-size: 24px;
+    }
+
+    @include media-max-s() {
+      // @include position(absolute, $top: 12px, $right: 20px);
+    }
+  }
+  }
+  
+  
+  &__flag {
+
+  }
+
+  &__dropdown {
+    @include position(absolute, $top: calc(100% + 20px), $left: 0);
+    overflow: hidden;
+    @include size(100%);
+    border-radius: 16px;
+    @include transition(#{opacity, transform});
+
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+  }
+
+  &__list {
+    @include size(100%, 200px);
+
+    @include bg-color(#fff);
+
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      @include size(6px);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      @include bg-color(#d8d8d8);
+      border-radius: 3px;
+    }
+  }
+
+  &__option {
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+
+    text-align: left;
+    transition: all 0.2s;
+    padding: 10px 19px;
+    @include color(#000);
+
+    @include flex(row, null, center, 10px);
+
+    text-wrap: pretty;
+
+    @include transition(background-color);
+
+    @include hover() {
+      @include bg-color(rgb(38, 79, 54), 0.1);
+    }
+
+    @include font-size(20px, 1.4, 400);
+
+    letter-spacing: -0.6px;
+
+
+    @include media-max-s() {
+      @include font-size(16px, 1.4, 400);
+    }
+
+    &.selected {
+      @include bg-color(rgb(38, 79, 54), 0.1);
+    }
+
+    &.disabled {
+      display: none;
+      background-color: transparent;
+      cursor: default;
+    }
+
+    &__flag {
+      @include flex();
+    }
+  }
+}

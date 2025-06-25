@@ -1,0 +1,45 @@
+{{#> layouts/main title='Бенефиты и условия' }}
+{{> shared/menu-gray activeIndex=3}}
+{{> sections/block-figures}}
+{{> sections/block-img}}
+
+{{#with this.store.benefitsText}}
+{{> shared/section__title descrClass="section__text-wrap--small mb-48"}}
+{{/with}}
+
+{{#with this.store.bonuses}}
+{{> shared/section__title}}
+{{> sections/block-steps}}
+{{/with}}
+
+{{#with this.store.culture}}
+{{> shared/section__title titleClass="section__title--small"}}
+{{> sections/block-culture-slider}}
+{{/with}}
+
+{{#with this.store.communitySlider}}
+{{> shared/section__title}}
+{{> sections/block-blue-slider}}
+{{/with}}
+
+{{#with this.store.benefitsStats}}
+{{> shared/section__title descrClass="section__text-wrap--small"}}
+{{> sections/block-career-stats classNameWrap="row-2"}}
+{{/with}}
+
+{{#with this.store.imgSliders.offices}}
+{{> shared/section__title}}
+{{> sections/block-img-slider stickyArrows=true}}
+{{/with}}
+{{#with this.store.offices}}
+{{> shared/section__title}}
+{{> sections/block-offices}}
+{{/with}}
+{{#with this.store.coworking}}
+{{> shared/section__title}}
+{{> sections/block-coworking}}
+{{/with}}
+{{#with this.store.banner.join}}
+{{> sections/block-banner className="last-block b-block-banner--black"}}
+{{/with}}
+{{/layouts/main}}

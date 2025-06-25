@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Работа в Т1",
+    "href": "/"
+  },
+  {
+    "label": "Студентам и джунам",
+    "href": "/internship"
+  },
+  {
+    "label": "Открытые школы Т1",
+    "href": "/open-school"
+  },
+  {
+    "label": "Alumni",
+    "href": "/alumni"
+  }
+]

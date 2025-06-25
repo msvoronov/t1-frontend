@@ -1,0 +1,74 @@
+$block-name: "block-computing-systems-directions";
+
+
+.#{$block-name} {
+  
+  padding: 0 0 48px;
+
+  @include flex($gap: 16px);
+  
+  @include media-max-sm() {
+    @include flex(column, $gap: 16px);
+  }
+
+  ul {
+    margin: unset !important;
+  }
+  ul>li:after {display: none;}
+  ul>li {
+    position: relative;
+    margin: unset !important;
+    padding-left: unset !important;
+    list-style: none;
+}
+  ul, ol, li {
+    list-style: none;
+  }
+
+  &__item {
+    @include bg-color(#F7F7F8);
+
+    @include size(100%);
+
+    border-radius: 16px;
+    padding: 16px;
+
+    &__img {
+      @include size(100px, 100px);
+      
+      margin-bottom: 16px;
+    }
+    
+    &__label {
+      @include font-size(28px, 33.6px, 500);
+      @include size(100%);
+      @include border(1px, solid, #000, bottom);
+
+      padding-bottom: 16px;
+      margin-bottom: 12px;
+
+      letter-spacing: -0.03em;
+    }
+
+    ol, li, ul {
+      list-style: none;
+    }
+
+    &__list-item {
+      @include flex($gap: 8px);
+      @include font-size(16px, 22.4px, 500);
+      
+      letter-spacing: -0.03em;
+
+      svg {
+        @include size(22px, 22px);
+        @include min-size(22px);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+    }
+  }
+}

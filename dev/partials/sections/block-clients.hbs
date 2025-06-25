@@ -1,0 +1,17 @@
+<div class="b-block-clients-new{{#if classNames}} {{classNames}}{{/if}}">
+	<div class="b-block-clients-new__wrap">
+        {{#each list}}
+		    <a href="{{href}}" class="b-block-clients-new__item">
+		    	<div class="b-block-clients-new__img">
+            	{{{getImg src=img }}}
+		        </div>
+		    </a>
+        {{/each}}
+	</div>
+	{{#if link}}
+        <a href="{{link.href}}" class="section__link section__link--mob">
+			{{link.label}}
+			{{{getSvg src="arrow-link"}}}
+		</a>
+    {{/if}}
+</div>
